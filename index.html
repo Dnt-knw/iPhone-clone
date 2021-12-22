@@ -1,0 +1,3395 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Working iPhone Clone</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div class="loading-container">
+      <p id="loading-text">
+        Loading <span id="first-iphone">&#128241;</span>
+        <span id="second-iphone">&#128241;</span>
+        <span id="third-iphone">&#128241;</span>
+      </p>
+    </div>
+    <div class="iphone">
+      <div class="iphone-speaker"></div>
+      <div class="iphone-camera"></div>
+      <div class="iphone-sensor"></div>
+      <div class="iphone-volume-toggle"></div>
+      <div class="iphone-phone-toggle"></div>
+      <div class="iphone-volume-up"></div>
+      <div class="iphone-volume-down"></div>
+      <div class="iphone-screen">
+        <div class="iphone-inner-screen">
+          <span id="sim-status">No SIM</span>
+          <span id="time"></span>
+          <span id="battery-status"></span>
+          <span id="battery-status-2"></span>
+          <br />
+          <div class="first-panel panel">
+            <div class="calendar icon">
+              <img
+                src="https://dl.dropbox.com/s/ldg0u4vk5uikud9/calendar.png"
+                alt="calendar"
+              />
+              <p>Calendar</p>
+            </div>
+            <div class="photos icon">
+              <img
+                src="https://dl.dropbox.com/s/x64vp8idi7u579v/photos.png"
+                alt="photos"
+              />
+              <p>Photos</p>
+            </div>
+            <div class="camera icon">
+              <img
+                src="https://dl.dropbox.com/s/rw65hjmbqhew1hu/camera.png"
+                alt="camera"
+              />
+              <p>Camera</p>
+            </div>
+            <div class="map icon">
+              <img
+                src="https://dl.dropbox.com/s/t83lhw7unv0g5wd/maps.png"
+                alt="map"
+              />
+              <p>Maps</p>
+            </div>
+          </div>
+          <div class="second-panel panel">
+            <div class="clock icon">
+              <img
+                src="https://dl.dropbox.com/s/oe514git8l046cs/clock.png"
+                alt="clock"
+              />
+              <p>Clock</p>
+            </div>
+            <div class="weather icon">
+              <img
+                src="https://dl.dropbox.com/s/5d9ny1xpc2vy55h/weather.png"
+                alt="weather"
+              />
+              <p>Weather</p>
+            </div>
+            <div class="notes icon">
+              <img
+                src="https://dl.dropbox.com/s/n36y7au006fbsqd/notes.png"
+                alt="notes"
+              />
+              <p>Notes</p>
+            </div>
+            <div class="reminders icon">
+              <img
+                src="https://dl.dropbox.com/s/92wpktp42xgberj/reminder.png"
+                alt="reminders"
+              />
+              <p>Reminders</p>
+            </div>
+          </div>
+          <div class="third-panel panel">
+            <div class="stocks icon">
+              <img
+                src="https://dl.dropbox.com/s/eipfrdrgnyaoj13/stocks.png"
+                alt="stocks"
+              />
+              <p>Stocks</p>
+            </div>
+            <div class="video icon">
+              <img
+                src="https://dl.dropbox.com/s/9ppshcocg3b9kki/video.png"
+                alt="video"
+              />
+              <p>Video</p>
+            </div>
+            <div class="iBooks icon">
+              <img
+                src="https://dl.dropbox.com/s/ug0n7flyub4j85d/ibooks.png"
+                alt="iBooks"
+              />
+              <p>iBooks</p>
+            </div>
+            <div class="iTunes-store icon">
+              <img
+                src="https://dl.dropbox.com/s/osci9e78tf9wgva/itunes.png"
+                alt="iTunes-store"
+              />
+              <p>iTunes store</p>
+            </div>
+          </div>
+          <div class="fourth-panel panel">
+            <div class="app-store icon">
+              <img
+                src="https://dl.dropbox.com/s/ic4phkqbyexd0dt/app-store.png"
+                alt="app-store"
+              />
+              <p>App store</p>
+            </div>
+            <div class="home icon">
+              <img
+                src="https://dl.dropbox.com/s/9u70f7aorajuxkt/home.png"
+                alt="home"
+              />
+              <p>Home</p>
+            </div>
+            <div class="health icon">
+              <img
+                src="https://dl.dropbox.com/s/9rzh5pj1ino5oth/health.png"
+                alt="health"
+              />
+              <p>Health</p>
+            </div>
+          </div>
+          <div class="fifth-panel panel"></div>
+          <div class="sixth-panel panel">
+            <div class="tel icon">
+              <img
+                src="https://dl.dropbox.com/s/t6ioyq6grmyvcat/phone.png"
+                alt="tel"
+              />
+            </div>
+            <div class="safari icon">
+              <img
+                src="https://dl.dropbox.com/s/6yntx3ej9ds13c5/safari.png"
+                alt="safari"
+              />
+            </div>
+            <div class="message icon">
+              <img
+                src="https://dl.dropbox.com/s/3733ndvjl3zydjc/message.png"
+                alt="message"
+              />
+            </div>
+            <div class="music icon">
+              <img
+                src="https://dl.dropbox.com/s/723kjssvz49g5cg/music.png"
+                alt="music"
+              />
+            </div>
+          </div>
+          <div class="seventh-panel panel">
+            <div class="facetime icon">
+              <img
+                src="https://dl.dropbox.com/s/ghg1c1jodtb3wxr/faceTime.png"
+                alt="facetime"
+              />
+              <p>FaceTime</p>
+            </div>
+            <div class="calculator icon">
+              <img
+                src="https://dl.dropbox.com/s/u7iv2foubld07qb/calculator.png"
+                alt="calculator"
+              />
+              <p>Calculator</p>
+            </div>
+            <div class="watch icon">
+              <img
+                src="https://dl.dropbox.com/s/3e24lk4vf4z5jsf/watch.png"
+                alt="watch"
+              />
+              <p>Watch</p>
+            </div>
+            <div class="apps icon">
+              <div class="apps-icon">
+                <div class="tips-icon icon-inner-extras"></div>
+                <div class="voice-icon icon-inner-extras"></div>
+                <div class="contacts-icon icon-inner-extras"></div>
+                <br />
+                <div class="find-friends-icon icon-inner-extras"></div>
+                <div class="find-iphone-icon icon-inner-extras"></div>
+                <p id="apps-text">Extras</p>
+              </div>
+            </div>
+          </div>
+          <div class="eighth-panel panel">
+            <div class="numbers-icon icon">
+              <img
+                src="https://dl.dropbox.com/s/puvvnjyk7daldg7/numbers.png"
+                alt="numbers"
+              />
+              <p>Numbers</p>
+            </div>
+            <div class="iTunes-u icon">
+              <img
+                src="https://dl.dropbox.com/s/hrii5lyvsixs1g1/itunes%20u.png"
+                alt="iTunes-u"
+              />
+              <p>iTunes U</p>
+            </div>
+            <div class="iMovie icon">
+              <img
+                src="https://dl.dropbox.com/s/0cmpnfw3chysd90/movie.png"
+                alt="iMovie"
+              />
+              <p>iMovie</p>
+            </div>
+            <div class="pages icon">
+              <img
+                src="https://dl.dropbox.com/s/dpu3r5f3x7gwdds/pages.png"
+                alt="pages"
+              />
+              <p>Pages</p>
+            </div>
+          </div>
+          <div class="nineth-panel panel">
+            <div class="keynote icon">
+              <img
+                src="https://dl.dropbox.com/s/vqyvz5to7r8bkns/keynote.png"
+                alt="keynote"
+              />
+              <p>Keynote</p>
+            </div>
+            <div class="garageband icon">
+              <img
+                src="https://dl.dropbox.com/s/as4ryyag6qyc5ri/garage-band.png"
+                alt="garageband"
+              />
+              <p>GarageBand</p>
+            </div>
+            <div class="telegram icon">
+              <img
+                src="https://dl.dropbox.com/s/s45b1g9l0tlluiq/telegram.png"
+                alt="telegram"
+                id="telegram-icon"
+              />
+              <p id="telegram-text">Telegram</p>
+            </div>
+            <div class="sololearn icon">
+              <img
+                src="https://dl.dropbox.com/s/gv0yhvjxbulm8jj/sololearn.png"
+                alt="sololearn"
+                id="sololearn-icon"
+              />
+              <p id="sololearn-app-name">SoloLearn</p>
+            </div>
+          </div>
+        </div>
+        <div class="left-toggle"></div>
+        <div class="right-toggle"></div>
+        <div class="calc">
+          <div class="calculatorInput">0</div>
+          <div onclick="window.clear()" class="button cleaner buttonTop">
+            AC
+          </div>
+          <div
+            onclick="try {window.sign()} catch(e){}"
+            class="button sign buttonTop"
+          >
+            <sup>+</sup>&frasl;<sub>-</sub>
+          </div>
+          <div
+            onclick="try {window.percent()} catch(e) {}"
+            class="button percent buttonTop"
+          >
+            %
+          </div>
+          <div
+            onclick="try {window.divide()} catch(e){}"
+            class="button divide buttonRight"
+          >
+            &#247;
+          </div>
+          <div
+            onclick="window.insertAndOperations('7')"
+            class="button seven numbers"
+          >
+            7
+          </div>
+          <div
+            onclick="window.insertAndOperations('8')"
+            class="button eight numbers"
+          >
+            8
+          </div>
+          <div
+            onclick="window.insertAndOperations('9')"
+            class="button nine numbers"
+          >
+            9
+          </div>
+          <div
+            onclick="try {window.mult()} catch(e){}"
+            class="button mult buttonRight"
+          >
+            &#215;
+          </div>
+          <div
+            onclick="window.insertAndOperations('4')"
+            class="button four numbers"
+          >
+            4
+          </div>
+          <div
+            onclick="window.insertAndOperations('5')"
+            class="button five numbers"
+          >
+            5
+          </div>
+          <div
+            onclick="window.insertAndOperations('6')"
+            class="button six numbers"
+          >
+            6
+          </div>
+          <div
+            onclick="try {window.minus()} catch(e){}"
+            class="button minus buttonRight"
+          >
+            -
+          </div>
+          <div
+            onclick="window.insertAndOperations('1')"
+            class="button one numbers"
+          >
+            1
+          </div>
+          <div
+            onclick="window.insertAndOperations('2')"
+            class="button two numbers"
+          >
+            2
+          </div>
+          <div
+            onclick="window.insertAndOperations('3')"
+            class="button three numbers"
+          >
+            3
+          </div>
+          <div
+            onclick="try {window.plus()} catch(e){}"
+            class="button plus buttonRight"
+          >
+            +
+          </div>
+          <div
+            onclick="window.insertAndOperations('0')"
+            class="button zero numbers"
+          >
+            0
+          </div>
+          <div onclick="window.insertAndOperations(',')" class="button comma">
+            ,
+          </div>
+          <div
+            onclick="try {window.equal()} catch(e){}"
+            class="button equal buttonRight"
+          >
+            =
+          </div>
+        </div>
+        <div class="iphone-inner-photos">
+          <div class="photos-top-container">
+            <button type="button" name="button" id="add-album-button">+</button>
+            <p id="album-text">Albums</p>
+          </div>
+          <div class="photos-middle-container">
+            <div class="middle-top-container">
+              <p id="my-album-text">My albums</p>
+              <div class="albums">
+                <div class="camera-roll-album album"></div>
+                <div class="favourites-album album">
+                  <img
+                    src="https://dl.dropbox.com/s/g6id2naihtxqlhz/favourites.png"
+                    id="heart-inner-favourites-album"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="names-and-photos">
+                <div class="names-container">
+                  <p id="camera-roll-text">Camera roll</p>
+                  <p id="favourites-text">Favourites</p>
+                </div>
+                <div class="photos-container">
+                  <p id="count-of-photos">12</p>
+                  <p id="count-of-favourites-photos">1</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="photos-bottom-container">
+            <div class="photo-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/3hhoirlbwooonfm/image-gallery.png"
+                id="bottom-container-photo-icon"
+                alt="photo"
+              />
+            </div>
+            <div class="for-you-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/jd3m0ppaku5ut7u/love.png"
+                id="bottom-container-for-you-icon"
+                alt="for-you"
+              />
+            </div>
+            <div class="albums-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/lll7fggyrtfgcca/album.png"
+                id="bottom-container-albums-icon"
+                alt="albums"
+              />
+            </div>
+            <div class="searching-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/zxw9xb0j4rumhjf/search.png"
+                id="bottom-container-searching-icon"
+                alt="searching"
+              />
+            </div>
+            <br />
+            <div class="photo-icon-text-container">
+              <p id="photo-icon-text">Photo</p>
+            </div>
+            <div class="for-you-icon-text-container">
+              <p id="photo-icon-text">For you</p>
+            </div>
+            <div class="albums-icon-text-container">
+              <p id="albums-icon-text">Albums</p>
+            </div>
+            <div class="searching-icon-text-container">
+              <p id="searching-icon-text">Searching</p>
+            </div>
+          </div>
+          <div class="inner-camera-roll">
+            <div class="camera-roll-top-container">
+              <button type="button" name="button" id="back-to-albums-button">
+                <span id="back-arrow">&#8249;</span> Albums
+              </button>
+              <p id="camera-roll-top-container-text">Camera roll</p>
+              <p id="select-text">Select</p>
+            </div>
+            <div
+              class="
+                camera-roll-middle-container-1 camera-roll-middle-container
+              "
+            >
+              <div class="image-1 image"></div>
+              <div class="image-2 image"></div>
+              <div class="image-3 image"></div>
+              <div class="image-4 image"></div>
+            </div>
+            <div
+              class="
+                camera-roll-middle-container-2 camera-roll-middle-container
+              "
+            >
+              <div class="image-5 image"></div>
+              <div class="image-6 image"></div>
+              <div class="image-7 image"></div>
+              <div class="image-8 image"></div>
+            </div>
+            <div
+              class="
+                camera-roll-middle-container-3 camera-roll-middle-container
+              "
+            >
+              <div class="image-9 image"></div>
+              <div class="image-10 image"></div>
+              <div class="image-11 image"></div>
+              <div class="image-12 image">
+                <img
+                  src="https://dl.dropbox.com/s/g6id2naihtxqlhz/favourites.png"
+                  id="favourite-image-inner-camera-roll"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="
+                camera-roll-middle-container-4 camera-roll-middle-container
+              "
+            ></div>
+            <div class="camera-roll-bottom-container">
+              <p id="count-of-photos-and-videos">12 photos, 0 videos</p>
+            </div>
+            <div class="inner-image-top-container">
+              <span id="back-arrow-inner-image">&#8249;</span>
+              <span id="dayOfPhoto"><span id="day">25</span> November</span>
+              <span id="time-inner-images">05:52</span>
+              <span id="edit-text">Edit</span>
+            </div>
+            <div class="opened-image-1 opened-image"></div>
+            <div class="opened-image-2 opened-image"></div>
+            <div class="opened-image-3 opened-image"></div>
+            <div class="opened-image-4 opened-image"></div>
+            <div class="opened-image-5 opened-image"></div>
+            <div class="opened-image-6 opened-image"></div>
+            <div class="opened-image-7 opened-image"></div>
+            <div class="opened-image-8 opened-image"></div>
+            <div class="opened-image-9 opened-image"></div>
+            <div class="opened-image-10 opened-image"></div>
+            <div class="opened-image-11 opened-image"></div>
+            <div class="opened-image-12 opened-image"></div>
+            <div class="inner-image-bottom-container">
+              <div class="inner-image-share">
+                <img
+                  src="https://dl.dropbox.com/s/4i5jrm6d6g5itfd/up_arrow_in_a_square.png"
+                  id="share-icon"
+                  alt=""
+                />
+              </div>
+              <div class="inner-image-heart">
+                <img
+                  src="https://dl.dropbox.com/s/rsp9m93z20fkw39/heart.png"
+                  id="heart-icon"
+                  alt=""
+                />
+                <img
+                  src="https://dl.dropbox.com/s/g6id2naihtxqlhz/favourites.png"
+                  id="favourites-icon-inner-camera-roll"
+                  alt=""
+                />
+              </div>
+              <div class="inner-image-delete">
+                <img
+                  src="https://dl.dropbox.com/s/n0v4sp5zmx70rfe/delete.png"
+                  id="delete-icon"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="inner-favourites">
+            <div class="inner-favourites-top-container">
+              <button
+                type="button"
+                name="button"
+                id="back-to-albums-button-inner-favourites"
+              >
+                <span id="back-arrow-inner-favourites">&#8249;</span> Albums
+              </button>
+              <p id="favourites-top-container-text">Favourites</p>
+              <p id="select-text-inner-favourites">Select</p>
+            </div>
+            <div class="inner-favourites-middle-container">
+              <div class="inner-favourites-image image">
+                <img
+                  src="https://dl.dropbox.com/s/g6id2naihtxqlhz/favourites.png"
+                  id="favourite-image-inner-favourites"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="inner-favourites-bottom-container">
+              <p id="count-of-photos-and-videos-inner-favourites">
+                1 photo, 0 videos
+              </p>
+            </div>
+            <div class="inner-favourites-image-top-container">
+              <span id="back-arrow-inner-favourites-image">&#8249;</span>
+              <span id="dayOfPhoto-inner-favourites-image"
+                ><span id="day-inner-favourites">25</span> November</span
+              >
+              <span id="time-inner-favourites-image">05:52</span>
+              <span id="edit-text-inner-favourites-image">Edit</span>
+            </div>
+            <div
+              class="opened-image-inner-favourites image-inner-favourites"
+            ></div>
+            <div class="inner-favourites-image-bottom-container">
+              <div class="inner-favourites-image-share">
+                <img
+                  src="https://dl.dropbox.com/s/4i5jrm6d6g5itfd/up_arrow_in_a_square.png"
+                  id="share-icon-inner-favourites"
+                  alt=""
+                />
+              </div>
+              <div class="inner-favourites-image-heart">
+                <img
+                  src="https://dl.dropbox.com/s/g6id2naihtxqlhz/favourites.png"
+                  id="heart-icon-inner-favourites"
+                  alt=""
+                />
+              </div>
+              <div class="inner-favourites-image-delete">
+                <img
+                  src="https://dl.dropbox.com/s/n0v4sp5zmx70rfe/delete.png"
+                  id="delete-icon-inner-favourites"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner-calendar">
+          <div class="calendar-top-container">
+            <span id="back-button-inner-calendar-top-container"
+              ><span id="back-arrow-inner-calendar">&#8249;</span></span
+            >
+            <span id="plus-button">&plus;</span>
+            <span id="searching-in-calendar"
+              ><img
+                src="https://dl.dropbox.com/s/zxw9xb0j4rumhjf/search.png"
+                alt=""
+                id="searching-icon-in-calendar"
+            /></span>
+            <span id="event-button"
+              ><img
+                src="https://dl.dropbox.com/s/kai2y4kutd0vuaf/event.png"
+                id="event-button-icon"
+                alt=""
+            /></span>
+            <br />
+            <span id="monday" class="day-of-the-week">M</span>
+            <span id="tuesday" class="day-of-the-week">T</span>
+            <span id="wendesday" class="day-of-the-week">W</span>
+            <span id="thursday" class="day-of-the-week">T</span>
+            <span id="friday" class="day-of-the-week">F</span>
+            <span id="saturday" class="day-of-the-week">S</span>
+            <span id="sunday" class="day-of-the-week">S</span>
+          </div>
+          <div class="calendar-middle-container">
+            <div class="current-calendar">
+              <div class="current-month"></div>
+              <div id="calendar"></div>
+            </div>
+          </div>
+          <div class="calendar-bottom-container">
+            <p id="today-text-inner-calendar-bottom-container">Today</p>
+            <p id="calendars-text-inner-calendar-bottom-container">Calendars</p>
+            <p id="inbox-text-inner-calendar-bottom-container">Inbox</p>
+          </div>
+        </div>
+        <div class="inner-clock">
+          <div class="inner-clock-top-container">
+            <div class="edit-text-inner-clock">Edit</div>
+            <div class="world-clock-text-inner-clock">World Clock</div>
+            <div class="plus-button-inner-clock">+</div>
+          </div>
+          <div class="inner-clock-middle-container">
+            <div class="inner-middle-container-first-city-time city-time">
+              <div
+                class="
+                  current-time-text-inner-clock
+                  text-inner-clock-middle-container
+                "
+              >
+                Your current time
+              </div>
+              <div class="current-time-inner-clock time-of-the-city"></div>
+            </div>
+            <div class="inner-middle-container-second-city-time city-time">
+              <div
+                class="
+                  name-of-the-second-city
+                  text-inner-clock-middle-container
+                "
+              >
+                Reykjavik
+              </div>
+              <div class="time-of-the-second-city time-of-the-city"></div>
+            </div>
+            <div class="inner-middle-container-third-city-time city-time">
+              <div
+                class="name-of-the-third-city text-inner-clock-middle-container"
+              >
+                Moscow
+              </div>
+              <div class="time-of-the-third-city time-of-the-city"></div>
+            </div>
+            <div class="inner-middle-container-fourth-city-time city-time">
+              <div
+                class="
+                  name-of-the-fourth-city
+                  text-inner-clock-middle-container
+                "
+              >
+                Singapore
+              </div>
+              <div class="time-of-the-fourth-city time-of-the-city"></div>
+            </div>
+            <div class="inner-middle-container-fifth-city-time city-time">
+              <div
+                class="name-of-the-fifth-city text-inner-clock-middle-container"
+              >
+                Hawaii
+              </div>
+              <div class="time-of-the-fifth-city time-of-the-city"></div>
+            </div>
+            <div class="inner-middle-container-sixth-city-time city-time">
+              <div
+                class="name-of-the-sixth-city text-inner-clock-middle-container"
+              >
+                Tokyo
+              </div>
+              <div class="time-of-the-sixth-city time-of-the-city"></div>
+            </div>
+          </div>
+          <div class="inner-clock-bottom-container">
+            <div class="world-clock-inner-bottom-container">
+              <img
+                src="https://dl.dropbox.com/s/tz6xncy03svlnjy/world_clock.png"
+                id="globe-inner-bottom-container"
+                alt=""
+              />
+              <p id="text-world-clock-inner-bottom-container">World Clock</p>
+            </div>
+            <div class="alarm-inner-bottom-container">
+              <img
+                src="https://dl.dropbox.com/s/26kgv52zkt7twav/alarm.png"
+                id="alarm"
+                alt=""
+              />
+              <p id="alarm-text-inner-bottom-container">Alarm</p>
+            </div>
+            <div class="bedtime-inner-bottom-container">
+              <img
+                src="https://dl.dropbox.com/s/6kudkbbmqp3a449/bedtime.png"
+                id="bedtime"
+                alt=""
+              />
+              <p id="bedtime-text-inner-bottom-container">Bedtime</p>
+            </div>
+            <div class="stopwatch-inner-bottom-container">
+              <img
+                src="https://dl.dropbox.com/s/ingphns3z94qiql/stopwatch.png"
+                id="stopwatch"
+                alt=""
+              />
+              <p id="stopwatch-text-inner-bottom-container">Stopwatch</p>
+            </div>
+            <div class="timer-inner-bottom-container">
+              <img
+                src="https://dl.dropbox.com/s/92kprygecdcdygp/timer.png"
+                id="timer"
+                alt=""
+              />
+              <p id="timer-text-inner-bottom-container">Timer</p>
+            </div>
+          </div>
+          <div class="inner-clock-alarm-container">
+            <div class="first-alarm alarm-inner-clock">
+              <div class="alarm-time">
+                <div class="first-alarm-time alarm-time-inner-alarm-container">
+                  03:00
+                </div>
+                <div class="first-alarm-text alarm-text-inner-alarm-container">
+                  Alarm, every day
+                </div>
+                <div class="first-toggle on-off-toggle">
+                  <div class="circle-1 circle-inner-toggle"></div>
+                  <div class="first-off off"></div>
+                  <div class="first-on on">|</div>
+                </div>
+              </div>
+            </div>
+            <div class="second-alarm alarm-inner-clock">
+              <div class="alarm-time">
+                <div class="second-alarm-time alarm-time-inner-alarm-container">
+                  04:20
+                </div>
+                <div class="second-alarm-text alarm-text-inner-alarm-container">
+                  Alarm, every day
+                </div>
+                <div class="second-toggle on-off-toggle">
+                  <div class="circle-2 circle-inner-toggle"></div>
+                  <div class="second-off off"></div>
+                  <div class="second-on on">|</div>
+                </div>
+              </div>
+            </div>
+            <div class="third-alarm alarm-inner-clock">
+              <div class="alarm-time">
+                <div class="third-alarm-time alarm-time-inner-alarm-container">
+                  05:40
+                </div>
+                <div class="third-alarm-text alarm-text-inner-alarm-container">
+                  Alarm, every day
+                </div>
+                <div class="third-toggle on-off-toggle">
+                  <div class="circle-3 circle-inner-toggle"></div>
+                  <div class="third-off off"></div>
+                  <div class="third-on on">|</div>
+                </div>
+              </div>
+            </div>
+            <div class="fourth-alarm alarm-inner-clock">
+              <div class="alarm-time">
+                <div class="fourth-alarm-time alarm-time-inner-alarm-container">
+                  07:10
+                </div>
+                <div class="fourth-alarm-text alarm-text-inner-alarm-container">
+                  Alarm, every day
+                </div>
+                <div class="fourth-toggle on-off-toggle">
+                  <div class="circle-4 circle-inner-toggle"></div>
+                  <div class="fourth-off off"></div>
+                  <div class="fourth-on on">|</div>
+                </div>
+              </div>
+            </div>
+            <div class="fifth-alarm alarm-inner-clock">
+              <div class="alarm-time">
+                <div class="fifth-alarm-time alarm-time-inner-alarm-container">
+                  08:00
+                </div>
+                <div class="fifth-alarm-text alarm-text-inner-alarm-container">
+                  Alarm, every day
+                </div>
+                <div class="fifth-toggle on-off-toggle">
+                  <div class="circle-5 circle-inner-toggle"></div>
+                  <div class="fifth-off off"></div>
+                  <div class="fifth-on on">|</div>
+                </div>
+              </div>
+            </div>
+            <div class="sixth-alarm alarm-inner-clock">
+              <div class="alarm-time">
+                <div class="sixth-alarm-time alarm-time-inner-alarm-container">
+                  08:30
+                </div>
+                <div class="sixth-alarm-text alarm-text-inner-alarm-container">
+                  Alarm, every day
+                </div>
+                <div class="sixth-toggle on-off-toggle">
+                  <div class="circle-6 circle-inner-toggle"></div>
+                  <div class="sixth-off off"></div>
+                  <div class="sixth-on on">|</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-clock-bedtime-container">
+            <div class="bedtime-top-container">
+              <div class="bedtime-text-container">
+                <p id="bedtime-text">Bedtime</p>
+                <p id="every-day-text">Every day</p>
+                <div class="toggle-inner-bedtime-container on-off-toggle">
+                  <div
+                    class="circle-inner-bedtime-container circle-inner-toggle"
+                  ></div>
+                  <div class="inner-bedtime-off off"></div>
+                  <div class="inner-bedtime-on on">|</div>
+                </div>
+              </div>
+            </div>
+            <div class="inner-bedtime-middle-container">
+              <div class="bedtime-container-inner-middle-container">
+                <p id="bedtime-text-inner-middle-container">
+                  <img
+                    src="https://dl.dropbox.com/s/149a237bw8ly4vj/sleeping.png"
+                    id="sleep"
+                    alt=""
+                  />
+                  Bedtime
+                </p>
+                <p id="time-inner-middle-container">00:00</p>
+              </div>
+              <div class="wake-container-inner-middle-container">
+                <p id="wake-text-inner-middle-container">
+                  <img
+                    src="https://dl.dropbox.com/s/2m6qbouzn42q4jd/bell.png"
+                    id="bell"
+                    alt=""
+                  />
+                  Wake
+                </p>
+                <p id="wake-time-inner-middle-container">09:00</p>
+              </div>
+              <div class="sleep-circle">
+                <img
+                  src="https://dl.dropbox.com/s/e20978s10ppklg3/clock.png"
+                  id="clock-face"
+                  alt=""
+                />
+                <div class="sleeping-time-circle">
+                  <img
+                    src="https://dl.dropbox.com/s/149a237bw8ly4vj/sleeping.png"
+                    id="circle-inner-middle-container"
+                    alt=""
+                  />
+                </div>
+                <div class="wake-time-circle">
+                  <img
+                    src="https://dl.dropbox.com/s/2m6qbouzn42q4jd/bell.png"
+                    id="wake-time-circle-inner-middle-container"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-clock-stopwatch-container">
+            <div class="stopwatch-container">
+              <div class="stopwatch-time">
+                <span id="stopwatch-minutes">00:</span>
+                <span id="stopwatch-seconds">00,</span>
+                <span id="stopwatch-milliseconds">00</span>
+              </div>
+              <div class="buttons-container">
+                <button type="button" name="button" id="lap-button">Lap</button>
+                <div class="circle-1-inner-buttons-container"></div>
+                <div class="circle-2-inner-buttons-container"></div>
+                <button type="button" name="button" id="start-button">
+                  Start
+                </button>
+              </div>
+              <div class="laps-container">
+                <div class="lap-1 lap-container"></div>
+                <div class="lap-2 lap-container"></div>
+                <div class="lap-3 lap-container"></div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-clock-timer-container">
+            <div class="timer-container">
+              <div class="times-inner-timer-container">
+                <div class="time-1 time">
+                  <span id="time-hours-1" class="time-hours">0 hours</span>
+                  <span id="time-min-1" class="time-min">0 min</span>
+                  <span id="time-sec-1" class="time-sec">1 sec</span>
+                </div>
+                <div class="time-2 time">
+                  <span class="time-hours">1</span>
+                  <span class="time-min">1</span>
+                  <span class="time-sec">2</span>
+                </div>
+                <div class="time-3 time">
+                  <span class="time-hours">2</span>
+                  <span class="time-min">2</span>
+                  <span class="time-sec">3</span>
+                </div>
+                <div class="time-4 time">
+                  <span class="time-hours">3</span>
+                  <span class="time-min">3</span>
+                  <span class="time-sec">4</span>
+                </div>
+                <div class="time-5 time">
+                  <span class="time-hours">4</span>
+                  <span class="time-min">4</span>
+                  <span class="time-sec">5</span>
+                </div>
+              </div>
+              <div class="when-timer-ends-container">
+                <p id="when-timer-ends-text">When Timer Ends</p>
+                <p id="opening-text">
+                  Opening
+                  <span id="back-arrow-inner-opening-text">&#8250;</span>
+                </p>
+              </div>
+            </div>
+            <div class="inner-timer-buttons-container">
+              <button type="button" name="button" id="cancel-button">
+                Cancel
+              </button>
+              <button type="button" name="button" id="start-button-inner-timer">
+                Start
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="inner-notes">
+          <div class="notes-top-container">
+            <div class="top-wrapper-inner-top-container">
+              <span id="arrow-inner-notes">&#8249;</span>
+              <span id="edit-text-inner-notes">Edit</span>
+            </div>
+            <div class="middle-wrapper-inner-top-container">
+              <p id="notes-text-inner-middle-wrapper">Notes</p>
+            </div>
+            <div class="bottom-wrapper-inner-top-container">
+              <input
+                type="text"
+                placeholder=" &#128269; Search"
+                id="search-inner-bottom-wrapper"
+                readonly
+              />
+            </div>
+          </div>
+          <div class="notes-middle-container"></div>
+          <div class="notes-bottom-container">
+            <p id="attachments">
+              <img
+                src="https://dl.dropbox.com/s/lkbvqb0ll62ym9n/attachment.png"
+                id="attachments-icon"
+                alt=""
+              />
+            </p>
+            <p id="count-of-notes">No Notes</p>
+            <p id="note-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/3xn5af3ed4i10r3/note.png"
+                id="note-icon"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="new-note-container">
+            <div class="inner-new-note-top-container">
+              <div class="top-wrapper-inner-top-container">
+                <span id="back-to-notes-button"
+                  ><span id="arrow-inner-new-note">&#8249;</span> Notes</span
+                >
+                <div class="add-contact-container">
+                  <img
+                    src="https://dl.dropbox.com/s/459gz7lz8n2hzw3/add_contact.png"
+                    id="add-contact-icon"
+                    alt=""
+                  />
+                </div>
+                <div class="lines-and-grids-container">
+                  <img
+                    src="https://dl.dropbox.com/s/4i5jrm6d6g5itfd/up_arrow_in_a_square.png"
+                    id="line-and-grids-icon"
+                    alt=""
+                  />
+                </div>
+                <div class="done-text-container">
+                  <span id="done-text">Done</span>
+                </div>
+              </div>
+              <div class="bottom-wrapper-inner-top-container"></div>
+            </div>
+            <div class="inner-new-note-middle-container">
+              <textarea id="writing-field"></textarea>
+            </div>
+            <div class="inner-new-note-bottom-container">
+              <div
+                class="
+                  delete-container-inner-new-note
+                  inner-bottom-container-inner-new-note
+                "
+              >
+                <img
+                  src="https://dl.dropbox.com/s/n0v4sp5zmx70rfe/delete.png"
+                  id="delete-icon-inner-new-note"
+                  alt=""
+                />
+              </div>
+              <div
+                class="
+                  check-mark-container-inner-new-note
+                  inner-bottom-container-inner-new-note
+                "
+              >
+                <img
+                  src="https://dl.dropbox.com/s/0biygw4xzuqo77f/checkmark.png"
+                  id="check-mark-icon-inner-new-note"
+                  alt=""
+                />
+              </div>
+              <div
+                class="
+                  plus-container-inner-new-note
+                  inner-bottom-container-inner-new-note
+                "
+              >
+                <img
+                  src="https://dl.dropbox.com/s/4nhz83t6ai2umwy/plus.png"
+                  id="plus-icon-inner-new-note"
+                  alt=""
+                />
+              </div>
+              <div
+                class="
+                  paint-container-inner-new-note
+                  inner-bottom-container-inner-new-note
+                "
+              >
+                <img
+                  src="https://dl.dropbox.com/s/sapomozpa8zml70/paint-brush.png"
+                  id="paint-icon-inner-new-note"
+                  alt=""
+                />
+              </div>
+              <div
+                class="
+                  pencil-container-inner-new-note
+                  inner-bottom-container-inner-new-note
+                "
+              >
+                <img
+                  src="https://dl.dropbox.com/s/3xn5af3ed4i10r3/note.png"
+                  id="pencil-icon-inner-new-note"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner-stocks">
+          <div class="main-wrapper-inner-stocks">
+            <div class="inner-stocks-top-container">
+              <img
+                src="https://dl.dropbox.com/s/eipfrdrgnyaoj13/stocks.png"
+                id="inner-stocks-icon"
+                alt="stocks"
+              />
+            </div>
+            <div class="inner-stocks-middle-container">
+              <p id="welcome-to-text">Welcome to</p>
+              <p id="stocks-text-inner-middle-container">Stocks</p>
+            </div>
+          </div>
+          <div class="inner-stocks-bottom-container">
+            <div class="text-inner-bottom-container">
+              <p id="inner-bottom-container-stocks-text-1">
+                Stocks Unavailable
+              </p>
+              <p id="inner-bottom-container-stocks-text-2">
+                Stocks isn't connected to the
+              </p>
+              <p id="inner-bottom-container-stocks-text-3">
+                Internet. Go online to get started
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-video">
+          <div class="inner-video-container"></div>
+          <div class="inner-video-text-container">
+            <p id="no-content-text">No Content</p>
+            <p id="download-text">You can download videos from the</p>
+            <p id="itunes-store-text-inner-video">iTunes Store</p>
+            <button type="button" name="button" id="store-button">Store</button>
+          </div>
+        </div>
+        <div class="inner-app-store">
+          <div class="inner-app-store-container">
+            <p id="inner-app-store-text-1">Turn on mobile data or use</p>
+            <p id="inner-app-store-text-2">Wi-Fi to access the</p>
+            <p id="inner-app-store-text-3">App Store</p>
+            <button type="button" name="button" id="settings-button">
+              Settings
+            </button>
+          </div>
+          <div class="inner-app-store-bottom-container">
+            <div class="inner-app-store-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/fazmraggc5aeadu/calendar.png"
+                class="app-store-icon-inner-app-store"
+                alt=""
+              />
+              <p
+                id="inner-app-store-today-text"
+                class="inner-app-store-icon-text"
+              >
+                Today
+              </p>
+            </div>
+            <div class="inner-app-store-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/0mg68msr46ojjnh/space-rocket-launch.png"
+                class="app-store-icon-inner-app-store"
+                alt=""
+              />
+              <p class="inner-app-store-icon-text">Games</p>
+            </div>
+            <div class="inner-app-store-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/pq2egf238elb0ww/stacked-files.png"
+                class="app-store-icon-inner-app-store"
+                alt=""
+              />
+              <p class="inner-app-store-icon-text">Apps</p>
+            </div>
+            <div class="inner-app-store-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/0jaozf9xuq3nlng/update.png"
+                class="app-store-icon-inner-app-store"
+                alt=""
+              />
+              <p class="inner-app-store-icon-text">Updates</p>
+            </div>
+            <div class="inner-app-store-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/zxw9xb0j4rumhjf/search.png"
+                class="app-store-icon-inner-app-store"
+                alt=""
+              />
+              <p class="inner-app-store-icon-text">Search</p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-itunes-store">
+          <div class="inner-itunes-store-top-container"></div>
+          <div class="inner-itunes-store-middle-container">
+            <div class="text-container-inner-itunes-store">
+              <p id="inner-itunes-store-text-1">Cannot</p>
+              <p id="inner-itunes-store-text-2">connect to</p>
+              <p id="inner-itunes-store-text-3">iTunes Store</p>
+            </div>
+          </div>
+          <div class="inner-itunes-store-bottom-container">
+            <div class="music-container">
+              <img
+                src="https://dl.dropbox.com/s/2lqkaekoe670zai/musical-note.png"
+                id="music-icon"
+                alt=""
+              />
+              <p id="music-text">Music</p>
+            </div>
+            <div class="film-container">
+              <img
+                src="https://dl.dropbox.com/s/nz7oug13aopmtl3/film.png"
+                id="film-reel-icon"
+                alt=""
+              />
+              <p id="films-text">Films</p>
+            </div>
+            <div class="tv-programmes-container">
+              <img
+                src="https://dl.dropbox.com/s/x111i4pe1egwgww/television.png"
+                id="tv-icon-inner-tv-container"
+                alt=""
+              />
+              <p id="tv-text-inner-itunes-store">TV Programmes</p>
+            </div>
+            <div class="search-container">
+              <img
+                src="https://dl.dropbox.com/s/zxw9xb0j4rumhjf/search.png"
+                id="search-icon-inner-search-container"
+                alt=""
+              />
+              <p id="search-text-inner-itunes-store">Search</p>
+            </div>
+            <div class="more-container">
+              <img
+                src="https://dl.dropbox.com/s/aaohgrv62it89um/more.png"
+                id="ellipsis-icon"
+                alt=""
+              />
+              <p id="more-text-inner-itunes-store">More</p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-home">
+          <div class="home-top-container">
+            <div class="home-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/ucoj4y4w6dug7b1/home_1.png"
+                id="home-icon-inner-home"
+                alt=""
+              />
+            </div>
+            <p id="my-home-text">My Home</p>
+            <p id="home-text-2">Start building your connected home by</p>
+            <p id="home-text-3">adding lights, locks, thermostats and</p>
+            <p id="home-text-4">other HomeKit-enabled accessories.</p>
+          </div>
+          <div class="home-middle-container">
+            <button type="button" name="button" id="add-accessory-button">
+              Add Accessory
+            </button>
+            <p id="text-inner-middle-home-container">
+              Learn About Home Accessories
+              <span id="arrow-inner-home">&#8250;</span>
+            </p>
+          </div>
+          <div class="home-bottom-container">
+            <div class="home-icon-container-inner-bottom-container">
+              <img
+                src="https://dl.dropbox.com/s/rcns109rt5ejkbr/home_2.png"
+                id="home-icon-inner-bottom-container"
+                alt=""
+              />
+              <p id="home-text-inner-bottom-container">Home</p>
+            </div>
+            <div class="automation-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/3l3yj8vczmyxpin/home-automation.png"
+                id="automation-icon"
+                alt=""
+              />
+              <p id="automation-text">Automation</p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-reminders">
+          <div class="scheduled-container">
+            <div class="scheduled-top-container">
+              <p id="scheduled-title">Scheduled</p>
+              <div class="clock-inner-reminders">
+                <img
+                  src="https://dl.dropbox.com/s/izviufa090es4sc/alarm-clock.png"
+                  id="clock-icon-inner-reminders"
+                  alt=""
+                />
+              </div>
+              <p id="items-condition">No items due today</p>
+              <button
+                type="button"
+                name="button"
+                id="done-button-inner-reminders"
+              >
+                Done
+              </button>
+              <div class="date-inner-reminders">
+                <p id="date-text-inner-reminders">Today</p>
+              </div>
+            </div>
+            <div class="scheduled-middle-container">
+              <span id="plus-inner-scheduled">&plus;</span>
+              <textarea id="textarea-inner-scheduled"></textarea>
+            </div>
+          </div>
+          <div class="inner-reminders-bottom-reminders-container">
+            <div class="inner-bottom-reminders-container-top-wrapper">
+              <p id="reminders-text-inner-reminders-bottom-container">
+                Reminders
+              </p>
+              <p id="count-of-reminders">0</p>
+            </div>
+            <div class="inner-bottom-reminders-container-bottom-wrapper">
+              <textarea id="textarea-inner-bottom-wrapper"></textarea>
+              <span id="plus-inner-reminders">&plus;</span>
+            </div>
+          </div>
+        </div>
+        <div class="inner-messages">
+          <div class="inner-messages-top-container">
+            <p id="edit-text-inner-messages">Edit</p>
+            <div class="write-message-container">
+              <img
+                src="https://dl.dropbox.com/s/3xn5af3ed4i10r3/note.png"
+                id="write-message-icon"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="inner-messages-middle-container">
+            <p id="messages-text">Messages</p>
+            <input
+              type="text"
+              placeholder=" &#128269; Search"
+              id="search-input-inner-messages"
+              readonly
+            />
+          </div>
+          <div class="inner-messages-bottom-container">
+            <div class="first-message-wrapper message-wrapper">
+              <div class="person-icon-container">
+                <img
+                  src="https://dl.dropbox.com/s/ncnq1tnubez36gb/profile_man.png"
+                  class="person-icon-inner-messages"
+                  alt=""
+                />
+              </div>
+              <p class="person-name">Dad</p>
+              <p class="date-of-message">
+                Sunday <span class="arrow-inner-date-message">&#8250;</span>
+              </p>
+              <p class="message-text">I'll call back later</p>
+            </div>
+            <div class="second-message-wrapper message-wrapper">
+              <div class="person-icon-container">
+                <img
+                  src="https://dl.dropbox.com/s/jwzuflk4cc9en17/profile_woman.png"
+                  class="person-icon-inner-messages"
+                  alt=""
+                />
+              </div>
+              <p class="person-name">Mum</p>
+              <p class="date-of-message">
+                Saturday <span class="arrow-inner-date-message">&#8250;</span>
+              </p>
+              <p class="message-text">Son, go to the store and buy bread</p>
+            </div>
+            <div class="third-message-wrapper message-wrapper">
+              <div class="person-icon-container">
+                <img
+                  src="https://dl.dropbox.com/s/ncnq1tnubez36gb/profile_man.png"
+                  class="person-icon-inner-messages"
+                  alt=""
+                />
+              </div>
+              <p class="person-name">Bro</p>
+              <p class="date-of-message">
+                Thursday <span class="arrow-inner-date-message">&#8250;</span>
+              </p>
+              <p class="message-text">
+                I'll wait you at 6 on the same place, as always
+              </p>
+            </div>
+            <div class="fourth-message-wrapper message-wrapper">
+              <div class="person-icon-container">
+                <img
+                  src="https://dl.dropbox.com/s/jwzuflk4cc9en17/profile_woman.png"
+                  class="person-icon-inner-messages"
+                  alt=""
+                />
+              </div>
+              <p class="person-name">Sis</p>
+              <p class="date-of-message">
+                Thursday <span class="arrow-inner-date-message">&#8250;</span>
+              </p>
+              <p class="message-text">Where are you???</p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-music">
+          <div class="inner-music-top-container">
+            <p id="browse-text">Browse</p>
+          </div>
+          <div class="inner-music-middle-container">
+            <p id="offline-text">You're Offline</p>
+            <p id="offline-text-2">Turn off Airplane Mode or</p>
+            <p id="offline-text-3">connect to Wi-Fi</p>
+            <div class="track-container-inner-middle-container">
+              <span id="music-icon-container-inner-middle-container"
+                ><img
+                  src="https://dl.dropbox.com/s/ze9sganambewplm/music-note.png"
+                  id="music-icon-inner-middle-container"
+                  alt=""
+              /></span>
+              <p id="track-status">Not playing</p>
+              <div class="play-music-button-container">
+                <img
+                  src="https://dl.dropbox.com/s/qs7lc0gogf4522x/play.png"
+                  id="play-music-icon"
+                  alt=""
+                />
+              </div>
+              <div class="next-track-button-container">
+                <img
+                  src="https://dl.dropbox.com/s/wwtuxnpjk0294jb/forward-button.png"
+                  id="next-track-icon"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="inner-music-bottom-container">
+            <div class="library-container">
+              <img
+                src="https://dl.dropbox.com/s/t7goyjygmso6ps7/library.png"
+                id="library-music-icon"
+                alt=""
+              />
+              <p id="library-text">Library</p>
+            </div>
+            <div class="heart-inner-music-container">
+              <img
+                src="https://dl.dropbox.com/s/g6id2naihtxqlhz/favourites.png"
+                id="heart-icon-inner-music"
+                alt=""
+              />
+              <p id="for-you-text-inner-music">For you</p>
+            </div>
+            <div class="music-note-inner-music-container">
+              <img
+                src="https://dl.dropbox.com/s/2lqkaekoe670zai/musical-note.png"
+                id="music-note-icon-inner-music-container"
+                alt=""
+              />
+              <p id="browse-text-inner-bottom-container">Browse</p>
+            </div>
+            <div class="search-inner-music-container">
+              <img
+                src="https://dl.dropbox.com/s/zxw9xb0j4rumhjf/search.png"
+                id="search-icon-inner-music-container"
+                alt=""
+              />
+              <p id="search-text-inner-music-container">Search</p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-health">
+          <div class="inner-health-top-container">
+            <p id="medical-id-text">Medical ID</p>
+          </div>
+          <div class="inner-health-middle-container">
+            <pre id="text-inner-middle-container">
+A Medical ID provides medical information
+about you that may be important in an
+emergency, like allergies and medical
+conditions.
+The Medical ID can be accessed from the
+emergency dialler without unlocking your
+phone.
+		</pre
+            >
+            <button type="button" name="button" id="create-medical-id-button">
+              Create Medical ID
+            </button>
+          </div>
+          <div class="inner-health-bottom-container">
+            <div class="inner-health-today-container">
+              <img
+                src="https://dl.dropbox.com/s/j6dkuhrwbrbgf6a/calendar.png"
+                id="inner-health-today-icon"
+                alt=""
+              />
+              <p id="today-text">Today</p>
+            </div>
+            <div class="inner-health-health-data-container">
+              <img
+                src="https://dl.dropbox.com/s/u1orh7utadvwb3c/grid.png"
+                id="inner-health-health-data-icon"
+                alt=""
+              />
+              <p id="health-data-text">Health Data</p>
+            </div>
+            <div class="inner-health-sources-container">
+              <img
+                src="https://dl.dropbox.com/s/owpol8vrv27voqz/heart-rate.png"
+                id="inner-health-sources-icon"
+                alt=""
+              />
+              <p id="sources-text">Sources</p>
+            </div>
+            <div class="inner-health-medical-id-container">
+              <img
+                src="https://dl.dropbox.com/s/x9dku2u0vecqihd/asterisk.png"
+                id="inner-health-medical-id-icon"
+                alt=""
+              />
+              <p id="medical-id-text-inner-medical-id-container">Medical ID</p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-phone">
+          <div class="inner-phone-favourites">
+            <div class="inner-phone-favourites-top-container">
+              <span id="plus-inner-phone-favourites">&plus;</span>
+              <p id="favourites-title-inner-phone-favourites">Favourites</p>
+            </div>
+            <div class="inner-phone-favourites-middle-container">
+              <p id="no-favourites-text">No favourites</p>
+            </div>
+          </div>
+          <div class="inner-phone-recents">
+            <div class="inner-phone-recents-top-container">
+              <div class="buttons-inner-phone-recents">
+                <button
+                  type="button"
+                  name="button"
+                  id="all-button-inner-recents"
+                >
+                  All
+                </button>
+                <button
+                  type="button"
+                  name="button"
+                  id="missed-button-inner-recents"
+                >
+                  Missed
+                </button>
+                <button
+                  type="button"
+                  name="button"
+                  id="edit-button-inner-recents"
+                >
+                  Edit
+                </button>
+              </div>
+              <div class="recents-title-container">
+                <p id="recents-text-inner-recents-container">Recents</p>
+              </div>
+            </div>
+            <div class="inner-phone-recents-middle-container">
+              <div class="first-phone-call phone-call">
+                <p
+                  class="first-person-inner-phone-call person-inner-phone-call"
+                >
+                  Dad
+                </p>
+                <p class="wherefrom">Home</p>
+                <div class="right-container-inner-call">
+                  <p class="first-date-of-call date-of-call">Friday</p>
+                  <div class="icon-inner-call">
+                    <img
+                      src="https://dl.dropbox.com/s/6mhi0f45e7tjsu3/information.png"
+                      class="i-icon"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="second-phone-call phone-call">
+                <p
+                  class="second-person-inner-phone-call person-inner-phone-call"
+                >
+                  Sis
+                </p>
+                <p class="wherefrom">Mobile</p>
+                <div class="right-container-inner-call">
+                  <p class="second-date-of-call date-of-call">Friday</p>
+                  <div class="icon-inner-call">
+                    <img
+                      src="https://dl.dropbox.com/s/6mhi0f45e7tjsu3/information.png"
+                      class="i-icon"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="third-phone-call phone-call">
+                <p
+                  class="third-person-inner-phone-call person-inner-phone-call"
+                >
+                  Mum
+                </p>
+                <p class="wherefrom">Home</p>
+                <div class="right-container-inner-call">
+                  <p class="third-date-of-call date-of-call">Thursday</p>
+                  <div class="icon-inner-call">
+                    <img
+                      src="https://dl.dropbox.com/s/6mhi0f45e7tjsu3/information.png"
+                      class="i-icon"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="fourth-phone-call phone-call">
+                <p
+                  class="fourth-person-inner-phone-call person-inner-phone-call"
+                >
+                  Bro
+                </p>
+                <p class="wherefrom">Mobile</p>
+                <div class="right-container-inner-call">
+                  <p class="fourth-date-of-call date-of-call">Monday</p>
+                  <div class="icon-inner-call">
+                    <img
+                      src="https://dl.dropbox.com/s/6mhi0f45e7tjsu3/information.png"
+                      class="i-icon"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-phone-contacts">
+            <div class="inner-phone-contacts-top-container">
+              <span id="plus-inner-phone-contacts">&plus;</span>
+              <p id="contacts-text-inner-phone">Contacts</p>
+              <input
+                type="text"
+                placeholder=" &#128269; Search"
+                id="search-input-inner-phone"
+                value=""
+                readonly
+              />
+            </div>
+            <div class="inner-phone-contacts-middle-container">
+              <div class="card-inner-contacts">
+                <div class="card-circle">
+                  <p id="name">D</p>
+                </div>
+                <p id="my-name">Don't know</p>
+                <p id="my-card">My Card</p>
+              </div>
+              <div class="first-letter-of-contact-1 first-letter-of-contact">
+                <p class="first-letter">B</p>
+              </div>
+              <div class="contact-1 contact-container">
+                <p class="bro-contact name-of-contact">Bro</p>
+              </div>
+              <div class="first-letter-of-contact-2 first-letter-of-contact">
+                <p class="first-letter">D</p>
+              </div>
+              <div class="contact-2 contact-container">
+                <p class="dad-contact name-of-contact">Dad</p>
+              </div>
+              <div class="first-letter-of-contact-3 first-letter-of-contact">
+                <p class="first-letter">M</p>
+              </div>
+              <div class="contact-3 contact-container">
+                <p class="mum-contact name-of-contact">Mum</p>
+              </div>
+              <div class="first-letter-of-contact-1 first-letter-of-contact">
+                <p class="first-letter">S</p>
+              </div>
+              <div class="contact-1 contact-container">
+                <p class="sis-contact name-of-contact">Sis</p>
+              </div>
+            </div>
+          </div>
+          <div class="inner-phone-keypad">
+            <div class="number-output">
+              <p id="output"></p>
+              <button type="button" name="button" id="add-number-button">
+                Add Number
+              </button>
+            </div>
+            <div class="keypad-container">
+              <div
+                class="
+                  first-buttons-container-inner-keypad
+                  buttons-container-inner-keypad
+                "
+              >
+                <button type="button" name="button" class="button-inner-keypad">
+                  1
+                </button>
+                <button type="button" name="button" class="button-inner-keypad">
+                  2
+                </button>
+                <button type="button" name="button" class="button-inner-keypad">
+                  3
+                </button>
+              </div>
+              <div
+                class="
+                  second-buttons-container-inner-keypad
+                  buttons-container-inner-keypad
+                "
+              >
+                <button type="button" name="button" class="button-inner-keypad">
+                  4
+                </button>
+                <button type="button" name="button" class="button-inner-keypad">
+                  5
+                </button>
+                <button type="button" name="button" class="button-inner-keypad">
+                  6
+                </button>
+              </div>
+              <div
+                class="
+                  third-buttons-container-inner-keypad
+                  buttons-container-inner-keypad
+                "
+              >
+                <button type="button" name="button" class="button-inner-keypad">
+                  7
+                </button>
+                <button type="button" name="button" class="button-inner-keypad">
+                  8
+                </button>
+                <button type="button" name="button" class="button-inner-keypad">
+                  9
+                </button>
+              </div>
+              <div
+                class="
+                  fourth-buttons-container-inner-keypad
+                  buttons-container-inner-keypad
+                "
+              >
+                <button type="button" name="button" class="button-inner-keypad">
+                  *
+                </button>
+                <button type="button" name="button" class="button-inner-keypad">
+                  0
+                </button>
+                <button type="button" name="button" class="button-inner-keypad">
+                  #
+                </button>
+              </div>
+              <div
+                class="
+                  fifth-buttons-container-inner-keypad
+                  buttons-container-inner-keypad
+                "
+              >
+                <button type="button" name="button" id="call-button">
+                  <img
+                    src="https://dl.dropbox.com/s/4h1aqx5x4i8srwy/phone.png"
+                    id="call-icon"
+                  />
+                </button>
+              </div>
+              <div id="delete-button">
+                <div class="delete-button"><span id="delete">&#215;</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-phone-voicemail">
+            <div class="inner-phone-voicemail-top-container">
+              <p id="voicemail-title">Voicemail</p>
+            </div>
+            <div class="inner-phone-voicemail-middle-container">
+              <button type="button" name="button" id="call-voicemail-button">
+                Call Voicemail
+              </button>
+            </div>
+          </div>
+          <div class="inner-phone-bottom-container">
+            <div class="favourites-icon-container-inner-phone">
+              <img
+                src="https://dl.dropbox.com/s/2cd68q8201fdjrt/favourites.png"
+                id="favourites-icon-inner-phone"
+                alt=""
+              />
+              <p id="favourites-text-inner-phone-bottom-container">
+                Favourites
+              </p>
+            </div>
+            <div class="recents-icon-container-inner-phone">
+              <img
+                src="https://dl.dropbox.com/s/e8ntaubc0o2vn8z/recents.png"
+                id="recents-icon-inner-phone"
+                alt=""
+              />
+              <p id="recents-text-inner-phone">Recents</p>
+            </div>
+            <div class="contacts-icon-inner-phone">
+              <img
+                src="https://dl.dropbox.com/s/84jij7yzmqce6sg/contacts.png"
+                id="contacts-icon-inner-phone"
+                alt=""
+              />
+              <p id="contacts-text-inner-bottom-container">Contacts</p>
+            </div>
+            <div class="keypad-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/j6lwr12iexlxraa/keypad.png"
+                id="keypad-icon"
+                alt=""
+              />
+              <p id="keypad-text">Keypad</p>
+            </div>
+            <div class="voicemail-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/pt8eqmv74v77gbh/voicemail.png"
+                id="voicemail-icon"
+                alt=""
+              />
+              <p id="voicemail-text">Voicemail</p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-safari">
+          <div class="safari-top-container">
+            <input
+              type="text"
+              placeholder="&#128269; Search or enter website name"
+              id="safari-search-input"
+              value=""
+              readonly
+            />
+          </div>
+          <div class="safari-middle-container">
+            <div class="safari-inner-middle-container-top-wrapper">
+              <div class="apple-inner-top-wrapper">
+                <img
+                  src="https://dl.dropbox.com/s/t76s0ll6pd0kyzu/apple.png"
+                  id="apple-icon-inner-top-wrapper"
+                  alt=""
+                />
+                <p id="apple-text-inner-top-wrapper">Apple</p>
+              </div>
+              <div class="google-inner-top-wrapper">
+                <img
+                  src="https://dl.dropbox.com/s/6it4mg0ouwsabbp/google.png"
+                  id="google-icon-inner-top-wrapper"
+                  alt=""
+                />
+                <p id="google-text-inner-top-wrapper">Google</p>
+              </div>
+            </div>
+          </div>
+          <div class="safari-bottom-container">
+            <div class="arrow-left-container">
+              <img
+                src="https://dl.dropbox.com/s/zkc4y9bpfc5gnor/back.png"
+                id="arrow-left-icon-inner-safari"
+                alt=""
+              />
+            </div>
+            <div class="arrow-right-container">
+              <img
+                src="https://dl.dropbox.com/s/ux8j5ia32ijzfom/right-arrow.png"
+                id="arrow-right-icon-inner-safari"
+                alt=""
+              />
+            </div>
+            <div class="square-with-arrow-up-container">
+              <img
+                src="https://dl.dropbox.com/s/3kov7469pm8ll6f/more.png"
+                id="square-with-arrow-up-icon"
+                alt=""
+              />
+            </div>
+            <div class="books-container-inner-safari">
+              <img
+                src="https://dl.dropbox.com/s/ek6s2b2bbmuwvk3/open-book.png"
+                id="books-icon-inner-safari"
+                alt=""
+              />
+            </div>
+            <div class="two-squares-container">
+              <img
+                src="https://dl.dropbox.com/s/zt7pug6pvnnlwpp/tabs.png"
+                id="two-squares-icon"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="inner-numbers">
+          <div class="inner-numbers-top-container">
+            <span id="plus-inner-numbers-container">&plus;</span>
+            <p id="numbers-recents-title">Numbers Recents</p>
+            <input
+              type="text"
+              placeholder=" &#128269; Search"
+              id="search-input-inner-numbers"
+              readonly
+            />
+          </div>
+          <div class="inner-numbers-middle-container">
+            <p id="no-recents-title">No Recents</p>
+            <p id="text-inner-numbers-1">See recently opened documents here</p>
+            <p id="text-inner-numbers-2">or use the Browse tab to see all</p>
+            <p id="text-inner-numbers-3">documents and folders</p>
+          </div>
+          <div class="inner-numbers-bottom-container">
+            <div class="recents-container-inner-numbers">
+              <img
+                src="https://dl.dropbox.com/s/bnwfc0kdo5erjxz/recents.png"
+                id="clock-icon-inner-numbers"
+                alt=""
+              />
+              <p id="recents-text-inner-numbers">Recents</p>
+            </div>
+            <div class="browse-container-inner-numbers">
+              <img
+                src="https://dl.dropbox.com/s/x5cfoo95q4z4wpi/browse.png"
+                id="folder-icon-inner-numbers"
+                alt=""
+              />
+              <p id="browse-text-inner-numbers">Browse</p>
+            </div>
+          </div>
+          <div class="inner-numbers-browse-container">
+            <div class="inner-browse-container-top-wrapper">
+              <p id="locations-button">
+                <span id="back-arrow-inner-numbers">&#8249;</span>Locations
+              </p>
+              <p id="icloud-drive-title">iCloud Drive</p>
+              <p id="plus-inner-browse-container">&plus;</p>
+              <p id="select-text-inner-browse-container">Select</p>
+              <input
+                type="text"
+                placeholder=" &#128269; Search"
+                id="search-input-inner-browse-container"
+                readonly
+              />
+            </div>
+            <div class="inner-browse-container-middle-wrapper">
+              <div class="spreadsheet-container">
+                <p id="plus-inner-spreadsheet">&plus;</p>
+                <p id="inner-browse-container-text-1">Create</p>
+                <p id="inner-browse-container-text-2">Spreadsheet</p>
+                <p id="count-of-items">0 items</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner-maps">
+          <div class="circle-wrapper">
+            <div class="circle-small"></div>
+          </div>
+          <div class="circle-under"></div>
+          <div class="bottom-container">
+            <div class="top-wrapper-inner-bottom-container-inner-maps">
+              <div class="top-button"></div>
+              <input
+                type="text"
+                placeholder=" &#128269; Search for a place or address"
+                id="search-input-inner-maps"
+                readonly
+              />
+            </div>
+            <div class="places-container">
+              <div class="heart-container">
+                <img
+                  src="https://dl.dropbox.com/s/rsp9m93z20fkw39/heart.png"
+                  id="heart-icon-inner-maps"
+                  alt=""
+                />
+              </div>
+              <p id="favourites-text-inner-maps">Favourites</p>
+              <span id="count-of-places-inner-maps">0 places</span>
+            </div>
+            <div class="places-container"></div>
+            <div class="places-container"></div>
+            <div class="places-container"></div>
+            <div class="places-container"></div>
+            <div class="places-container"></div>
+          </div>
+        </div>
+        <div class="inner-facetime">
+          <div class="inner-facetime-top-container">
+            <p id="edit-text-inner-facetime">Edit</p>
+            <p id="plus-inner-facetime">&plus;</p>
+            <p id="facetime-title">FaceTime</p>
+          </div>
+          <div class="inner-facetime-middle-container">
+            <div class="call-container-inner-facetime">
+              <div class="person-icon-container">
+                <img
+                  src="https://dl.dropbox.com/s/ncnq1tnubez36gb/profile_man.png"
+                  class="person-icon-inner-facetime"
+                  alt=""
+                />
+              </div>
+              <p class="person-name-inner-facetime">Dad</p>
+              <p class="facetime-video-text">&#9734;FaceTime Video</p>
+              <p class="date-of-facetime-call">Sunday</p>
+              <img
+                src="https://dl.dropbox.com/s/byncou2b46rvnqu/information.png"
+                class="info-icon"
+                alt=""
+              />
+            </div>
+            <div class="call-container-inner-facetime">
+              <div class="person-icon-container">
+                <img
+                  src="https://dl.dropbox.com/s/ncnq1tnubez36gb/profile_man.png"
+                  class="person-icon-inner-facetime"
+                  alt=""
+                />
+              </div>
+              <p class="person-name-inner-facetime">Bro</p>
+              <p class="facetime-video-text">&#9734;FaceTime Video</p>
+              <p class="date-of-facetime-call">Sunday</p>
+              <img
+                src="https://dl.dropbox.com/s/byncou2b46rvnqu/information.png"
+                class="info-icon"
+                alt=""
+              />
+            </div>
+            <div class="call-container-inner-facetime">
+              <div class="person-icon-container">
+                <img
+                  src="https://dl.dropbox.com/s/jwzuflk4cc9en17/profile_woman.png"
+                  class="person-icon-inner-facetime"
+                  alt=""
+                />
+              </div>
+              <p class="person-name-inner-facetime">Mum</p>
+              <p class="facetime-video-text">&#9734;FaceTime Video</p>
+              <p class="third-date-of-facetime-call date-of-facetime-call">
+                Friday
+              </p>
+              <img
+                src="https://dl.dropbox.com/s/byncou2b46rvnqu/information.png"
+                class="info-icon"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="inner-iMovie">
+          <div class="inner-iMovie-top-container">
+            <p id="video-title-inner-iMovie">Video</p>
+            <p id="projects-title-inner-iMovie">Projects</p>
+            <p id="theater-title-inner-iMovie">Theater</p>
+          </div>
+          <div class="inner-iMovie-middle-container">
+            <div class="create-project-container">
+              <p id="plus-inner-create-project-container">&plus;</p>
+              <p id="create-project-text">Create Project</p>
+            </div>
+          </div>
+          <div class="inner-iMovie-bottom-container">
+            <div class="inner-iMovie-arrow-down-container">
+              <img
+                src="https://dl.dropbox.com/s/igkr0azt1o5exxj/arrow-down.png"
+                id="arrow-down-icon-inner-iMovie"
+                alt=""
+              />
+            </div>
+            <div class="help-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/zju69m13yjwtd4a/question.png"
+                id="question-mark-icon"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="inner-pages">
+          <div class="inner-pages-top-container">
+            <span id="plus-inner-pages-container">&plus;</span>
+            <p id="pages-recents-title">Pages Recents</p>
+            <input
+              type="text"
+              placeholder=" &#128269; Search"
+              id="search-input-inner-pages"
+              readonly
+            />
+          </div>
+          <div class="inner-pages-middle-container">
+            <p id="no-recents-title-inner-pages">No Recents</p>
+            <p id="text-inner-pages-1">See recently opened documents here</p>
+            <p id="text-inner-pages-2">or use the Browse tab to see all</p>
+            <p id="text-inner-pages-3">documents and folders</p>
+          </div>
+          <div class="inner-pages-bottom-container">
+            <div class="recents-container-inner-pages">
+              <img
+                src="https://dl.dropbox.com/s/bnwfc0kdo5erjxz/recents.png"
+                id="clock-icon-inner-pages"
+                alt=""
+              />
+              <p id="recents-text-inner-pages">Recents</p>
+            </div>
+            <div class="browse-container-inner-pages">
+              <img
+                src="https://dl.dropbox.com/s/x5cfoo95q4z4wpi/browse.png"
+                id="folder-icon-inner-pages"
+                alt=""
+              />
+              <p id="browse-text-inner-pages">Browse</p>
+            </div>
+          </div>
+          <div class="inner-pages-browse-container">
+            <div class="inner-browse-container-top-wrapper-inner-pages">
+              <p id="icloud-drive-button">
+                <span id="back-arrow-inner-pages">&#8249;</span>iCloud Drive
+              </p>
+              <p id="pages-title">Pages</p>
+              <p id="plus-inner-browse-container-inner-pages">&plus;</p>
+              <p id="select-text-inner-browse-container-inner-pages">Select</p>
+              <input
+                type="text"
+                placeholder=" &#128269; Search"
+                id="search-input-inner-browse-container-inner-pages"
+                readonly
+              />
+            </div>
+            <div class="inner-browse-container-middle-wrapper-inner-pages">
+              <div class="document-container">
+                <p id="plus-inner-document">&plus;</p>
+                <p id="inner-browse-container-inner-pages-text-1">Create</p>
+                <p id="inner-browse-container-inner-pages-text-2">Document</p>
+                <p id="count-of-items-inner-pages">0 items</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner-keynote">
+          <div class="inner-keynote-top-container">
+            <p id="locations-text">Locations</p>
+            <p id="plus-inner-keynote">&plus;</p>
+            <div class="iphone-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/hgeiagpw03id3vd/video-player.png"
+                id="iphone-icon-inner-keynote"
+                alt=""
+              />
+            </div>
+            <div class="upload-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/3kov7469pm8ll6f/more.png"
+                id="upload-icon-inner-keynote"
+                alt=""
+              />
+            </div>
+            <p id="edit-text-inner-keynote">Edit</p>
+          </div>
+          <div class="inner-keynote-bottom-container">
+            <p id="inner-keynote-text-inner-middle-container">
+              Tap to create a new presentation
+            </p>
+          </div>
+        </div>
+        <div class="inner-garageband">
+          <div class="garageband-top-container">
+            <p id="garageband-title">Get Started</p>
+          </div>
+          <div class="garageband-middle-container">
+            <div class="play-container">
+              <img
+                src="https://dl.dropbox.com/s/6wicq86kemenvjd/piano.png"
+                id="piano-icon"
+                alt=""
+              />
+              <p id="play-text-inner-play-container">Play</p>
+            </div>
+            <div class="record-container">
+              <img
+                src="https://dl.dropbox.com/s/tx39msx6wjun3tf/guitar.png"
+                id="guitar-icon"
+                alt=""
+              />
+              <p id="record-text-inner-record-container">Record</p>
+            </div>
+            <div class="share-container">
+              <img
+                src="https://dl.dropbox.com/s/bbtifwfawd7hxsm/share.png"
+                id="share-icon-inner-garageband"
+                alt=""
+              />
+              <p id="share-text-inner-share-container">Share</p>
+            </div>
+            <div class="garageband-bottom-container">
+              <p id="garageband-text-inner-bottom-container">Use GarageBand</p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-watch">
+          <div class="inner-watch-top-container">
+            <p id="inner-watch-top-text-inner-top-container">Good Evening</p>
+            <p id="inner-watch-top-text-inner-bottom-container">
+              If you have an Apple Watch, you <br />
+              can pair it with your iPhone here.
+            </p>
+          </div>
+          <div class="inner-watch-middle-container">
+            <div class="watches"></div>
+            <button type="button" name="button" id="start-pairing-button">
+              Start Pairing
+            </button>
+            <p id="text-inner-middle-container-inner-watch">
+              Learn more about Apple Watch
+            </p>
+          </div>
+          <div class="inner-watch-bottom-container">
+            <div class="my-watch-container">
+              <img
+                src="https://dl.dropbox.com/s/mzn5q615e7cffhp/apple.png"
+                id="my-watch-icon"
+                alt=""
+              />
+              <p id="my-watch-text">My Watch</p>
+            </div>
+            <div class="face-gallery-container">
+              <img
+                src="https://dl.dropbox.com/s/nwgqwev1ssf4t3z/smartwatch.png"
+                id="face-gallery-icon"
+                alt=""
+              />
+              <p id="face-gallery-text">Face Gallery</p>
+            </div>
+            <div class="app-store-container">
+              <img
+                src="https://dl.dropbox.com/s/lsxf8eh4b576y7k/app-store.png"
+                id="app-store-icon-inner-watch"
+                alt=""
+              />
+              <p id="app-store-text-inner-watch">App Store</p>
+            </div>
+            <div class="search-bar-container-inner-watch">
+              <img
+                src="https://dl.dropbox.com/s/zxw9xb0j4rumhjf/search.png"
+                id="search-icon-inner-watch"
+                alt=""
+              />
+              <p id="search-text-inner-watch">Search</p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-iBooks">
+          <div class="inner-iBooks-top-container">
+            <p id="reading-status">Reading Now</p>
+            <div class="user-avatar"></div>
+          </div>
+          <div class="inner-iBooks-middle-container">
+            <div class="inner-iBooks-middle-container-top-wrapper">
+              <div class="the-book-you-reading"></div>
+              <p id="name-of-current-book">
+                Harry Potter and<br />the Philosopher's stone
+              </p>
+              <p id="progress-of-reading">34%</p>
+              <img
+                src="https://dl.dropbox.com/s/82f8auevyu6soh2/ellipsis.png"
+                class="
+                  ellipsis-inner-top-wrapper ellipsis-inner-middle-container
+                "
+              />
+            </div>
+            <div class="inner-iBooks-middle-container-middle-wrapper">
+              <p id="recent-title">RECENT</p>
+              <div
+                class="inner-iBooks-middle-container-middle-wrapper-recent-book"
+              ></div>
+              <p id="progress-of-reading-recent-book">26%</p>
+              <img
+                src="https://dl.dropbox.com/s/82f8auevyu6soh2/ellipsis.png"
+                class="
+                  ellipsis-inner-middle-wrapper ellipsis-inner-middle-container
+                "
+              />
+            </div>
+          </div>
+          <div class="inner-iBooks-middle-container-bottom-wrapper"></div>
+          <div class="inner-iBooks-bottom-container">
+            <div class="reading-now-container">
+              <img
+                src="https://dl.dropbox.com/s/ngdmoalx78sp73v/reading_now.png"
+                id="opened-book-icon"
+                alt=""
+              />
+              <p id="reading-now-text-inner-iBooks">Reading Now</p>
+            </div>
+            <div class="library-container-inner-iBooks">
+              <img
+                src="https://dl.dropbox.com/s/tizfd5mkf3jbh9o/library.png"
+                id="books-icon"
+                alt=""
+              />
+              <p id="library-text-inner-iBooks">Library</p>
+            </div>
+            <div class="search-container-inner-iBooks">
+              <img
+                src="https://dl.dropbox.com/s/zxw9xb0j4rumhjf/search.png"
+                id="search-icon-inner-iBooks"
+                alt=""
+              />
+              <p id="search-text-inner-iBooks">Search</p>
+            </div>
+          </div>
+          <div class="inner-iBooks-library-container">
+            <div class="inner-iBooks-library-container-top-container">
+              <div class="inner-iBooks-library-container-top-wrapper">
+                <p id="edit-text-inner-library-container">Edit</p>
+                <p id="library-title-inner-library-container">Library</p>
+              </div>
+              <div class="inner-iBooks-library-container-middle-wrapper">
+                <div class="menu-inner-middle-wrapper"></div>
+                <p id="collections-title">Collections</p>
+                <p id="arrow-inner-library-container">&#8250;</p>
+              </div>
+              <div class="inner-iBooks-library-container-bottom-wrapper">
+                <div
+                  class="
+                    inner-iBooks-library-container-bottom-wrapper-top-container
+                  "
+                >
+                  <p id="count-of-pdfs">2 PDF<span id="last-letter">s</span></p>
+                </div>
+                <div
+                  class="
+                    inner-iBooks-library-container-bottom-wrapper-bottom-container
+                  "
+                >
+                  <p id="text-inner-library-container-bottom-wrapper">
+                    SORT <span id="manually-text">MANUALLY</span
+                    ><span id="arrow-down-inner-library-container"></span>
+                  </p>
+                  <div class="menu-inner-bottom-wrapper"></div>
+                </div>
+              </div>
+            </div>
+            <div class="inner-iBooks-library-container-middle-container">
+              <div class="inner-library-first-book-container">
+                <div class="inner-library-first-book"></div>
+                <p id="first-book-progress-reading">34%</p>
+                <div class="ellipsis-inner-first-book-container"></div>
+              </div>
+              <div class="inner-library-second-book-container">
+                <div class="inner-library-second-book"></div>
+                <p id="second-book-progress-reading">26%</p>
+                <div class="ellipsis-inner-second-book-container"></div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-iBooks-search-container">
+            <div class="inner-search-container-top-wrapper">
+              <p id="search-title-inner-search-container">Search</p>
+              <input
+                type="text"
+                placeholder=" &#128269; Your Library"
+                id="search-input-inner-search-container"
+                readonly
+              />
+            </div>
+            <div class="inner-search-container-middle-wrapper"></div>
+          </div>
+        </div>
+        <div class="inner-extras-container">
+          <div class="inner-extras-blur-container"></div>
+          <p id="extras-title">Extras</p>
+          <div class="inner-opened-extras">
+            <div class="inner-opened-extras-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/8q0xjy3vavc0uv7/tips.png"
+                id="tips-icon-inner-opened-extras"
+              />
+              <p class="title-inner-opened-extras">Tips</p>
+            </div>
+            <div class="inner-opened-extras-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/rpf8a9ggkxj2hn5/voiceMemos.png"
+                id="voice-memos-icon-inner-opened-extras"
+              />
+              <p class="title-inner-opened-extras">Voice Memos</p>
+            </div>
+            <div class="inner-opened-extras-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/e1m23az6g5pyjcb/contacts.png"
+                id="contacts-icon-inner-opened-extras"
+              />
+              <p class="title-inner-opened-extras">Contacts</p>
+            </div>
+            <div class="inner-opened-extras-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/fglfhmuskp2exnh/findFriends.png"
+                id="find-friends-icon-inner-opened-extras"
+              />
+              <p class="title-inner-opened-extras">Find Frineds</p>
+            </div>
+            <div class="inner-opened-extras-icon-container">
+              <img
+                src="https://dl.dropbox.com/s/cbewfjsdp4qwkkp/findIphone.png"
+                id="find-iphone-icon-inner-opened-extras"
+              />
+              <p class="title-inner-opened-extras">Find Iphone</p>
+            </div>
+          </div>
+          <div class="inner-extras"></div>
+        </div>
+        <div class="inner-tips">
+          <span class="sim-status-inner-extras">No SIM</span>
+          <span class="time-inner-extras"></span>
+          <span class="battery-status-inner-extras"></span>
+          <span class="battery-status-2-inner-extras"></span>
+          <p id="inner-tips-text-1">No Internet connection.</p>
+          <p id="inner-tips-text-2">Try again later.</p>
+        </div>
+        <div class="inner-voice-memos">
+          <span class="sim-status-inner-extras">No SIM</span>
+          <span class="time-inner-extras"></span>
+          <span class="battery-status-inner-extras"></span>
+          <span class="battery-status-2-inner-extras"></span>
+          <div class="inner-voice-memos-top-container">
+            <p id="voice-memos-title">Voice Memos</p>
+          </div>
+          <div class="inner-voice-memos-middle-container">
+            <p id="inner-voice-memos-text">
+              Tap the Record button to start a Voice Memo
+            </p>
+          </div>
+          <div class="inner-voice-memos-bottom-container">
+            <div class="record-button-inner-voice-memos"></div>
+          </div>
+        </div>
+        <div class="inner-find-friends">
+          <span class="sim-status-inner-extras">No SIM</span>
+          <span class="time-inner-extras"></span>
+          <span class="battery-status-inner-extras"></span>
+          <span class="battery-status-2-inner-extras"></span>
+          <div class="inner-find-friends-top-container">
+            <p id="inner-find-friends-title">Find My Friends</p>
+          </div>
+          <div class="inner-find-friends-bottom-container">
+            <div class="inner-find-friends-wrapper">
+              <div class="find-friends-icon-inner-friends-wrapper"></div>
+              <p id="cannot-connect-text-inner-find-my-friends">
+                Cannot Connect
+              </p>
+              <p id="wifi-connect-text-inner-find-my-friends">
+                You must connect to a Wi-Fi or mobile data
+              </p>
+              <p id="bottom-text-inner-find-my-friends">
+                network to access Find My Friends
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-find-iphone">
+          <span class="sim-status-inner-extras">No SIM</span>
+          <span class="time-inner-extras"></span>
+          <span class="battery-status-inner-extras"></span>
+          <span class="battery-status-2-inner-extras"></span>
+          <div class="inner-find-iphone-top-container">
+            <p id="inner-find-iphone-title">Find My iPhone</p>
+          </div>
+          <div class="inner-find-iphone-bottom-container">
+            <div class="inner-find-iphone-wrapper">
+              <div class="find-iphone-icon-inner-iphone-wrapper"></div>
+              <p id="cannot-connect-text-inner-find-iphone">Cannot Connect</p>
+              <p id="wifi-connect-text-inner-find-iphone">
+                You must connect to a Wi-Fi or mobile data
+              </p>
+              <p id="bottom-text-inner-find-iphone">
+                network to access Find My Friends
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-contacts">
+          <span class="sim-status-inner-extras">No SIM</span>
+          <span class="time-inner-extras"></span>
+          <span class="battery-status-inner-extras"></span>
+          <span class="battery-status-2-inner-extras"></span>
+          <div class="inner-contacts-top-container">
+            <span id="plus-inner-contacts">&plus;</span>
+            <p id="contacts-text-inner-contacts">Contacts</p>
+            <input
+              type="text"
+              placeholder=" &#128269; Search"
+              id="search-input-inner-contacts"
+              value=""
+              readonly
+            />
+          </div>
+          <div class="inner-contacts-middle-container">
+            <div class="card-inner-contacts-icon">
+              <div class="card-circle-inner-contacts-icon">
+                <p id="name-inner-contacts-icon">D</p>
+              </div>
+              <p id="my-name-inner-contacts-icon">Don't know</p>
+              <p id="my-card-inner-contacts-icon">My Card</p>
+            </div>
+            <div class="first-letter-of-contact-1 first-letter-of-contact">
+              <p class="first-letter">B</p>
+            </div>
+            <div class="contact-1 contact-container">
+              <p class="bro-contact name-of-contact">Bro</p>
+            </div>
+            <div class="first-letter-of-contact-2 first-letter-of-contact">
+              <p class="first-letter">D</p>
+            </div>
+            <div class="contact-2 contact-container">
+              <p class="dad-contact name-of-contact">Dad</p>
+            </div>
+            <div class="first-letter-of-contact-3 first-letter-of-contact">
+              <p class="first-letter">M</p>
+            </div>
+            <div class="contact-3 contact-container">
+              <p class="mum-contact name-of-contact">Mum</p>
+            </div>
+            <div class="first-letter-of-contact-1 first-letter-of-contact">
+              <p class="first-letter">S</p>
+            </div>
+            <div class="contact-1 contact-container">
+              <p class="sis-contact name-of-contact">Sis</p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-itunes-u"></div>
+        <div class="inner-sololearn">
+          <div class="inner-sololearn-top-container">
+            <div class="left-wrapper-inner-top-container">&#9733;&#9733;</div>
+            <p id="title-inner-top-container">Learn</p>
+            <div class="message-icon-inner-sololearn"></div>
+            <div class="notification-icon-inner-sololearn"></div>
+            <div class="more-icon-inner-sololearn"></div>
+          </div>
+          <div class="inner-sololearn-learn-container">
+            <div class="top-wrapper-inner-learn-container">
+              <img
+                src="https://dl.dropbox.com/s/ngdmoalx78sp73v/reading_now.png"
+                id="book-icon-inner-search-input"
+              />
+              <input
+                type="text"
+                placeholder=" &#128269;  Search"
+                id="search-input-inner-learn-container"
+                readonly
+              />
+            </div>
+            <div class="medium-wrapper-inner-learn-container">
+              <p id="my-courses-title">My Courses</p>
+              <p id="manage-button">MANAGE</p>
+              <div class="courses-container">
+                <div class="course-1-container course-container">JS</div>
+                <div class="course-2-container course-container">HTML</div>
+                <div class="course-3-container course-container">CSS</div>
+                <br />
+                <p id="JS-course-text">JavaScript<br />Tutorial</p>
+                <p id="HTML-course-text">HTML<br />Fundamentals</p>
+                <p id="CSS-course-text">CSS<br />Fundamentals</p>
+              </div>
+            </div>
+            <div class="bottom-wrapper-inner-learn-container">
+              <p
+                class="
+                  error-text-inner-learn-container error-text-inner-sololearn
+                "
+              >
+                Please check your internet connection and <br />
+                try again.
+              </p>
+              <button
+                type="button"
+                name="button"
+                class="try-again-button-inner-learn-container try-again-button"
+              >
+                TRY AGAIN
+              </button>
+            </div>
+            <div class="play-container-inner-sololearn">
+              <p
+                class="
+                  error-text-inner-play-container error-text-inner-sololearn
+                "
+              >
+                Please check your internet connection and <br />
+                try again.
+              </p>
+              <button
+                type="button"
+                name="button"
+                class="try-again-button-inner-play-container try-again-button"
+              >
+                TRY AGAIN
+              </button>
+              <button
+                type="button"
+                name="button"
+                id="plus-button-inner-play-container"
+              >
+                &plus;
+              </button>
+            </div>
+            <div class="activity-feed-container-inner-sololearn">
+              <div class="inner-activity-feed-top-container">
+                <div class="main-photo">
+                  <div class="level-star">&#9733;</div>
+                </div>
+                <p id="page-name">&#9733; Don't know &#9733;</p>
+                <p id="post-button">What's going on?</p>
+                <button type="button" name="button" id="discover-peers-button">
+                  DISCOVER PEERS
+                </button>
+              </div>
+              <div class="inner-activity-feed-middle-container">
+                <button type="button" name="button" id="activity-feed-button">
+                  ACTIVITY FEED
+                  <img
+                    src="https://dl.dropbox.com/s/cnl0qliw0m1h9vd/down-arrow.png"
+                    id="arrow-down-inner-activity-feed"
+                    alt=""
+                  />
+                </button>
+                <p
+                  class="
+                    error-text-inner-activity-feed-container
+                    error-text-inner-sololearn
+                  "
+                >
+                  Please check your internet connection and try again.
+                </p>
+                <button
+                  type="button"
+                  name="button"
+                  class="
+                    try-again-button-inner-activity-feed-container
+                    try-again-button
+                  "
+                >
+                  TRY AGAIN
+                </button>
+              </div>
+            </div>
+            <div class="code-playground-container">
+              <div class="inner-code-playground-top-container">
+                <input
+                  type="text"
+                  placeholder=" &#128269;   Search..."
+                  id="search-input-inner-code-playground"
+                  readonly
+                />
+                <button id="show-all-codes-button">
+                  All
+                  <img
+                    src="https://dl.dropbox.com/s/cnl0qliw0m1h9vd/down-arrow.png"
+                    id="arrow-down-inner-show-all-codes-button"
+                    alt=""
+                  />
+                </button>
+                <button id="show-hot-today-button">
+                  Hot Today
+                  <img
+                    src="https://dl.dropbox.com/s/cnl0qliw0m1h9vd/down-arrow.png"
+                    id="arrow-down-inner-show-hot-today-button"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="inner-code-playground-middle-container">
+                <p
+                  class="
+                    error-text-inner-code-playground error-text-inner-sololearn
+                  "
+                >
+                  Please check your internet connection and <br />
+                  try again.
+                </p>
+                <button
+                  type="button"
+                  name="button"
+                  class="
+                    try-again-button-inner-code-playground try-again-button
+                  "
+                >
+                  TRY AGAIN
+                </button>
+                <button
+                  type="button"
+                  name="button"
+                  id="plus-button-inner-code-playground"
+                >
+                  &plus;
+                </button>
+              </div>
+            </div>
+            <div class="discuss-container">
+              <div class="inner-discuss-top-container">
+                <input
+                  type="text"
+                  placeholder=" &#128269;   Search..."
+                  id="search-input-inner-discuss"
+                  readonly
+                />
+                <button id="show-hot-today-button-inner-discuss">
+                  Hot Today
+                  <img
+                    src="https://dl.dropbox.com/s/cnl0qliw0m1h9vd/down-arrow.png"
+                    id="arrow-down-inner-show-hot-today-button-inner-discuss"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="inner-discuss-middle-container">
+                <p class="error-text-inner-discuss error-text-inner-sololearn">
+                  Please check your internet connection and <br />
+                  try again.
+                </p>
+                <button
+                  type="button"
+                  name="button"
+                  class="try-again-button-inner-discuss try-again-button"
+                >
+                  TRY AGAIN
+                </button>
+                <button
+                  type="button"
+                  name="button"
+                  id="plus-button-inner-discuss"
+                >
+                  <p id="pencil-icon-inner-discuss">&#9998;</p>
+                </button>
+              </div>
+            </div>
+            <div class="inner-sololearn-bottom-container">
+              <div class="learn-icon-container">
+                <img
+                  src="https://dl.dropbox.com/s/1naciw6fyq0ltbw/mortarboard.png"
+                  id="learn-icon-inner-sololearn"
+                  alt=""
+                />
+                <p id="learn-text-inner-bottom-container">Learn</p>
+              </div>
+              <div class="play-icon-container">
+                <img
+                  src="https://dl.dropbox.com/s/z0vdhsmocved72m/thunder.png"
+                  id="play-icon-inner-sololearn"
+                  alt=""
+                />
+                <p id="play-text-inner-bottom-container">Play</p>
+              </div>
+              <div class="feed-icon-container">
+                <img
+                  src="https://dl.dropbox.com/s/bkd2t9jeait84wj/home.png"
+                  id="feed-icon-inner-sololearn"
+                  alt=""
+                />
+                <p id="feed-text-inner-bottom-container">Feed</p>
+              </div>
+              <div class="curly-bracket-icon-container">
+                <img
+                  src="https://dl.dropbox.com/s/z98hzz9eqj6eq98/brackets.png"
+                  id="curly-bracket-icon-inner-sololearn"
+                  alt=""
+                />
+                <p id="code-text-inner-bottom-container">Code</p>
+              </div>
+              <div class="discuss-icon-container">
+                <img
+                  src="https://dl.dropbox.com/s/3wncof8f6s7fvwn/chat.png"
+                  id="discuss-icon-inner-sololearn"
+                  alt=""
+                />
+                <p id="discuss-text-inner-bottom-container">Discuss</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner-telegram">
+          <div class="inner-telegram-contacts-top-container">
+            <p id="contacts-title-inner-telegram">Contacts</p>
+            <p id="plus-inner-contacts-telegram">&plus;</p>
+            <input
+              type="text"
+              placeholder="&#128269; Search"
+              id="search-inner-contacts-telegram"
+              readonly
+            />
+          </div>
+          <div class="inner-telegram-contacts-middle-container">
+            <p id="sorted-by-text">
+              Sorted by Last Seen Time
+              <img
+                src="https://dl.dropbox.com/s/cnl0qliw0m1h9vd/down-arrow.png"
+                id="arrow-down-inner-sorted-text"
+                alt=""
+              />
+            </p>
+            <div class="find-people-container-inner-telegram">
+              <div class="geolocation-icon"></div>
+              <p id="find-people-nearby">Find People Nearby</p>
+            </div>
+            <div class="invite-friends-container-inner-telegram">
+              <div class="add-contact-icon"></div>
+              <p id="invite-friends-text">Invite Friends</p>
+            </div>
+            <div class="first-person-container-inner-telegram">
+              <div class="first-person-photo"></div>
+              <p id="name-of-first-person-inner-telegram">
+                Bro <br />
+                <span id="first-person-last-seen"
+                  >last seen 16 minutes ago</span
+                >
+              </p>
+            </div>
+            <div class="second-person-container-inner-telegram">
+              <div class="second-person-photo"></div>
+              <p id="name-of-second-person-inner-telegram">
+                Dad <br />
+                <span id="second-person-last-seen"
+                  >last seen 18 minutes ago</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="inner-calls-container-inner-telegram">
+            <div class="inner-calls-top-container">
+              <div class="missed-and-recent-calls-inner-top-container">
+                <p id="calls-toggle-inner-telegram"></p>
+                <p id="recent-calls-button-inner-telegram">All</p>
+                <p id="missed-calls-button-inner-telegram">Missed</p>
+              </div>
+              <div class="new-call-button"></div>
+              <div class="inner-calls-middle-container">
+                <p id="calls-text-inner-middle-container">
+                  Your recent calls will appear here
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="inner-chats-container-inner-telegram">
+            <div class="inner-chats-container-top-wrapper">
+              <p id="edit-text-inner-chats-telegram">Edit</p>
+              <p id="chats-title-inner-telegram">Chats</p>
+              <div class="proxy-button-inner-telegram"></div>
+              <div class="new-message-button-inner-telegram"></div>
+              <input
+                type="text"
+                placeholder="&#128269; Search for messages or users"
+                id="search-inner-chats-telegram"
+                readonly
+              />
+            </div>
+            <div class="inner-chats-container-middle-wrapper">
+              <div class="message-container-inner-telegram">
+                <div class="person-icon-inner-telegram"></div>
+                <div class="name-and-message-content-container">
+                  <p class="person-name-inner-message-container">Dad</p>
+                  <p class="date-of-message-inner-telegram">Tue</p>
+                  <p class="message-content-inner-telegram">Take care...</p>
+                </div>
+              </div>
+              <div class="message-container-inner-telegram">
+                <div class="person-icon-inner-telegram"></div>
+                <div class="name-and-message-content-container">
+                  <p class="person-name-inner-message-container">Bro</p>
+                  <p class="date-of-message-inner-telegram">Tue</p>
+                  <p class="message-content-inner-telegram">
+                    Aren't you tired of coding?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inner-telegram-settings">
+            <div class="inner-telegram-settings-top-container">
+              <p id="settings-title-inner-telegram">Settings</p>
+              <p id="edit-button-inner-telegram-settings">Edit</p>
+              <input
+                type="text"
+                placeholder="&#128269; Search"
+                id="search-inner-settings-telegram"
+                readonly
+              />
+            </div>
+            <div class="inner-telegram-settings-middle-container">
+              <div class="about-user">
+                <div class="main-photo-inner-telegram-settings"></div>
+                <p id="page-name-inner-settings">&#9733; Don't know &#9733;</p>
+                <p id="tel-number-inner-telegram-settings">+ 7 999 666-66-66</p>
+                <p
+                  id="arrow-right-inner-about-user-container"
+                  class="arrow-right-inner-telegram-settings"
+                >
+                  &#8250;
+                </p>
+                <div class="set-username-container">
+                  <p id="set-username-button">Set Username</p>
+                </div>
+              </div>
+              <div class="proxy-setting parameter-container">
+                <div class="proxy-icon icon-inner-telegram-settings"></div>
+                <p class="parameter-title">Proxy</p>
+                <p class="parameter-status">Disabled</p>
+                <p class="arrow-right-inner-parameters">&#8250;</p>
+              </div>
+              <div class="saved-messages parameter-container">
+                <div
+                  class="saved-messages-icon icon-inner-telegram-settings"
+                ></div>
+                <p class="saved-messages-title parameter-title">
+                  Saved Messages
+                </p>
+                <p class="arrow-right-inner-parameters">&#8250;</p>
+              </div>
+              <div class="recent-calls parameter-container">
+                <div
+                  class="recent-calls-icon icon-inner-telegram-settings"
+                ></div>
+                <p class="recent-calls-title parameter-title">Recent Calls</p>
+                <p class="arrow-right-inner-parameters">&#8250;</p>
+              </div>
+              <div class="devices parameter-container">
+                <div class="devices-icon icon-inner-telegram-settings"></div>
+                <p class="devices-title parameter-title">Devices</p>
+                <p id="devices-status">Scan QR</p>
+                <p class="arrow-right-inner-parameters">&#8250;</p>
+              </div>
+              <div class="notifications-and-sounds parameter-container">
+                <div
+                  class="
+                    notifications-and-sounds-icon
+                    icon-inner-telegram-settings
+                  "
+                ></div>
+                <p class="notifications-and-sounds-title parameter-title">
+                  Notifications and Sounds
+                </p>
+                <div class="warning-sign"></div>
+                <p class="arrow-right-inner-parameters">&#8250;</p>
+              </div>
+              <div class="privacy-and-security parameter-container">
+                <div
+                  class="privacy-and-security-icon icon-inner-telegram-settings"
+                ></div>
+                <p class="privacy-and-security-title parameter-title">
+                  Privacy and Security
+                </p>
+                <p class="arrow-right-inner-parameters">&#8250;</p>
+              </div>
+              <div class="data-and-storage parameter-container">
+                <div
+                  class="data-and-storage-icon icon-inner-telegram-settings"
+                ></div>
+                <p class="data-and-storage-title parameter-title">
+                  Data and Storage
+                </p>
+                <p class="arrow-right-inner-parameters">&#8250;</p>
+              </div>
+              <div class="appearance parameter-container">
+                <div class="appearance-icon icon-inner-telegram-settings"></div>
+                <p class="appearance-title parameter-title">Appearance</p>
+                <p class="arrow-right-inner-parameters">&#8250;</p>
+              </div>
+              <div class="language parameter-container">
+                <div class="language-icon icon-inner-telegram-settings"></div>
+                <p class="language-title parameter-title">Language</p>
+                <p id="current-language-inner-telegram">English</p>
+                <p class="arrow-right-inner-parameters">&#8250;</p>
+              </div>
+              <div class="stickers parameter-container">
+                <div class="stickers-icon icon-inner-telegram-settings"></div>
+                <p class="stickers-title parameter-title">Stickers</p>
+                <p id="count-of-trending-stickers">23</p>
+                <p class="arrow-right-inner-parameters">&#8250;</p>
+              </div>
+              <div class="ask-a-question parameter-container">
+                <div
+                  class="ask-a-question-icon icon-inner-telegram-settings"
+                ></div>
+                <p class="ask-a-question-title parameter-title">
+                  Ask a Question
+                </p>
+                <p class="arrow-right-inner-parameters">&#8250;</p>
+              </div>
+              <div class="telegram-FAQ parameter-container">
+                <div
+                  class="telegram-FAQ-icon icon-inner-telegram-settings"
+                ></div>
+                <p class="telegram-FAQ-title parameter-title">Telegram FAQ</p>
+                <p class="arrow-right-inner-parameters">&#8250;</p>
+              </div>
+              <div class="empty-parameter parameter-container">
+                <div class=""></div>
+                <p class="parameter-title"></p>
+                <p class="arrow-right-inner-parameters"></p>
+              </div>
+            </div>
+          </div>
+          <div class="inner-telegram-bottom-container">
+            <div class="inner-telegram-contacts-icon-container">
+              <div class="inner-telegram-contacts-icon"></div>
+              <p id="contacts-text-inner-telegram-bottom-container">Contacts</p>
+            </div>
+            <div class="inner-telegram-calls-container">
+              <div class="inner-telegram-calls-icon"></div>
+              <p id="calls-text-inner-telegram-bottom-container">Calls</p>
+            </div>
+            <div class="inner-telegram-chats-icon-container">
+              <div class="inner-telegram-chats-icon"></div>
+              <p id="chats-text-inner-telegram-bottom-container">Chats</p>
+            </div>
+            <div class="inner-telegram-settings-icon-container">
+              <div class="inner-telegram-settings-icon"></div>
+              <p id="settings-text-inner-telegram-bottom-container">Settings</p>
+            </div>
+          </div>
+        </div>
+        <div class="inner-camera">
+          <div class="empty-container-inner-camera"></div>
+          <div class="inner-camera-top-container">
+            <div class="flash-icon-inner-camera-top-container"></div>
+            <div class="hdr-text-inner-camera">HDR</div>
+            <div class="live-camera-inner-top-container"></div>
+            <div class="camera-timer"></div>
+            <div class="filter-icon"></div>
+          </div>
+          <div class="photo-inner-camera"></div>
+          <div class="inner-camera-bottom-container">
+            <div class="inner-camera-bottom-container-top-wrapper">
+              <span id="video-text-inner-camera">VIDEO</span>
+              <span id="photo-text">PHOTO</span>
+              <span id="square-text">SQUARE</span>
+            </div>
+            <div class="last-camera-photo"></div>
+            <button id="button-inner-camera"></button>
+            <div class="change-camera-icon"></div>
+          </div>
+          <div class="square-container">
+            <div class="inner-square-top-container">
+              <div class="flash-inner-square-container"></div>
+              <div class="hdr-text-inner-square-container">HDR</div>
+              <div class="timer-inner-square-container"></div>
+              <div class="filter-icon-inner-square-container"></div>
+            </div>
+            <div class="inner-square-middle-container">
+              <div class="square-photo"></div>
+            </div>
+          </div>
+          <div class="video-container">
+            <div class="inner-video-top-container">
+              <div class="flash-inner-video-container"></div>
+              <p id="video-timer-inner-top-container">00:00:00</p>
+              <p id="count-of-frames">HD &#183; 60</p>
+            </div>
+            <div class="inner-video-container-photo"></div>
+          </div>
+        </div>
+        <div class="inner-weather">
+          <div class="inner-weather-top-container">
+            <p id="name-of-the-city">Aberdeen</p>
+            <p id="weather-status-inner-weather-container">Showers</p>
+            <p id="degrees-today-inner-weather-container">9°</p>
+            <div class="bottom-wrapper-inner-weather">
+              <p id="friday-title">Friday</p>
+              <p id="today-text-inner-weather">TODAY</p>
+              <p id="max-degrees-today-inner-weather">10</p>
+              <p id="min-degrees-today-inner-weather">8</p>
+            </div>
+          </div>
+          <div class="inner-weather-middle-container">
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">Now</p>
+              <div class="rain-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">9°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">17</p>
+              <div class="rain-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">8°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">18</p>
+              <div class="rain-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">8°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">19</p>
+              <div class="rain-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">9°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">20</p>
+              <div class="rain-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">10°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">21</p>
+              <div class="rain-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">10°</p>
+            </div>
+            <div class="sunset-container-inner-weather">
+              <p id="sunset-time">21:55</p>
+              <div class="sunset-icon-inner-weather"></div>
+              <p id="sunset-text">Sunset</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">22</p>
+              <div class="wind-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">11°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">23</p>
+              <div class="wind-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">10°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">00</p>
+              <div class="wind-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">9°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">01</p>
+              <div class="rain-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">9°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">02</p>
+              <div class="rain-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">9°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">03</p>
+              <div class="rain-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">9°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">04</p>
+              <div class="wind-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">9°</p>
+            </div>
+            <div class="sunrise-container-inner-weather">
+              <p id="sunrise-time">04:15</p>
+              <div class="sunrise-icon-inner-weather"></div>
+              <p id="sunrise-text">Sunrise</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">05</p>
+              <div class="rain-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">9°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">06</p>
+              <div class="rain-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">9°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">07</p>
+              <div class="cloud-with-sun-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">9°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">08</p>
+              <div class="cloud-with-sun-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">11°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">09</p>
+              <div class="cloud-with-sun-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">12°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">10</p>
+              <div class="cloud-with-sun-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">12°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">11</p>
+              <div class="cloud-with-sun-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">13°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">12</p>
+              <div class="cloud-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">13°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">13</p>
+              <div class="cloud-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">14°</p>
+            </div>
+            <div class="weather-status-container-inner-middle-container">
+              <p class="hours-title">14</p>
+              <div class="cloud-with-sun-icon-inner-weather-container"></div>
+              <p class="count-of-degrees-inner-middle-container">14°</p>
+            </div>
+          </div>
+          <div class="inner-weather-bottom-container">
+            <div class="weather-info-inner-bottom-container">
+              <p class="day-of-week-inner-bottom-container">Saturday</p>
+              <div class="rain-icon-inner-bottom-container"></div>
+              <p class="max-degrees-inner-bottom-container">16</p>
+              <p class="min-degrees-inner-bottom-container">9</p>
+            </div>
+            <div class="weather-info-inner-bottom-container">
+              <p class="day-of-week-inner-bottom-container">Sunday</p>
+              <div class="wind-icon-inner-bottom-container"></div>
+              <p class="max-degrees-inner-bottom-container">11</p>
+              <p class="min-degrees-inner-bottom-container">6</p>
+            </div>
+            <div class="weather-info-inner-bottom-container">
+              <p class="day-of-week-inner-bottom-container">Monday</p>
+              <div class="cloud-icon-inner-bottom-container"></div>
+              <p class="max-degrees-inner-bottom-container">13</p>
+              <p class="min-degrees-inner-bottom-container">6</p>
+            </div>
+            <div class="weather-info-inner-bottom-container">
+              <p class="day-of-week-inner-bottom-container">Tuesday</p>
+              <div class="rain-icon-inner-bottom-container"></div>
+              <p class="max-degrees-inner-bottom-container">14</p>
+              <p class="min-degrees-inner-bottom-container">8</p>
+            </div>
+            <div class="weather-info-inner-bottom-container">
+              <p class="day-of-week-inner-bottom-container">Wendesday</p>
+              <div class="rain-icon-inner-bottom-container"></div>
+              <p class="max-degrees-inner-bottom-container">16</p>
+              <p class="min-degrees-inner-bottom-container">9</p>
+            </div>
+            <div class="weather-info-inner-bottom-container">
+              <p class="day-of-week-inner-bottom-container">Thursday</p>
+              <div class="cloud-with-sun-icon-inner-bottom-container"></div>
+              <p class="max-degrees-inner-bottom-container">17</p>
+              <p class="min-degrees-inner-bottom-container">10</p>
+            </div>
+            <div class="weather-info-inner-bottom-container">
+              <p class="day-of-week-inner-bottom-container">Friday</p>
+              <div class="cloud-with-sun-icon-inner-bottom-container"></div>
+              <p class="max-degrees-inner-bottom-container">17</p>
+              <p class="min-degrees-inner-bottom-container">11</p>
+            </div>
+            <div class="weather-info-inner-bottom-container">
+              <p class="day-of-week-inner-bottom-container">Saturday</p>
+              <div class="cloud-with-sun-icon-inner-bottom-container"></div>
+              <p class="max-degrees-inner-bottom-container">16</p>
+              <p class="min-degrees-inner-bottom-container">11</p>
+            </div>
+            <div class="weather-info-inner-bottom-container">
+              <p class="day-of-week-inner-bottom-container">Sunday</p>
+              <div class="rain-icon-inner-bottom-container"></div>
+              <p class="max-degrees-inner-bottom-container">17</p>
+              <p class="min-degrees-inner-bottom-container">11</p>
+            </div>
+            <div class="weather-info-text-inner-bottom-container">
+              <p class="weather-info-text">
+                Today: Rain conditions with 11 m/s winds <br />
+                from the north-west. The high will be 10°.<br />Showers tonight
+                with a low of 8°
+              </p>
+            </div>
+            <div class="weather-details">
+              <p class="detail-title">SUNRISE</p>
+              <p class="detail-content">04:15</p>
+            </div>
+            <div class="weather-details">
+              <p class="detail-title">SUNSET</p>
+              <p class="detail-content">21:55</p>
+            </div>
+            <div class="weather-details">
+              <p class="detail-title">CHANCE OF RAIN</p>
+              <p class="detail-content">100%</p>
+            </div>
+            <div class="weather-details">
+              <p class="detail-title">HUMIDITY</p>
+              <p class="detail-content">73%</p>
+            </div>
+            <div class="weather-details">
+              <p class="detail-title">WIND</p>
+              <p class="detail-content">WNW 11 m/s</p>
+            </div>
+            <div class="weather-details">
+              <p class="detail-title">FEELS LIKE</p>
+              <p class="detail-content">5°</p>
+            </div>
+            <div class="weather-details">
+              <p class="detail-title">PRECIPITATION</p>
+              <p class="detail-content">0,2 cm</p>
+            </div>
+            <div class="weather-details">
+              <p class="detail-title">PRESSURE</p>
+              <p class="detail-content">741,43 mm Hg</p>
+            </div>
+            <div class="weather-details">
+              <p class="detail-title">VISIBILITY</p>
+              <p class="detail-content">6,4 km</p>
+            </div>
+            <div class="weather-details">
+              <p class="detail-title">UV INDEX</p>
+              <p class="detail-content">2</p>
+            </div>
+            <div class="weather-details">
+              <p class="detail-title">AIR QUALITY INDEX</p>
+              <p class="detail-content">1</p>
+            </div>
+            <div class="air-quality weather-details">
+              <p class="detail-title">AIR QUALITY</p>
+              <p class="detail-content">Good</p>
+            </div>
+          </div>
+        </div>
+        <div class="off-container"></div>
+        <div class="start-container">
+          <p id="time-inner-start-container"></p>
+          <p id="date-inner-start-container"></p>
+        </div>
+        <div class="passcode-container">
+          <p id="enter-passcode-text">Enter Passcode</p>
+          <input type="text" id="passcode-input" />
+          <button
+            type="button"
+            name="button"
+            id="done-button-inner-passcode-container"
+          >
+            Done
+          </button>
+        </div>
+        <input
+          type="text"
+          placeholder=" &#128269; Search"
+          class="search-input"
+          readonly
+        />
+        <div class="maps-destinations">
+          <div class="maps-destinations-top-container">
+            <div class="maps-destinations-icon"></div>
+            <p id="maps-destinations-title">MAPS DESTINATIONS</p>
+          </div>
+          <div class="maps-destinations-bottom-container">
+            <div class="significant-location-icon"></div>
+            <p id="significant-location-title">Turn on Significant Locations</p>
+            <p id="significant-location-text">
+              Set up Maps to show travel times to <br />
+              your destinations
+            </p>
+          </div>
+        </div>
+        <div class="weather-under-maps-destinations">
+          <div class="weather-under-maps-destinations-top-container">
+            <div
+              class="weather-icon-inner-weather-under-maps-destinations"
+            ></div>
+            <p id="weather-title-under-maps-destinations">WEATHER</p>
+          </div>
+          <div class="weather-under-maps-destinations-bottom-container">
+            <div class="weather-icon-inner-bottom-container"></div>
+            <p id="name-of-city-under-maps-destinations">Aberdeen</p>
+            <p id="degrees-today">9°</p>
+            <p id="min-max-degrees-today">10°/8°</p>
+            <p id="weather-status-under-maps-destinations">Showers</p>
+            <p id="chance-of-rain-text">Chance of Rain: 100%</p>
+          </div>
+        </div>
+        <button type="button" name="button" id="edit-button">Edit</button>
+        <div class="container"></div>
+      </div>
+      <div class="iphone-home"></div>
+    </div>
+  </body>
+</html>
