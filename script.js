@@ -85,9 +85,11 @@ function main() {
     alert(`How to use
 1)Tap home button.
 2)Tap it again and write passcode.
-3)To see more widgets tap on left/right screen side.
+3)To see more widgets tap on left/right screen side.😊
 
 ❗️ Your passcode is ${passCode} ❗️`);
+  }, 7400);
+
   doneButtonInnerPasscodeContainer.onclick = () => {
     if (passcodeInput.value == passCode) {
       passcodeContainer.classList.remove('run-appear-passcode-container-animation');
