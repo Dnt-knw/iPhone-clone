@@ -1235,7 +1235,7 @@ function main() {
   }
 
   iPhoneCalculatorIcon.onclick = () => {
-    iPhoneCalculator.style.display = 'inline';
+    iPhoneCalculator.style.display = 'block';
   }
 
   photosIcon.onclick = () => {
@@ -2191,7 +2191,7 @@ function main() {
       offContainer.style.display = 'none';
     }, 500);
     if (
-      iPhoneCalculator.style.display == 'inline' ||
+      iPhoneCalculator.style.display == 'block' ||
       photos.style.display == 'block' ||
       innerCalendar.style.display == 'block' ||
       innerClock.style.display == 'block' ||
