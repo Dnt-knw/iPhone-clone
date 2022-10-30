@@ -3,23 +3,57 @@
   font-family: sans-serif;
 }
 
-html, body {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+div,
+p,
+span,
+button,
+table,
+tr,
+td {
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+textarea {
+  -webkit-appearance: textfield;
+}
+
+html,
+body {
   display: block;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  background: orange;
-  overflow: auto;
+  background: linear-gradient(to bottom, #df1933 25%, #f9ba17 100%);
+  overflow: hidden;
+}
+
+.main-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transform-origin: center center;
 }
 
 .loading-container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: red;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #df1933 25%, #f9ba17 100%);
   z-index: 99999999999999;
 }
 
@@ -76,15 +110,25 @@ html, body {
 }
 
 @keyframes loading-animation {
-  from {transform: translateY(0);}
-  25% {transform: translateY(-8px);}
-  50% {transform: translateY(0);}
-  75% {transform: translateY(8px);}
-  to {transform: translateY(0);}
+  from {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(8px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 .iphone {
-  position: relative;
+  position: fixed;
   top: calc(50% - 234px);
   left: calc(50% - 129px);
   display: block;
@@ -93,6 +137,7 @@ html, body {
   background: white;
   border-radius: 32px;
   border: 4px solid silver;
+  transform: rotate(90deg);
 }
 
 .iphone-speaker {
@@ -105,7 +150,8 @@ html, body {
   border-radius: 100px;
 }
 
-.iphone-camera, .iphone-sensor {
+.iphone-camera,
+.iphone-sensor {
   position: relative;
   background: black;
   border-radius: 50%;
@@ -122,367 +168,394 @@ html, body {
   top: -5px;
   width: 6px;
   height: 6px;
- }
+}
 
-.iphone-volume-toggle, .iphone-volume-up, .iphone-volume-down {
-   position: relative;
- }
+.iphone-volume-toggle,
+.iphone-volume-up,
+.iphone-volume-down {
+  position: relative;
+}
 
- .iphone-volume-up,  .iphone-volume-down {
-   height: 30px;
-   width: 2px;
-   border-radius: 30px;
-   left: -5px;
-   background: #d6d6d6;
- }
+.iphone-volume-up,
+.iphone-volume-down {
+  height: 30px;
+  width: 2px;
+  border-radius: 30px;
+  left: -5px;
+  background: #d6d6d6;
+}
 
 .iphone-volume-toggle {
-   height: 15px;
-   width: 2px;
-   left: -5px;
-   background: #e0e0e0;
-   border-radius: 25px;
-   top: 45px;
- }
+  height: 15px;
+  width: 2px;
+  left: -5px;
+  background: #e0e0e0;
+  border-radius: 25px;
+  top: 45px;
+}
 
 .iphone-phone-toggle {
-   position: relative;
-   width: 1px;
-   height: 30px;
-   left: 254px;
-   top: 58px;
-   background: #dcdcdc;
- }
+  position: relative;
+  width: 1px;
+  height: 30px;
+  left: 254px;
+  top: 58px;
+  background: #dcdcdc;
+}
 
- .iphone-volume-up {
-   top: 40px;
- }
+.iphone-volume-up {
+  top: 40px;
+}
 
- .iphone-volume-down {
-   top: 60px;
- }
+.iphone-volume-down {
+  top: 60px;
+}
 
- .iphone-screen {
-   position: relative;
-   top: -63px;
-   margin: 0 7.5px;
-   width: 94%;
-   height: 77%;
-   overflow: hidden;
- }
+.iphone-screen {
+  position: relative;
+  top: -63px;
+  margin: 0 7.5px;
+  width: 94%;
+  height: 77%;
+  overflow: hidden;
+}
 
- .iphone-inner-screen {
-   position: relative;
-   left: -100%;
-   width: 300%;
-   height: 100%;
-   background: url(https://dl.dropbox.com/s/21zc33wl3d7gi7f/background_2560x1600.jpg);
-   background-repeat: no-repeat;
-   background-size: 100%;
-   transition-property: left, filter;
-   transition-duration: .3s, .5s;
-   transition-timing-function: ease-in, ease-in-out;
- }
+.iphone-inner-screen {
+  position: relative;
+  left: -100%;
+  width: 300%;
+  height: 100%;
+  transition-property: left, filter;
+  transition-duration: 0.3s, 0.5s;
+  transition-timing-function: ease-in, ease-in-out;
+}
 
- .container {
-   position: fixed;
-   display: none;
-   top: 0;
-   left: 0;
-   width: 100vw;
-   height: 100vh;
-   background: white;
-   z-index: 9999999999999999999999999999;
- }
+.iphone-inner-screen-background {
+  position: fixed;
+  top: calc(50% - 170px);
+  left: calc(50% - 117.5px);
+  width: 235px;
+  height: 354px;
+  background: url(https://dl.dropbox.com/s/21zc33wl3d7gi7f/background_2560x1600.jpg);
+  background-repeat: no-repeat;
+  background-size: 241%;
+  filter: brightness(0.5) blur(1px);
+  transform-origin: center center;
+  transform: none;
+}
 
- .off-container {
-   position: absolute;
-   display: block;
-   left: 0;
-   top: 0;
-   width: 235px;
-   height: 356px;
-   background: black;
-   z-index: 999999999;
- }
+.container {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: 9999999999999999999999999999;
+}
 
- .start-container {
-   position: absolute;
-   display: block;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 356px;
-   background: url(https://dl.dropbox.com/s/21zc33wl3d7gi7f/background_2560x1600.jpg) no-repeat;
-   background-size: 241%;
-   z-index: 999;
- }
+.off-container {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 235px;
+  height: 356px;
+  background: black;
+  z-index: 999999999;
+}
 
- .passcode-container {
-   position: absolute;
-   display: none;
-   top: 0;
-   left: 0;
-   width: 235px;
-   height: 356px;
-   background: transparent;
-   z-index: 99999;
- }
+.start-container {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 356px;
+  z-index: 999;
+}
 
- #passcode-input {
-   position: relative;
-   border: 1px solid #989898;
-   width: 204.5px;
-   padding-left: 5px;
-   height: 22px;
-   left: 12.5px;
-   font-size: 12px;
-   top: 65px;
-   border-radius: 4px;
-   background: transparent;
- }
+.start-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://dl.dropbox.com/s/21zc33wl3d7gi7f/background_2560x1600.jpg)
+    no-repeat;
+  background-size: 241%;
+  filter: brightness(0.5) blur(1px);
+}
 
- #passcode-input:focus {
-   outline: none;
- }
+.passcode-container {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 235px;
+  height: 356px;
+  background: transparent;
+  z-index: 99999;
+}
 
- #done-button-inner-passcode-container {
-   position: relative;
-   top: 75px;
-   left: 97.5px;
-   cursor: pointer;
-   width: 40px;
-   height: 20px;
-   background: #4e5dff;
-   font-size: 8px;
-   padding: 5px;
-   color: white;
-   border: none;
-   border-radius: 5px;
- }
+#passcode-input {
+  position: relative;
+  border: 1px solid #989898;
+  width: 200px;
+  padding: 5px;
+  height: auto;
+  left: 12.5px;
+  top: 65px;
+  border-radius: 4px;
+  background: transparent;
+  letter-spacing: 1px;
+  font-size: 11px;
+}
 
- #enter-passcode-text {
-   position: relative;
-   top: 60px;
-   left: 0;
-   width: 235px;
-   height: 15px;
-   text-align: center;
-   font-size: 10px;
- }
+#passcode-input:focus {
+  outline: none;
+}
 
- #time-inner-start-container {
-   position: relative;
-   top: 40px;
-   text-align: center;
-   left: 0;
-   width: 235px;
-   height: 40px;
-   font-size: 36px;
-   background: transparent;
-   font-family: 'Open Sans', sans-serif;
- }
+#done-button-inner-passcode-container {
+  position: relative;
+  top: 75px;
+  left: 97.5px;
+  cursor: pointer;
+  width: 40px;
+  height: auto;
+  background: #4e5dff;
+  font-size: 8px;
+  padding: 5px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
 
- #date-inner-start-container {
-   position: relative;
-   top: 45px;
-   text-align: center;
-   left: 0;
-   width: 235px;
-   height: 20px;
-   font-size: 12px;
-   background: transparent;
-   font-family: 'Open Sans', sans-serif;
- }
+#enter-passcode-text {
+  position: relative;
+  top: 60px;
+  left: 0;
+  width: 235px;
+  height: 15px;
+  text-align: center;
+  font-size: 10px;
+}
 
- .run-animation {
-   animation: icon_transition .2s ease-in;
- }
+#time-inner-start-container {
+  position: relative;
+  top: 40px;
+  text-align: center;
+  left: 0;
+  width: 235px;
+  height: 40px;
+  font-size: 36px;
+  background: transparent;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+}
 
- .run-animation-reverse {
-   animation: icon_transition .2s ease-in;
-   animation-direction: reverse;
- }
+#date-inner-start-container {
+  position: relative;
+  top: 45px;
+  text-align: center;
+  left: 0;
+  width: 235px;
+  height: 20px;
+  font-size: 12px;
+  background: transparent;
+  font-family: "Open Sans", sans-serif;
+}
 
- span {
-   position: relative;
-   display: inline;
-   font-size: 10px;
- }
+.run-animation {
+  animation: icon_transition 0.2s ease-in;
+}
 
- #sim-status {
-   position: absolute;
-   left: 239px;
-   top: 2px;
-   font-size: 8px;
-   transition: .3s ease-in 0s;
-   z-index: 999999999;
-   white-space: nowrap;
- }
+.run-animation-reverse {
+  animation: icon_transition 0.2s ease-in;
+  animation-direction: reverse;
+}
 
- .sim-status-inner-extras {
-   position: absolute;
-   left: 4px;
-   top: 2px;
-   transition: .2s ease-in 0s;
-   z-index: 999999999;
-   white-space: nowrap;
-   color: black;
- }
+span {
+  position: relative;
+  display: inline;
+  font-size: 10px;
+}
 
- #time {
-   position: absolute;
-   left: 342.5px;
-   top: 2px;
-   font-size: 8px;
-   transition: .3s ease-in 0s;
-   z-index: 999999999;
-   white-space: nowrap;
- }
+#sim-status {
+  position: absolute;
+  left: 239px;
+  top: 2px;
+  font-size: 8px;
+  transition: 0.3s ease-in 0s;
+  z-index: 999999999;
+  white-space: nowrap;
+}
 
- .time-inner-extras {
-   position: absolute;
-   left: 105px;
-   top: 2px;
-   transition: .2s ease-in 0s;
-   z-index: 999999999;
-   white-space: nowrap;
-   color: black;
- }
+.sim-status-inner-extras {
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  transition: 0.2s ease-in 0s;
+  z-index: 999999999;
+  white-space: nowrap;
+  color: black;
+}
 
- #battery-status {
-   position: absolute;
-   background: white;
-   left: 446px;
-   top: 3px;
-   width: 17px;
-   height: 7px;
-   z-index: 9999999;
-   border: 1px solid gray;
-   border-radius: 2px;
-   box-shadow: inset 1px 0px black, inset -1px 0px black, inset 0px 1px black, inset 0px -1px black,  inset 1px 1px black, inset -1px -1px black;
-   transition: .3s ease-in 0s;
- }
+#time {
+  position: absolute;
+  left: 342.5px;
+  top: 2px;
+  font-size: 8px;
+  transition: 0.3s ease-in 0s;
+  z-index: 999999999;
+  white-space: nowrap;
+}
 
- .battery-status-inner-extras {
-   position: absolute;
-   background: black;
-   left: 211px;
-   top: 3px;
-   width: 17px;
-   height: 7px;
-   z-index: 9999999;
-   border: 1px solid gray;
-   border-radius: 2px;
-   box-shadow: inset 1px 0px white, inset -1px 0px white, inset 0px 1px white, inset 0px -1px white,  inset 1px 1px white, inset -1px -1px white;
-   transition: .2s ease-in 0s;
- }
+.time-inner-extras {
+  position: absolute;
+  left: 105px;
+  top: 2px;
+  transition: 0.2s ease-in 0s;
+  z-index: 999999999;
+  white-space: nowrap;
+  color: black;
+}
 
- #battery-status-2 {
-   position: absolute;
-   background: gray;
-   left: 463px;
-   top: 6px;
-   width: 3px;
-   height: 3px;
-   border-radius: 10px;
-   z-index: 999999;
-   transition: .2s ease-in 0s;
- }
+#battery-status {
+  position: absolute;
+  background: white;
+  left: 446px;
+  top: 3px;
+  width: 17px;
+  height: 7px;
+  z-index: 9999999;
+  border: 1px solid gray;
+  border-radius: 2px;
+  box-shadow: inset 1px 0px black, inset -1px 0px black, inset 0px 1px black,
+    inset 0px -1px black, inset 1px 1px black, inset -1px -1px black;
+  transition: 0.3s ease-in 0s;
+}
 
- .battery-status-2-inner-extras {
-   position: absolute;
-   background: gray;
-   left: 228px;
-   top: 6px;
-   width: 3px;
-   height: 3px;
-   border-radius: 10px;
-   z-index: 999999;
-   transition: .2s ease-in 0s;
- }
+.battery-status-inner-extras {
+  position: absolute;
+  background: black;
+  left: 211px;
+  top: 3px;
+  width: 17px;
+  height: 7px;
+  z-index: 9999999;
+  border: 1px solid gray;
+  border-radius: 2px;
+  box-shadow: inset 1px 0px white, inset -1px 0px white, inset 0px 1px white,
+    inset 0px -1px white, inset 1px 1px white, inset -1px -1px white;
+  transition: 0.2s ease-in 0s;
+}
 
- .panel {
-   position: relative;
-   white-space: nowrap;
-   left: 235px;
-   width: 225px;
-   top: -3px;
-   margin: 0 11.4px;
-   height: 16%;
-   background: transparent;
- }
+.battery-status-2-inner-extras {
+  position: absolute;
+  background: gray;
+  left: 228px;
+  top: 6px;
+  width: 3px;
+  height: 3px;
+  border-radius: 10px;
+  z-index: 999999;
+  transition: 0.2s ease-in 0s;
+}
 
- .icon {
-   position: relative;
-   display: inline-block;
-   vertical-align: top;
-   margin: 0 4.4px;
-   background: transparent;
-   width: 42px;
-   cursor: pointer;
-   height: 57px;
-   text-align: center;
- }
+.panel {
+  position: relative;
+  white-space: nowrap;
+  left: 235px;
+  width: 225px;
+  top: -3px;
+  margin: 0 11.4px;
+  height: 16%;
+  background: transparent;
+}
 
- img {
-   position: relative;
-   top: 0;
-   left: 0;
-   width: 38px;
-   height: 38px;
- }
+.icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 4.4px;
+  background: transparent;
+  width: 42px;
+  cursor: pointer;
+  height: 57px;
+  text-align: center;
+}
 
- p {
-   position: relative;
-   width: 125%;
-   height: 10px;
-   left: -12.5%;
-   background: transparent;
-   font-size: 8px;
-   margin: 0;
-   top: -1px;
- }
+img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+}
 
- .sixth-panel {
-   margin: 0;
-   width: 235px;
-   height: 15%;
-   top: 1px;
-   left: 235px;
-   background: linear-gradient(to right, #666666, 10%, #6e6e6e 50%, #898989 100%);
-   transition: .3s ease-in 0s;
- }
+p {
+  position: relative;
+  width: 125%;
+  height: 10px;
+  left: -12.5%;
+  background: transparent;
+  font-size: 8px;
+  margin: 0;
+  top: -1px;
+}
 
-.tel, .safari, .message, .music {
-   position: relative;
-   left: 8px;
-   top: 6px;
-   margin-left: 5px;
-   transition: .2s ease-in 0s;
+.sixth-panel {
+  margin: 0;
+  width: 235px;
+  height: 15%;
+  top: 1px;
+  left: 235px;
+  background: linear-gradient(
+    to right,
+    #666666,
+    10%,
+    #6e6e6e 50%,
+    #898989 100%
+  );
+  transition: 0.3s ease-in 0s;
+}
+
+.tel,
+.safari,
+.message,
+.music {
+  position: relative;
+  left: 8px;
+  top: 6px;
+  margin-left: 5px;
+  transition: 0.2s ease-in 0s;
 }
 
 .left-toggle {
-   position: relative;
-   left: 0;
-   top: -355px;
-   height: 86%;
-   width: 14px;
-   background: transparent;
-   cursor: pointer;
+  position: relative;
+  left: 0;
+  top: -355px;
+  height: 86%;
+  width: 14px;
+  background: transparent;
+  cursor: pointer;
 }
 
 .right-toggle {
-   position: relative;
-   left: 221px;
-   top: -660px;
-   height: 86%;
-   width: 14px;
-   background: transparent;
-   cursor: pointer;
+  position: relative;
+  left: 221px;
+  top: -660px;
+  height: 86%;
+  width: 14px;
+  background: transparent;
+  cursor: pointer;
 }
 
-.seventh-panel, .eighth-panel, .nineth-panel {
+.seventh-panel,
+.eighth-panel,
+.nineth-panel {
   width: 215px;
   top: -336px;
   left: 470px;
@@ -549,7 +622,7 @@ html, body {
   left: 0;
   top: 0;
   background: black;
-  animation: icon_transition .2s ease-in 1;
+  animation: icon_transition 0.2s ease-in 1;
   user-select: none;
 }
 
@@ -565,7 +638,7 @@ html, body {
   background: transparent;
   white-space: nowrap;
   border: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .button {
@@ -578,45 +651,81 @@ html, body {
   height: 44px;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
 }
 
-.cleaner, .seven, .four, .one, .zero, .seven,.eight, .nine, .mult {
+.cleaner,
+.seven,
+.four,
+.one,
+.zero,
+.seven,
+.eight,
+.nine,
+.mult {
   left: 12px;
 }
 
-.cleaner, .sign, .percent, .divide {
+.cleaner,
+.sign,
+.percent,
+.divide {
   top: 105px;
 }
 
-.seven,.eight, .nine, .mult {
+.seven,
+.eight,
+.nine,
+.mult {
   top: 155px;
 }
 
-.four, .five, .six, .minus {
+.four,
+.five,
+.six,
+.minus {
   top: 205px;
 }
 
-.one, .two, .three, .plus {
+.one,
+.two,
+.three,
+.plus {
   top: 255px;
 }
 
-.zero, .comma, .equal {
+.zero,
+.comma,
+.equal {
   top: 305px;
 }
 
-.sign, .eight, .five, .two {
+.sign,
+.eight,
+.five,
+.two {
   left: 67px;
 }
 
-.percent, .nine, .six, .three, .comma {
+.percent,
+.nine,
+.six,
+.three,
+.comma {
   left: 122px;
 }
 
-.divide, .mult, .minus, .plus, .equal {
+.divide,
+.mult,
+.minus,
+.plus,
+.equal {
   left: 177px;
 }
 
-.buttonTop, sub, sup {
+.buttonTop,
+sub,
+sup {
   color: black;
 }
 
@@ -628,7 +737,8 @@ html, body {
   background: orange;
 }
 
-.numbers, .comma {
+.numbers,
+.comma {
   background: #494949;
 }
 
@@ -653,7 +763,7 @@ html, body {
 }
 
 .numbers {
-  font-size:20px;
+  font-size: 20px;
   padding-top: 11px;
   height: 33px;
 }
@@ -680,7 +790,7 @@ html, body {
   height: 38px;
   background: #a3a3a3;
   border-radius: 20%;
-  transition: .5s ease-in-out 0s;
+  transition: 0.5s ease-in-out 0s;
 }
 
 #apps-text {
@@ -884,7 +994,10 @@ button:focus {
   width: auto;
 }
 
-.photo-icon-container, .for-you-icon-container, .albums-icon-container, .searching-icon-container {
+.photo-icon-container,
+.for-you-icon-container,
+.albums-icon-container,
+.searching-icon-container {
   position: relative;
   display: inline-block;
   width: 18px;
@@ -909,12 +1022,18 @@ button:focus {
   left: 120px;
 }
 
-#bottom-container-photo-icon, #bottom-container-for-you-icon, #bottom-container-albums-icon, #bottom-container-searching-icon {
+#bottom-container-photo-icon,
+#bottom-container-for-you-icon,
+#bottom-container-albums-icon,
+#bottom-container-searching-icon {
   width: 15px;
   height: 15px;
 }
 
-.photo-icon-text-container, .for-you-icon-text-container, .albums-icon-text-container, .searching-icon-text-container {
+.photo-icon-text-container,
+.for-you-icon-text-container,
+.albums-icon-text-container,
+.searching-icon-text-container {
   position: relative;
   display: inline-block;
   width: 30px;
@@ -923,7 +1042,10 @@ button:focus {
   background: transparent;
 }
 
-#photo-icon-text,#for-you-icon-text, #albums-icon-text, #searching-icon-text {
+.photo-icon-text,
+#for-you-icon-text,
+#albums-icon-text,
+#searching-icon-text {
   position: relative;
   display: block;
   width: 100%;
@@ -973,7 +1095,8 @@ button:focus {
   background: #eaeaea;
 }
 
-#back-to-albums-button, #back-to-albums-button-inner-favourites {
+#back-to-albums-button,
+#back-to-albums-button-inner-favourites {
   position: relative;
   white-space: nowrap;
   border: none;
@@ -989,7 +1112,8 @@ button:focus {
   cursor: pointer;
 }
 
-#back-arrow, #back-arrow-inner-favourites {
+#back-arrow,
+#back-arrow-inner-favourites {
   position: absolute;
   font-size: 30px;
   color: #8372ff;
@@ -1031,7 +1155,7 @@ button:focus {
   left: 0;
   top: 0;
   white-space: nowrap;
-  background: transparent
+  background: transparent;
 }
 
 .image-1 {
@@ -1126,9 +1250,12 @@ button:focus {
   z-index: 9;
   border: 1px solid white;
   cursor: pointer;
+  filter: brightness(0.75);
 }
 
-#favourite-image-inner-camera-roll, #favourite-image-inner-favourites, #heart-inner-favourites-album {
+#favourite-image-inner-camera-roll,
+#favourite-image-inner-favourites,
+#heart-inner-favourites-album {
   position: absolute;
   top: 45px;
   left: 3px;
@@ -1170,7 +1297,9 @@ button:focus {
   background: #eaeaea;
 }
 
-#time-inner-images, #dayOfPhoto, #day {
+#time-inner-images,
+#dayOfPhoto,
+#day {
   color: #101010;
 }
 
@@ -1200,7 +1329,8 @@ button:focus {
   font-size: 9px;
 }
 
-.opened-image, .opened-image-inner-favourites {
+.opened-image,
+.opened-image-inner-favourites {
   position: absolute;
   display: none;
   left: 0;
@@ -1211,7 +1341,8 @@ button:focus {
 }
 
 .opened-image-1 {
-  background: url(https://dl.dropbox.com/s/t4hsuhnn2fday9e/morning.jpg) 0% 0% / 100% no-repeat;
+  background: url(https://dl.dropbox.com/s/t4hsuhnn2fday9e/morning.jpg) 0% 0% /
+    100% no-repeat;
 }
 
 .opened-image-2 {
@@ -1284,7 +1415,9 @@ button:focus {
   z-index: 9999;
 }
 
-.inner-image-share, .inner-image-heart, .inner-image-delete {
+.inner-image-share,
+.inner-image-heart,
+.inner-image-delete {
   position: relative;
   display: inline-block;
   background: transparent;
@@ -1305,7 +1438,9 @@ button:focus {
   top: 7px;
 }
 
-#heart-icon, #black-heart-icon, #favourites-icon-inner-camera-roll  {
+#heart-icon,
+#black-heart-icon,
+#favourites-icon-inner-camera-roll {
   width: 15px;
   height: 15px;
 }
@@ -1471,7 +1606,9 @@ button:focus {
   background: transparent;
 }
 
-#share-icon-inner-favourites, #delete-icon-inner-favourites, #heart-icon-inner-favourites {
+#share-icon-inner-favourites,
+#delete-icon-inner-favourites,
+#heart-icon-inner-favourites {
   width: 15px;
   height: 15px;
 }
@@ -1617,7 +1754,6 @@ button:focus {
 .current-month {
   position: relative;
   display: inline-block;
-  width: 100%;
   height: 20px;
   left: 100px;
   top: 5px;
@@ -1636,7 +1772,7 @@ hr {
 }
 
 #hr-inner-current-month {
-  top: 4px;
+  top: 6px;
 }
 
 table {
@@ -1644,35 +1780,54 @@ table {
   display: block;
   white-space: nowrap;
   width: 100%;
-  top: 15px;
-  height: 170px;
+  height: auto;
   background: transparent;
+}
+
+#calendar {
+  position: relative;
+  top: 3px;
+  height: 100%;
 }
 
 td {
   position: relative;
   display: inline-block;
-  width: 25px;
+  width: 23px;
   color: #101010;
-  margin-left: 6px;
-  margin-top: 10px;
+  margin-left: 0;
+  margin-top: 0;
   text-align: center;
   font-size: 16px;
+  border-top: 1px solid black;
+  padding: 5px;
 }
 
-#hr-1 {
+td:empty {
+  border: none;
+}
+
+.calendar-selected {
+  border: none;
+  background: red;
+  color: white !important;
+  border-radius: 50px;
+  padding: 1px 5px;
+}
+
+/* #hr-1 {
   position: relative;
   top: 35px;
 }
 
 #hr-2 {
   position:relative;
-   top: 67px;
+   top: 66px;
 }
 
 #hr-3 {
   position:relative;
-   top: 99px;
+   top: 98px;
 }
 
 #hr-4 {
@@ -1683,12 +1838,7 @@ td {
 #hr-5 {
   top: 163px;
   width: 35px;
-}
-
-#hr-6 {
-  top: 163px;
-  width: 70px;
-}
+} */
 
 #hr-inner-current-month {
   top: 4px;
@@ -1704,7 +1854,9 @@ td {
   background: #f6f6f6;
 }
 
-#today-text-inner-calendar-bottom-container, #calendars-text-inner-calendar-bottom-container, #inbox-text-inner-calendar-bottom-container {
+#today-text-inner-calendar-bottom-container,
+#calendars-text-inner-calendar-bottom-container,
+#inbox-text-inner-calendar-bottom-container {
   font-size: 11px;
 }
 
@@ -1716,7 +1868,7 @@ td {
   height: 15px;
   top: 3px;
   background: transparent;
-  color:red;
+  color: red;
 }
 
 #calendars-text-inner-calendar-bottom-container {
@@ -1758,7 +1910,7 @@ td {
   top: 0;
   left: 0;
   background: #0b0b0b;
-  z-index:99999;
+  z-index: 99999;
   border-bottom: 0.2px solid #686868;
 }
 
@@ -1833,7 +1985,7 @@ td {
   width: 80px;
   height: 20px;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .time-of-the-city {
@@ -1844,7 +1996,7 @@ td {
   text-align: center;
   white-space: nowrap;
   font-size: 30px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .current-time-text-inner-clock {
@@ -1857,20 +2009,28 @@ td {
   color: white;
 }
 
-.current-time-inner-clock{
+.current-time-inner-clock {
   top: 1px;
   left: 55px;
   background: transparent;
 }
 
-.name-of-the-second-city, .name-of-the-third-city, .name-of-the-fourth-city, .name-of-the-fifth-city, .name-of-the-sixth-city {
+.name-of-the-second-city,
+.name-of-the-third-city,
+.name-of-the-fourth-city,
+.name-of-the-fifth-city,
+.name-of-the-sixth-city {
   top: -2px;
   left: 10px;
   text-align: center;
   background: transparent;
 }
 
-.time-of-the-second-city, .time-of-the-third-city, .time-of-the-fourth-city, .time-of-the-fifth-city, .time-of-the-sixth-city {
+.time-of-the-second-city,
+.time-of-the-third-city,
+.time-of-the-fourth-city,
+.time-of-the-fifth-city,
+.time-of-the-sixth-city {
   top: 3px;
   left: 55px;
   background: transparent;
@@ -1895,7 +2055,11 @@ td {
   border-top: 0.3px solid #686868;
 }
 
-.world-clock-inner-bottom-container, .alarm-inner-bottom-container, .bedtime-inner-bottom-container, .stopwatch-inner-bottom-container, .timer-inner-bottom-container {
+.world-clock-inner-bottom-container,
+.alarm-inner-bottom-container,
+.bedtime-inner-bottom-container,
+.stopwatch-inner-bottom-container,
+.timer-inner-bottom-container {
   position: relative;
   display: inline-block;
   width: 35px;
@@ -1929,7 +2093,11 @@ td {
   top: 0px;
 }
 
-#globe-inner-bottom-container, #alarm, #bedtime, #stopwatch, #timer {
+#globe-inner-bottom-container,
+#alarm,
+#bedtime,
+#stopwatch,
+#timer {
   position: relative;
   width: 13px;
   height: 13px;
@@ -1940,7 +2108,11 @@ td {
   left: 11.2px;
 }
 
-#text-world-clock-inner-bottom-container, #alarm-text-inner-bottom-container, #bedtime-text-inner-bottom-container, #stopwatch-text-inner-bottom-container, #timer-text-inner-bottom-container {
+#text-world-clock-inner-bottom-container,
+#alarm-text-inner-bottom-container,
+#bedtime-text-inner-bottom-container,
+#stopwatch-text-inner-bottom-container,
+#timer-text-inner-bottom-container {
   position: relative;
   font-size: 6px;
   white-space: nowrap;
@@ -2037,7 +2209,7 @@ td {
   height: 75%;
   font-size: 27px;
   color: #afafaf;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .alarm-text-inner-alarm-container {
@@ -2049,7 +2221,7 @@ td {
   white-space: nowrap;
   color: #afafaf;
   background: transparent;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .on-off-toggle {
@@ -2172,7 +2344,8 @@ td {
   background: black;
 }
 
-.bedtime-container-inner-middle-container, .wake-container-inner-middle-container {
+.bedtime-container-inner-middle-container,
+.wake-container-inner-middle-container {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -2190,20 +2363,22 @@ td {
   left: 70px;
 }
 
-#sleep, #bell {
+#sleep,
+#bell {
   width: 10px;
   height: 10px;
 }
 
-#bedtime-text-inner-middle-container, #wake-text-inner-middle-container {
+#bedtime-text-inner-middle-container,
+#wake-text-inner-middle-container {
   width: 100%;
   height: 16px;
   background: transparent;
   white-space: nowrap;
   font-size: 11px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #aaaaaa;
-  opacity: .75;
+  opacity: 0.75;
 }
 
 #wake-text-inner-middle-container {
@@ -2217,9 +2392,9 @@ td {
   left: 0;
   background: transparent;
   font-size: 24px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #aaaaaa;
-  opacity: .75;
+  opacity: 0.75;
 }
 
 #wake-time-inner-middle-container {
@@ -2229,9 +2404,9 @@ td {
   left: 0;
   background: transparent;
   font-size: 24px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #aaaaaa;
-  opacity: .75;
+  opacity: 0.75;
 }
 
 .sleep-circle {
@@ -2246,7 +2421,7 @@ td {
   transform: rotate(45deg);
   border-radius: 50%;
   background: #aaaaaa;
-  opacity: .75;
+  opacity: 0.75;
 }
 
 #clock-face {
@@ -2255,7 +2430,8 @@ td {
   height: 145px;
 }
 
-.sleeping-time-circle, .wake-time-circle {
+.sleeping-time-circle,
+.wake-time-circle {
   position: relative;
   border-radius: 50%;
   width: 19px;
@@ -2274,7 +2450,8 @@ td {
   left: -2px;
 }
 
-#circle-inner-middle-container, #wake-time-circle-inner-middle-container {
+#circle-inner-middle-container,
+#wake-time-circle-inner-middle-container {
   width: 10px;
   height: 10px;
   top: -1px;
@@ -2311,11 +2488,13 @@ td {
   background: black;
 }
 
-#stopwatch-minutes, #stopwatch-seconds, #stopwatch-milliseconds {
+#stopwatch-minutes,
+#stopwatch-seconds,
+#stopwatch-milliseconds {
   font-size: 46px;
   top: -8px;
   left: 24px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .buttons-container {
@@ -2335,11 +2514,13 @@ td {
   border: 1.5px solid #072b2f;
   background: #031314;
   color: #9ec1c6;
-  box-shadow: inset 0px 1px black, inset 1px 0px black, inset 1px 1px black, inset 0px -1px black, inset -1px 0px black, inset -1px 1px black;
+  box-shadow: inset 0px 1px black, inset 1px 0px black, inset 1px 1px black,
+    inset 0px -1px black, inset -1px 0px black, inset -1px 1px black;
   width: 45px;
   height: 45px;
   font-size: 10px;
   overflow: hidden;
+  text-align: center;
 }
 
 .circle-1-inner-buttons-container {
@@ -2389,11 +2570,13 @@ td {
   border: 1.5px solid #003d1d;
   background: #003d1d;
   color: #ccb566;
-  box-shadow: inset 0px 1px black, inset 1px 0px black, inset 1px 1px black, inset 0px -1px black, inset -1px 0px black, inset -1px 1px black;
+  box-shadow: inset 0px 1px black, inset 1px 0px black, inset 1px 1px black,
+    inset 0px -1px black, inset -1px 0px black, inset -1px 1px black;
   width: 45px;
   height: 45px;
   font-size: 10px;
   overflow: hidden;
+  text-align: center;
 }
 
 .inner-clock-timer-container {
@@ -2570,10 +2753,11 @@ td {
   border: 1.5px solid #072b2f;
   background: #031314;
   color: #9ec1c6;
-  box-shadow: inset 0px 1px black, inset 1px 0px black, inset 1px 1px black, inset 0px -1px black, inset -1px 0px black, inset -1px 1px black;
+  box-shadow: inset 0px 1px black, inset 1px 0px black, inset 1px 1px black,
+    inset 0px -1px black, inset -1px 0px black, inset -1px 1px black;
   width: 45px;
   height: 45px;
-  text-align: left;
+  text-align: center;
   font-size: 10px;
   overflow: hidden;
 }
@@ -2586,11 +2770,13 @@ td {
   border: 1.5px solid #003d1d;
   background: #003d1d;
   color: #ccb566;
-  box-shadow: inset 0px 1px black, inset 1px 0px black, inset 1px 1px black, inset 0px -1px black, inset -1px 0px black, inset -1px 1px black;
+  box-shadow: inset 0px 1px black, inset 1px 0px black, inset 1px 1px black,
+    inset 0px -1px black, inset -1px 0px black, inset -1px 1px black;
   width: 45px;
   height: 45px;
   font-size: 10px;
   overflow: hidden;
+  text-align: center;
 }
 
 .inner-notes {
@@ -2635,15 +2821,19 @@ td {
   position: relative;
   border: none;
   width: 90%;
-  height: 22px;
+  height: auto;
   left: 10px;
   top: 5px;
+  padding: 0;
+  height: 22px;
   border-radius: 6px;
   background: #a6a6a6;
+  font-size: 10px;
 }
 
 #search-inner-bottom-wrapper::placeholder {
   color: #424242;
+  font-size: 10px;
 }
 
 #search-inner-bottom-wrapper:focus {
@@ -2707,7 +2897,7 @@ td {
 }
 
 .note-content {
-  display:block;
+  display: block;
   top: 1.5px;
   left: 0;
   width: 100%;
@@ -2907,7 +3097,7 @@ td {
   left: 0;
   width: 100%;
   height: 252px;
-  background: yellow;
+  background: #f9f9f9;
 }
 
 #writing-field {
@@ -2970,7 +3160,11 @@ td {
   left: 118px;
 }
 
-#delete-icon-inner-new-note, #check-mark-icon-inner-new-note, #plus-icon-inner-new-note, #paint-icon-inner-new-note, #pencil-icon-inner-new-note {
+#delete-icon-inner-new-note,
+#check-mark-icon-inner-new-note,
+#plus-icon-inner-new-note,
+#paint-icon-inner-new-note,
+#pencil-icon-inner-new-note {
   position: relative;
   top: 0;
   left: 0;
@@ -3064,7 +3258,9 @@ td {
   background: transparent;
 }
 
-#inner-bottom-container-stocks-text-1, #inner-bottom-container-stocks-text-2, #inner-bottom-container-stocks-text-3 {
+#inner-bottom-container-stocks-text-1,
+#inner-bottom-container-stocks-text-2,
+#inner-bottom-container-stocks-text-3 {
   position: relative;
   top: 0;
   left: 0;
@@ -3097,7 +3293,8 @@ td {
   height: 100%;
   left: 0;
   top: 0;
-  background: url(https://dl.dropbox.com/s/21zc33wl3d7gi7f/background_2560x1600.jpg) no-repeat;
+  background: url(https://dl.dropbox.com/s/21zc33wl3d7gi7f/background_2560x1600.jpg)
+    no-repeat;
   background-size: 245%;
   filter: blur(10px);
 }
@@ -3198,7 +3395,7 @@ td {
   background: transparent;
   font-size: 14px;
   color: #8b8b8b;
-  background: transparent
+  background: transparent;
 }
 
 #inner-app-store-text-3 {
@@ -3254,8 +3451,8 @@ td {
 }
 
 .app-store-icon-inner-app-store {
-    width: 15px;
-    height: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .inner-itunes-store {
@@ -3398,7 +3595,9 @@ td {
   color: #a2a2a2;
 }
 
-#inner-itunes-store-text-1, #inner-itunes-store-text-2, #inner-itunes-store-text-3 {
+#inner-itunes-store-text-1,
+#inner-itunes-store-text-2,
+#inner-itunes-store-text-3 {
   position: relative;
   left: 0;
   top: 0;
@@ -3422,9 +3621,13 @@ td {
   background: #f9f9f9;
 }
 
-.music-container, .film-container, .search-container, .tv-programmes-container, .more-container {
-top: 1px;
-margin: 0 3%;
+.music-container,
+.film-container,
+.search-container,
+.tv-programmes-container,
+.more-container {
+  top: 1px;
+  margin: 0 3%;
 }
 
 .inner-home {
@@ -3443,7 +3646,7 @@ margin: 0 3%;
   top: 0;
   width: 100%;
   height: 120px;
-  background:transparent;
+  background: transparent;
 }
 
 .home-icon-container {
@@ -3454,14 +3657,15 @@ margin: 0 3%;
   text-align: center;
   width: 20px;
   height: 20px;
-  background: #eb2f14;
   border-radius: 50%;
 }
 
 #home-icon-inner-home {
-  top: 1.2px;
-  width: 12px;
-  height: 12px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
 }
 
 #my-home-text {
@@ -3475,7 +3679,9 @@ margin: 0 3%;
   white-space: nowrap;
 }
 
-#home-text-2, #home-text-3, #home-text-4 {
+#home-text-2,
+#home-text-3,
+#home-text-4 {
   position: relative;
   left: 10px;
   top: 35px;
@@ -3533,7 +3739,7 @@ margin: 0 3%;
   width: 100%;
   height: 26px;
   background: #251e00;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .home-icon-container-inner-bottom-container {
@@ -3744,8 +3950,8 @@ margin: 0 3%;
   position: relative;
   top: 4px;
   left: 25px;
-  width: 210px;
-  height: 230px;
+  width: 195px;
+  height: auto;
   background: transparent;
 }
 
@@ -3761,7 +3967,13 @@ margin: 0 3%;
 #textarea-inner-scheduled {
   color: black;
   font-size: 22px;
-  background: repeating-linear-gradient(0deg, gray, gray 1px, #f2f2f2 1px, #f2f2f2 26px);
+  background: repeating-linear-gradient(
+    0deg,
+    gray,
+    gray 1px,
+    #f2f2f2 2px,
+    #f2f2f2 26px
+  );
   left: 0;
   top: 0;
   width: 190px;
@@ -3835,7 +4047,13 @@ margin: 0 3%;
   position: relative;
   color: black;
   font-size: 22.5px;
-  background: repeating-linear-gradient(0deg, gray, gray 1px, #f2f2f2 1px, #f2f2f2 26px);
+  background: repeating-linear-gradient(
+    0deg,
+    gray,
+    gray 1px,
+    #f2f2f2 2px,
+    #f2f2f2 26px
+  );
   left: 20px;
   top: 0;
   width: 210px;
@@ -3917,7 +4135,7 @@ margin: 0 3%;
 #messages-text {
   position: relative;
   left: 10px;
-  top: 5px;
+  top: 7px;
   width: 120px;
   font-size: 24px;
   height: 25px;
@@ -3929,15 +4147,19 @@ margin: 0 3%;
   position: relative;
   border: none;
   width: 90%;
+  height: auto;
+  padding: 0;
   height: 22px;
   left: 10px;
-  top: 10px;
+  top: 12px;
+  font-size: 10px;
   border-radius: 6px;
   background: #c5c5c5;
 }
 
 #search-input-inner-messages::placeholder {
   color: #737373;
+  font-size: 10px;
 }
 
 #search-input-inner-messages:focus {
@@ -4139,7 +4361,7 @@ margin: 0 3%;
   width: 80px;
   height: 17px;
   white-space: nowrap;
-  font-size: 11px;
+  font-size: 10px;
   background: transparent;
   color: #202020;
 }
@@ -4576,7 +4798,9 @@ margin: 0 3%;
   background: transparent;
 }
 
-#all-button-inner-recents, #missed-button-inner-recents, #edit-button-inner-recents {
+#all-button-inner-recents,
+#missed-button-inner-recents,
+#edit-button-inner-recents {
   position: relative;
   border: none;
   width: 40px;
@@ -4687,8 +4911,9 @@ margin: 0 3%;
   color: black;
 }
 
-.first-date-of-call, .second-date-of-call {
-	left: 13px;
+.first-date-of-call,
+.second-date-of-call {
+  left: 13px;
 }
 
 .third-date-of-call {
@@ -4742,7 +4967,7 @@ margin: 0 3%;
 #contacts-text-inner-phone {
   position: relative;
   left: 10px;
-  top: 15px;
+  top: 12px;
   font-size: 24px;
   width: 105px;
   height: 25px;
@@ -4754,16 +4979,19 @@ margin: 0 3%;
   position: relative;
   border: none;
   width: 90%;
-  height: 17px;
+  height: auto;
+  padding: 0;
+  height: 22px;
   left: 10px;
-  top: 20px;
+  top: 16px;
   border-radius: 6px;
+  font-size: 10px;
   background: #c5c5c5;
 }
 
 #search-input-inner-phone::placeholder {
   color: #737373;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 #search-input-inner-phone:focus {
@@ -4803,7 +5031,7 @@ margin: 0 3%;
 #name {
   position: relative;
   left: 8.5px;
-  top: 3.5px;
+  top: 3.7px;
   font-weight: 500;
   width: 15px;
   height: 20px;
@@ -4818,7 +5046,6 @@ margin: 0 3%;
   width: 50px;
   height: 12px;
   font-weight: 600;
-  font-style: 10px;
   color: black;
   white-space: nowrap;
 }
@@ -4967,6 +5194,7 @@ margin: 0 3%;
   background: #d2d2d2;
   color: black;
   cursor: pointer;
+  padding: 0;
   vertical-align: bottom;
 }
 
@@ -5089,7 +5317,7 @@ margin: 0 3%;
   background: #fafafa;
 }
 
-.favourites-icon-container-inner-phone{
+.favourites-icon-container-inner-phone {
   position: relative;
   display: inline-block;
   left: 12px;
@@ -5253,9 +5481,12 @@ margin: 0 3%;
   position: relative;
   border: none;
   width: 90%;
-  height: 20px;
+  height: auto;
+  padding: 0;
+  height: 22px;
   left: 10px;
-  top: 17px;
+  top: 18px;
+  font-size: 10px;
   border-radius: 6px;
   background: #c5c5c5;
   text-align: center;
@@ -5474,7 +5705,7 @@ margin: 0 3%;
 #numbers-recents-title {
   position: relative;
   left: 10px;
-  top: 20px;
+  top: 18px;
   font-size: 22px;
   color: #e74b4d;
   width: 180px;
@@ -5487,15 +5718,19 @@ margin: 0 3%;
   position: relative;
   border: none;
   width: 90%;
-  height: 18px;
+  height: auto;
+  padding: 0;
+  height: 22px;
   left: 10px;
-  top: 24px;
+  top: 20px;
   border-radius: 6px;
   background: #c5c5c5;
+  font-size: 10px;
 }
 
 #search-input-inner-numbers::placeholder {
   color: #888888;
+  font-size: 10px;
 }
 
 #search-input-inner-numbers:focus {
@@ -5638,7 +5873,10 @@ margin: 0 3%;
   position: relative;
   border: none;
   width: 90%;
-  height: 18px;
+  height: auto;
+  font-size: 10px;
+  padding: 0;
+  height: 22px;
   left: 10px;
   top: -12px;
   border-radius: 6px;
@@ -5813,7 +6051,7 @@ margin: 0 3%;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  transform: scale(.5);
+  transform: scale(0.5);
   animation: scale-animation 1.7s ease-in-out alternate infinite;
 }
 
@@ -5851,16 +6089,19 @@ margin: 0 3%;
   position: relative;
   border: none;
   width: 90%;
-  height: 19px;
+  height: auto;
   left: 10px;
-  top: 10px;
+  padding: 0;
+  height: 22px;
+  top: 9px;
   border-radius: 6px;
   background: #d4d4d4;
+  font-size: 10px;
 }
 
 #search-input-inner-maps::placeholder {
   color: #848484;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 #search-input-inner-maps:focus {
@@ -5894,14 +6135,14 @@ margin: 0 3%;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #ff3139;
 }
 
 #heart-icon-inner-maps {
-  width: 10px;
-  left: 5.2px;
-  top: 1px;
-  height: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
 }
 
 #favourites-text-inner-maps {
@@ -6244,7 +6485,10 @@ margin: 0 3%;
   position: relative;
   border: none;
   width: 90%;
-  height: 18px;
+  height: auto;
+  font-size: 10px;
+  padding: 0;
+  height: 22px;
   left: 10px;
   top: 24px;
   border-radius: 6px;
@@ -6253,6 +6497,7 @@ margin: 0 3%;
 
 #search-input-inner-pages::placeholder {
   color: #888888;
+  font-size: 10px;
 }
 
 #search-input-inner-pages:focus {
@@ -6373,7 +6618,7 @@ margin: 0 3%;
   width: 10px;
   height: 15px;
   color: #e4a310;
-  left: 125px;
+  left: 130px;
   top: -15px;
   font-size: 16px;
   font-weight: 600;
@@ -6385,7 +6630,7 @@ margin: 0 3%;
   width: 35px;
   height: 15px;
   color: #e4a310;
-  left: 130px;
+  left: 133px;
   top: -17px;
   font-size: 12px;
   font-weight: 400;
@@ -6395,7 +6640,10 @@ margin: 0 3%;
   position: relative;
   border: none;
   width: 90%;
-  height: 18px;
+  height: auto;
+  font-size: 10px;
+  padding: 0;
+  height: 22px;
   left: 10px;
   top: -12px;
   border-radius: 6px;
@@ -6867,7 +7115,8 @@ margin: 0 3%;
   left: 0;
   width: 100%;
   height: 150px;
-  background: url(https://dl.dropbox.com/s/fcmxdoecqk5ytjf/apple-watch-bg.jpg) no-repeat;
+  background: url(https://dl.dropbox.com/s/fcmxdoecqk5ytjf/apple-watch-bg.jpg)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -7240,7 +7489,8 @@ margin: 0 3%;
   top: -4px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/82f8auevyu6soh2/ellipsis.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/82f8auevyu6soh2/ellipsis.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -7280,7 +7530,8 @@ margin: 0 3%;
   top: -4px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/82f8auevyu6soh2/ellipsis.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/82f8auevyu6soh2/ellipsis.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -7320,16 +7571,19 @@ margin: 0 3%;
   position: relative;
   border: none;
   width: 100%;
-  height: 18px;
+  height: auto;
   left: 0;
-  top: 32px;
+  top: 28px;
+  padding: 0;
+  height: 22px;
   border-radius: 5px;
   background: #b2b2b2;
+  font-size: 10px;
 }
 
 #search-input-inner-search-container::placeholder {
   color: #636363;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 #search-input-inner-search-container:focus {
@@ -7587,7 +7841,8 @@ margin: 0 3%;
   position: relative;
   left: 5px;
   display: inline-block;
-  background: url(https://dl.dropbox.com/s/ublbmz68rh2mi0i/arrow-down.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/ublbmz68rh2mi0i/arrow-down.png)
+    no-repeat;
   width: 5px;
   height: 5px;
   background-size: 100%;
@@ -7643,7 +7898,7 @@ margin: 0 3%;
   height: 160px;
   background: #a3a3a3;
   border-radius: 20px;
-  opacity: .65;
+  opacity: 0.65;
 }
 
 #extras-title {
@@ -7654,7 +7909,7 @@ margin: 0 3%;
   top: 44px;
   font-size: 18px;
   height: 25px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .inner-opened-extras {
@@ -7683,8 +7938,10 @@ margin: 0 3%;
   text-align: center;
 }
 
-#tips-icon-inner-opened-extras, #voice-memos-icon-inner-opened-extras,
-#contacts-icon-inner-opened-extras, #find-friends-icon-inner-opened-extras,
+#tips-icon-inner-opened-extras,
+#voice-memos-icon-inner-opened-extras,
+#contacts-icon-inner-opened-extras,
+#find-friends-icon-inner-opened-extras,
 #find-iphone-icon-inner-opened-extras {
   width: 35px;
   height: 35px;
@@ -7756,28 +8013,32 @@ margin: 0 3%;
 .voice-icon {
   top: -1px;
   left: 0.5px;
-  background: url(https://dl.dropbox.com/s/rpf8a9ggkxj2hn5/voiceMemos.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/rpf8a9ggkxj2hn5/voiceMemos.png)
+    no-repeat;
   background-size: 100%;
 }
 
 .contacts-icon {
   top: -1px;
   left: -1px;
-  background: url(https://dl.dropbox.com/s/e1m23az6g5pyjcb/contacts.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/e1m23az6g5pyjcb/contacts.png)
+    no-repeat;
   background-size: 100%;
 }
 
 .find-friends-icon {
   top: -8px;
   left: -4.25px;
-  background: url(https://dl.dropbox.com/s/fglfhmuskp2exnh/findFriends.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/fglfhmuskp2exnh/findFriends.png)
+    no-repeat;
   background-size: 100%;
 }
 
 .find-iphone-icon {
   top: -8px;
   left: -5.75px;
-  background: url(https://dl.dropbox.com/s/cbewfjsdp4qwkkp/findIphone.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/cbewfjsdp4qwkkp/findIphone.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -7892,7 +8153,9 @@ margin: 0 3%;
   background: red;
   top: 10px;
   border-radius: 50%;
-  box-shadow: 0px 1px #eaeaea,-1px 0px #eaeaea, 0px -1px #eaeaea, 1px 0px #eaeaea, 1px 1px #eaeaea,1px -1px #eaeaea, -1px 1px #eaeaea,-1px -1px  #eaeaea;
+  box-shadow: 0px 1px #eaeaea, -1px 0px #eaeaea, 0px -1px #eaeaea,
+    1px 0px #eaeaea, 1px 1px #eaeaea, 1px -1px #eaeaea, -1px 1px #eaeaea,
+    -1px -1px #eaeaea;
   border: 2px solid #1a1a1a;
 }
 
@@ -7953,7 +8216,8 @@ margin: 0 3%;
   left: 85px;
   width: 70px;
   height: 70px;
-  background: url(https://dl.dropbox.com/s/fglfhmuskp2exnh/findFriends.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/fglfhmuskp2exnh/findFriends.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -8050,7 +8314,8 @@ margin: 0 3%;
   left: 85px;
   width: 70px;
   height: 70px;
-  background: url(https://dl.dropbox.com/s/cbewfjsdp4qwkkp/findIphone.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/cbewfjsdp4qwkkp/findIphone.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -8127,7 +8392,7 @@ margin: 0 3%;
 #contacts-text-inner-contacts {
   position: relative;
   left: 10px;
-  top: 15px;
+  top: 12px;
   font-size: 24px;
   width: 105px;
   height: 25px;
@@ -8139,16 +8404,19 @@ margin: 0 3%;
   position: relative;
   border: none;
   width: 90%;
-  height: 17px;
+  height: auto;
+  padding: 0;
+  height: 22px;
+  font-size: 10px;
   left: 10px;
-  top: 20px;
+  top: 16px;
   border-radius: 6px;
   background: #c5c5c5;
 }
 
 #search-input-inner-contacts::placeholder {
   color: #737373;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 #search-input-inner-contacts:focus {
@@ -8188,7 +8456,7 @@ margin: 0 3%;
 #name-inner-contacts-icon {
   position: relative;
   left: 8.5px;
-  top: 3.5px;
+  top: 3.7px;
   font-weight: 500;
   width: 15px;
   height: 20px;
@@ -8203,7 +8471,6 @@ margin: 0 3%;
   width: 50px;
   height: 12px;
   font-weight: 600;
-  font-style: 10px;
   color: black;
   white-space: nowrap;
 }
@@ -8280,7 +8547,14 @@ margin: 0 3%;
   left: 0;
   width: 100%;
   height: 356px;
-  background: repeating-linear-gradient(0deg, #fff, #fff 40px, #d9d9d9 25px, white 66px) fixed;
+  background: repeating-linear-gradient(
+      0deg,
+      #fff,
+      #fff 40px,
+      #d9d9d9 25px,
+      white 66px
+    )
+    fixed;
 }
 
 .inner-sololearn {
@@ -8337,7 +8611,8 @@ margin: 0 3%;
   left: 152px;
   width: 12px;
   height: 12px;
-  background: url(https://dl.dropbox.com/s/dw2r6uuhg5f2vcm/speech-bubble.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/dw2r6uuhg5f2vcm/speech-bubble.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -8348,7 +8623,8 @@ margin: 0 3%;
   left: 155px;
   width: 12px;
   height: 12px;
-  background: url(https://dl.dropbox.com/s/7j07mkus4pcb4ui/notification.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/7j07mkus4pcb4ui/notification.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -8385,7 +8661,10 @@ margin: 0 3%;
   position: relative;
   border: none;
   width: 95%;
-  height: 17px;
+  height: auto;
+  font-size: 10px;
+  padding: 0;
+  height: 22px;
   left: 5px;
   top: 5px;
   border-radius: 6px;
@@ -8403,7 +8682,7 @@ margin: 0 3%;
 
 #search-input-inner-learn-container::placeholder {
   color: #8d8d8d;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 #search-input-inner-learn-container:focus {
@@ -8461,7 +8740,9 @@ margin: 0 3%;
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  box-shadow: 0px 1.3px blue, 1.2px 0px #0066b8, 0px -1.3px #0066b8, 1.3px 0px #0066b8, 1px 1px #0066b8, 1px -1px #0066b8, -1.2px 1px #0066b8, -1.2px -1px #0066b8;
+  box-shadow: 0px 1.3px blue, 1.2px 0px #0066b8, 0px -1.3px #0066b8,
+    1.3px 0px #0066b8, 1px 1px #0066b8, 1px -1px #0066b8, -1.2px 1px #0066b8,
+    -1.2px -1px #0066b8;
   border: 1px solid white;
 }
 
@@ -8498,7 +8779,9 @@ margin: 0 3%;
   top: 0;
 }
 
-#HTML-course-text, #CSS-course-text, #JS-course-text {
+#HTML-course-text,
+#CSS-course-text,
+#JS-course-text {
   top: 4px;
 }
 
@@ -8616,7 +8899,7 @@ margin: 0 3%;
   border-radius: 50%;
   border: none;
   box-shadow: 0 5px 5px #b7b7b7;
-  animation: appear-plus-button-inner-sololearn .4s ease-in-out 1;
+  animation: appear-plus-button-inner-sololearn 0.4s ease-in-out 1;
 }
 
 .activity-feed-container-inner-sololearn {
@@ -8647,7 +8930,8 @@ margin: 0 3%;
   width: 40px;
   border: 1px solid #0066b8;
   height: 40px;
-  background: url(https://dl.dropbox.com/s/bxon50mqxqanjv9/profile-avatar.jpg) no-repeat;
+  background: url(https://dl.dropbox.com/s/bxon50mqxqanjv9/profile-avatar.jpg)
+    no-repeat;
   background-size: 105%;
   border-radius: 50%;
 }
@@ -8776,7 +9060,7 @@ margin: 0 3%;
   border-radius: 50%;
   border: none;
   box-shadow: 0 5px 5px #b7b7b7;
-  animation: appear-plus-button-inner-sololearn .4s ease-in-out 1;
+  animation: appear-plus-button-inner-sololearn 0.4s ease-in-out 1;
 }
 
 .inner-code-playground-top-container {
@@ -8794,7 +9078,10 @@ margin: 0 3%;
   position: relative;
   border: none;
   width: 55%;
-  height: 17px;
+  height: auto;
+  font-size: 10px;
+  padding: 0;
+  height: 22px;
   left: 5px;
   top: 5px;
   border-radius: 6px;
@@ -8803,14 +9090,15 @@ margin: 0 3%;
 
 #search-input-inner-code-playground::placeholder {
   color: #b6b6b6;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 #search-input-inner-code-playground:focus {
   outline: none;
 }
 
-#arrow-down-inner-show-all-codes-button, #arrow-down-inner-show-hot-today-button {
+#arrow-down-inner-show-all-codes-button,
+#arrow-down-inner-show-hot-today-button {
   left: 0;
   top: 0;
   width: 5px;
@@ -8887,7 +9175,10 @@ margin: 0 3%;
   position: relative;
   border: none;
   width: 55%;
-  height: 17px;
+  height: auto;
+  font-size: 10px;
+  padding: 0;
+  height: 22px;
   left: 5px;
   top: 5px;
   border-radius: 6px;
@@ -8896,7 +9187,7 @@ margin: 0 3%;
 
 #search-input-inner-discuss::placeholder {
   color: #b6b6b6;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 #search-input-inner-discuss:focus {
@@ -8954,11 +9245,12 @@ margin: 0 3%;
   border-radius: 50%;
   border: none;
   box-shadow: 0 5px 5px #b7b7b7;
-  animation: appear-plus-button-inner-sololearn .4s ease-in-out 1;
+  animation: appear-plus-button-inner-sololearn 0.4s ease-in-out 1;
 }
 
 #pencil-icon-inner-discuss {
   position: relative;
+  display: block;
   background: transparent;
   width: 30px;
   height: 25px;
@@ -9181,8 +9473,10 @@ margin: 0 3%;
   position: relative;
   border: none;
   width: 95%;
-  height: 16px;
-  padding: 2px;
+  height: auto;
+  font-size: 10px;
+  padding: 0;
+  height: 22px;
   top: 22px;
   border-radius: 6px;
   background: #d5d5d5;
@@ -9191,7 +9485,7 @@ margin: 0 3%;
 #search-inner-contacts-telegram::placeholder {
   color: #8e8e8e;
   text-align: center;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 #search-inner-contacts-telegram:focus {
@@ -9243,7 +9537,8 @@ margin: 0 3%;
   left: 10px;
   width: 20px;
   height: 20px;
-  background: url(https://dl.dropbox.com/s/dtr8ra5sifolmyr/location.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/dtr8ra5sifolmyr/location.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -9278,7 +9573,8 @@ margin: 0 3%;
   left: 10px;
   width: 20px;
   height: 20px;
-  background: url(https://dl.dropbox.com/s/rw593ofy6cinx0q/invite_friends.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/rw593ofy6cinx0q/invite_friends.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -9313,7 +9609,8 @@ margin: 0 3%;
   left: 10px;
   width: 20px;
   height: 20px;
-  background: url(https://dl.dropbox.com/s/f9fb0iycs5q7vc4/profile.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/f9fb0iycs5q7vc4/profile.png)
+    no-repeat;
   border-radius: 50%;
   background-size: 100%;
 }
@@ -9355,7 +9652,8 @@ margin: 0 3%;
   left: 10px;
   width: 20px;
   height: 20px;
-  background: url(https://dl.dropbox.com/s/f9fb0iycs5q7vc4/profile.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/f9fb0iycs5q7vc4/profile.png)
+    no-repeat;
   border-radius: 50%;
   background-size: 100%;
 }
@@ -9407,7 +9705,8 @@ margin: 0 3%;
   left: 7px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/brywobw3ka1r2xp/contact.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/brywobw3ka1r2xp/contact.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -9503,7 +9802,8 @@ margin: 0 3%;
   left: 7px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/23pfsu681pxrqft/settings.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/23pfsu681pxrqft/settings.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -9564,30 +9864,30 @@ margin: 0 3%;
   position: relative;
   display: inline-block;
   left: 0;
-  top: -1px;
+  top: 0;
   width: 45px;
   font-size: 9px;
   text-align: center;
-  height: 15px;
-  padding-top: 5px;
+  padding: 0;
   background: transparent;
   border-radius: 5px;
   color: black;
+  vertical-align: middle;
 }
 
 #missed-calls-button-inner-telegram {
   position: relative;
   display: inline-block;
-  top: -1px;
+  top: 0;
   left: -4px;
   width: 45px;
   font-size: 9px;
   text-align: center;
-  height: 15px;
-  padding-top: 5px;
+  padding: 0;
   background: transparent;
   border-radius: 5px;
   color: #525252;
+  vertical-align: middle;
 }
 
 .new-call-button {
@@ -9596,7 +9896,8 @@ margin: 0 3%;
   left: 213px;
   width: 14px;
   height: 14px;
-  background: url(https://dl.dropbox.com/s/iyccnjcelttqrv3/new_call.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/iyccnjcelttqrv3/new_call.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -9688,8 +9989,10 @@ margin: 0 3%;
   position: relative;
   border: none;
   width: 95%;
-  height: 16px;
-  padding: 2px;
+  height: auto;
+  padding: 0;
+  height: 22px;
+  font-size: 10px;
   top: 27px;
   border-radius: 6px;
   background: #d5d5d5;
@@ -9698,7 +10001,7 @@ margin: 0 3%;
 #search-inner-chats-telegram::placeholder {
   color: #8e8e8e;
   text-align: center;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 #search-inner-chats-telegram:focus {
@@ -9731,7 +10034,8 @@ margin: 0 3%;
   left: 5px;
   width: 40px;
   height: 40px;
-  background: url(https://dl.dropbox.com/s/f9fb0iycs5q7vc4/profile.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/f9fb0iycs5q7vc4/profile.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -9826,8 +10130,10 @@ margin: 0 3%;
   position: relative;
   border: none;
   width: 95%;
-  height: 16px;
-  padding: 2px;
+  height: auto;
+  padding: 0;
+  height: 22px;
+  font-size: 10px;
   top: 27px;
   border-radius: 6px;
   background: #d5d5d5;
@@ -9836,7 +10142,7 @@ margin: 0 3%;
 #search-inner-settings-telegram::placeholder {
   color: #8e8e8e;
   text-align: center;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 #search-inner-settings-telegram:focus {
@@ -9871,7 +10177,8 @@ margin: 0 3%;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: url(https://dl.dropbox.com/s/bxon50mqxqanjv9/profile-avatar.jpg) no-repeat;
+  background: url(https://dl.dropbox.com/s/bxon50mqxqanjv9/profile-avatar.jpg)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -9886,12 +10193,13 @@ margin: 0 3%;
   background: transparent;
   color: black;
   white-space: nowrap;
+  vertical-align: middle;
 }
 
 #tel-number-inner-telegram-settings {
   position: relative;
   display: inline-block;
-  top: -7px;
+  top: -6px;
   left: -73px;
   width: 75px;
   height: 12px;
@@ -9899,6 +10207,7 @@ margin: 0 3%;
   background: transparent;
   color: #a8a8a8;
   white-space: nowrap;
+  vertical-align: middle;
 }
 
 #arrow-right-inner-about-user-container {
@@ -9996,7 +10305,8 @@ margin: 0 3%;
 }
 
 .saved-messages-icon {
-  background: url(https://dl.dropbox.com/s/5tnkwzr1q3z0vot/bookmark.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/5tnkwzr1q3z0vot/bookmark.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -10071,7 +10381,8 @@ margin: 0 3%;
 }
 
 .data-and-storage-icon {
-  background: url(https://dl.dropbox.com/s/tim8o2hhg937xhi/database.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/tim8o2hhg937xhi/database.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -10082,7 +10393,8 @@ margin: 0 3%;
 }
 
 .appearance-icon {
-  background: url(https://dl.dropbox.com/s/19s1i78n03oaxt7/brightness.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/19s1i78n03oaxt7/brightness.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -10115,7 +10427,8 @@ margin: 0 3%;
 }
 
 .stickers-icon {
-  background: url(https://dl.dropbox.com/s/kz641uyzknsezt5/sticker.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/kz641uyzknsezt5/sticker.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -10150,7 +10463,8 @@ margin: 0 3%;
 }
 
 .telegram-FAQ-icon {
-  background: url(https://dl.dropbox.com/s/f9cdkqf3ehljixp/question.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/f9cdkqf3ehljixp/question.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -10258,7 +10572,8 @@ margin: 0 3%;
   left: 0;
   width: 250px;
   height: 355px;
-  background: url(https://dl.dropbox.com/s/ive1x6md6hd93hd/squirrel.jpg) no-repeat;
+  background: url(https://dl.dropbox.com/s/ive1x6md6hd93hd/squirrel.jpg)
+    no-repeat;
   background-size: 140%;
   z-index: 99;
 }
@@ -10290,7 +10605,8 @@ margin: 0 3%;
   width: 100%;
   height: 355px;
   z-index: 9;
-  background: url(https://dl.dropbox.com/s/ive1x6md6hd93hd/squirrel.jpg) no-repeat;
+  background: url(https://dl.dropbox.com/s/ive1x6md6hd93hd/squirrel.jpg)
+    no-repeat;
   background-size: 177%;
   filter: blur(2px);
 }
@@ -10335,6 +10651,7 @@ margin: 0 3%;
   border-radius: 5px;
   background: url(https://dl.dropbox.com/s/5q3asoilg7lehr2/lion.jpg) no-repeat;
   background-size: 100%;
+  vertical-align: bottom;
 }
 
 #button-inner-camera {
@@ -10347,7 +10664,10 @@ margin: 0 3%;
   width: 40px;
   height: 40px;
   background: white;
-  box-shadow:inset 0px 1px black,inset -1px 0px black,inset 0px -1px black,inset 1px 0px black,inset 1px 1px black,inset 1px -1px black,inset -1px 1px black,inset -1px -1px black;
+  vertical-align: top;
+  box-shadow: inset 0px 1px black, inset -1px 0px black, inset 0px -1px black,
+    inset 1px 0px black, inset 1px 1px black, inset 1px -1px black,
+    inset -1px 1px black, inset -1px -1px black;
 }
 
 .change-camera-icon {
@@ -10359,6 +10679,7 @@ margin: 0 3%;
   height: 20px;
   background: url(https://dl.dropbox.com/s/ds6aynrs28trgh2/change.png) no-repeat;
   background-size: 100%;
+  vertical-align: bottom;
 }
 
 .square-container {
@@ -10444,7 +10765,8 @@ margin: 0 3%;
   left: 0;
   width: 100%;
   height: 195px;
-  background: url(https://dl.dropbox.com/s/ive1x6md6hd93hd/squirrel.jpg) no-repeat;
+  background: url(https://dl.dropbox.com/s/ive1x6md6hd93hd/squirrel.jpg)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -10464,7 +10786,8 @@ margin: 0 3%;
   left: 10px;
   width: 250px;
   height: 355px;
-  background: url(https://dl.dropbox.com/s/ive1x6md6hd93hd/squirrel.jpg) no-repeat;
+  background: url(https://dl.dropbox.com/s/ive1x6md6hd93hd/squirrel.jpg)
+    no-repeat;
   background-size: 140%;
   z-index: 99;
 }
@@ -10516,8 +10839,10 @@ margin: 0 3%;
   position: absolute;
   display: none;
   border: none;
-  width: 225px;
-  font-size: 12px;
+  width: 220px;
+  font-size: 10px;
+  height: auto;
+  padding: 0;
   height: 22px;
   left: 5px;
   top: 15px;
@@ -10529,6 +10854,7 @@ margin: 0 3%;
 
 .search-input::placeholder {
   color: #88a2b5;
+  font-size: 10px;
 }
 
 .search-input:focus {
@@ -10542,7 +10868,7 @@ margin: 0 3%;
   left: 5px;
   width: 225px;
   height: 85px;
-  opacity: .85;
+  opacity: 0.85;
   backdrop-filter: blur(2px);
   background: #a7d4e2;
   border-radius: 10px;
@@ -10597,7 +10923,8 @@ margin: 0 3%;
   height: 35px;
   width: 35px;
   left: 10px;
-  background: url(https://dl.dropbox.com/s/0nckxzhf8m9ln9d/paper-plane.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/0nckxzhf8m9ln9d/paper-plane.png)
+    no-repeat;
   background-size: 100%;
   border-radius: 50%;
 }
@@ -10633,7 +10960,7 @@ margin: 0 3%;
   left: 5px;
   width: 225px;
   height: 85px;
-  opacity: .85;
+  opacity: 0.85;
   backdrop-filter: blur(2px);
   background: #a7d4e2;
   border-radius: 10px;
@@ -10656,7 +10983,8 @@ margin: 0 3%;
   left: 5px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/5d9ny1xpc2vy55h/weather.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/5d9ny1xpc2vy55h/weather.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -10714,7 +11042,7 @@ margin: 0 3%;
   height: 30px;
   font-size: 25px;
   color: #353535;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #weather-status-under-maps-destinations {
@@ -10737,7 +11065,7 @@ margin: 0 3%;
   height: 12px;
   font-size: 8px;
   color: #353535;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #chance-of-rain-text {
@@ -10758,7 +11086,7 @@ margin: 0 3%;
   left: 105px;
   width: 25px;
   height: 25px;
-  opacity: .6;
+  opacity: 0.6;
   backdrop-filter: blur(3px);
   background: #ccf0fb;
   border: none;
@@ -10775,7 +11103,8 @@ margin: 0 3%;
   left: 0;
   width: 100%;
   height: 355px;
-  background: url(https://dl.dropbox.com/s/q846ctlxfd6k89e/weather_bg.jpg) no-repeat;
+  background: url(https://dl.dropbox.com/s/q846ctlxfd6k89e/weather_bg.jpg)
+    no-repeat;
   background-size: 100%;
   z-index: 99;
 }
@@ -10825,16 +11154,16 @@ margin: 0 3%;
   color: white;
   text-align: center;
   background: transparent;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .bottom-wrapper-inner-weather {
- position: relative;
- top: 35px;
- left: 0;
- width: 100%;
- height: 25px;
- background: transparent;
+  position: relative;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  background: transparent;
 }
 
 #friday-title {
@@ -10869,7 +11198,7 @@ margin: 0 3%;
   width: 15px;
   height: 15px;
   font-size: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #min-degrees-today-inner-weather {
@@ -10880,7 +11209,7 @@ margin: 0 3%;
   width: 10px;
   height: 15px;
   font-size: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .inner-weather-middle-container {
@@ -10926,7 +11255,7 @@ margin: 0 3%;
   height: 10px;
   font-size: 10px;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .rain-icon-inner-weather-container {
@@ -11008,7 +11337,8 @@ margin: 0 3%;
   left: 10px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/j0t47d3kr6jb4px/sunrise.png) no-repeat;
+  background: url(https://dl.dropbox.com/s/j0t47d3kr6jb4px/sunrise.png)
+    no-repeat;
   background-size: 100%;
 }
 
@@ -11108,7 +11438,7 @@ margin: 0 3%;
   height: 13px;
   background: transparent;
   font-size: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .min-degrees-inner-bottom-container {
@@ -11120,7 +11450,7 @@ margin: 0 3%;
   height: 13px;
   background: transparent;
   font-size: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .wind-icon-inner-bottom-container {
@@ -11176,7 +11506,7 @@ margin: 0 3%;
   height: 40px;
   white-space: nowrap;
   font-size: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .weather-details {
@@ -11215,13 +11545,30 @@ margin: 0 3%;
   border: none;
 }
 
-::-webkit-scrollbar { width: 3px; height: 3px;}
-::-webkit-scrollbar-button {  background-color: #666; }
-::-webkit-scrollbar-track {  background-color: #999;}
-::-webkit-scrollbar-track-piece { background-color: #ffffff;}
-::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
-::-webkit-scrollbar-corner { background-color: #999;}
-::-webkit-resizer { background-color: #666;}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-button {
+  background-color: #666;
+}
+::-webkit-scrollbar-track {
+  background-color: #999;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #666;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-corner {
+  background-color: #999;
+}
+::-webkit-resizer {
+  background-color: #666;
+}
 
 .iphone-home {
   position: relative;
@@ -11237,69 +11584,77 @@ margin: 0 3%;
 }
 
 .run-appear-animation {
-  animation: appear .15s ease-in-out 1;
+  width: 235px;
+  height: 284px;
+  transform-origin: left top;
+  filter: brightness(1);
+  animation: appear 0.15s ease-in-out 1;
 }
 
 .run-alarm-on-animation {
-  animation: alarm-on .15s ease-in-out 1;
+  animation: alarm-on 0.15s ease-in-out 1;
   animation-fill-mode: forwards;
 }
 
 .run-alarm-off-animation {
-  animation: alarm-on .15s ease-in-out 1;
+  animation: alarm-on 0.15s ease-in-out 1;
   animation-direction: reverse;
   animation-fill-mode: forwards;
 }
 
 .run-bottom-container-appear-animation {
-  animation: bottom-container-appear .15s ease-in-out 1;
+  animation: bottom-container-appear 0.15s ease-in-out 1;
 }
 
 .run-bottom-container-disappear-animation {
-  animation: bottom-container-appear .15s ease-in-out 1;
+  animation: bottom-container-appear 0.15s ease-in-out 1;
   animation-direction: reverse;
 }
 
 .run-disappear-animation {
-  animation: appear .15s ease-in-out 1;
+  width: 235px;
+  height: 284px;
+  transform-origin: left top;
+  filter: brightness(0.75);
+  animation: appear 0.15s ease-in-out 1;
   animation-direction: reverse;
 }
 
 .run-camera-roll-appear-animation {
-  animation: camera-roll-appear .4s ease-in 1;
+  animation: camera-roll-appear 0.4s ease-in 1;
 }
 
 .run-camera-roll-disappear-animation {
-  animation: camera-roll-disappear .4s ease-out 1;
+  animation: camera-roll-disappear 0.4s ease-out 1;
 }
 
 .run-favourites-appear-animation {
-  animation: favourites-appear .4s ease-out 1;
+  animation: favourites-appear 0.4s ease-out 1;
 }
 
 .run-new-note-appear-animation {
-  animation: new-note-appear .4s ease-out 1;
+  animation: new-note-appear 0.4s ease-out 1;
 }
 
 .run-new-note-disappear-animation {
-  animation: new-note-disappear .4s ease-out 1;
+  animation: new-note-disappear 0.4s ease-out 1;
 }
 
 .run-favourites-disappear-animation {
-  animation: favourites-disappear .4s ease-out 1;
+  animation: favourites-disappear 0.4s ease-out 1;
 }
 
 .run-blur-animation {
-  animation: blur .5s ease-in 1;
+  animation: blur 0.5s ease-in 1;
 }
 
 .run-delete-note-animation {
-  animation: delete-note .3s ease-in 1;
+  animation: delete-note 0.3s ease-in 1;
   animation-fill-mode: forwards;
 }
 
 .run-stocks-animation {
-  animation: stocks-animation .5s ease-in 1;
+  animation: stocks-animation 0.5s ease-in 1;
 }
 
 .run-stocks-text-animation {
@@ -11307,27 +11662,27 @@ margin: 0 3%;
 }
 
 .run-reminders-appear-animation {
-  animation: reminders-appear .3s ease-in-out 1;
+  animation: reminders-appear 0.3s ease-in-out 1;
   animation-fill-mode: forwards;
 }
 
 .run-reminders-disappear-animation {
-  animation: reminders-appear .3s ease-in-out 1;
+  animation: reminders-appear 0.3s ease-in-out 1;
   animation-fill-mode: forwards;
   animation-direction: reverse;
 }
 
 .run-icon-transition {
-  animation: icon_transition .3s ease-in-out 1;
+  animation: icon_transition 0.3s ease-in-out 1;
 }
 
 .run-icon-transition-2 {
-  animation: icon_transition .3s ease-in-out 1;
+  animation: icon_transition 0.3s ease-in-out 1;
   animation-direction: reverse;
 }
 
 .run-icon-transition-slower {
-  animation: icon_transition .7s ease-in-out 1;
+  animation: icon_transition 0.7s ease-in-out 1;
   animation-fill-mode: both;
 }
 
@@ -11337,820 +11692,1446 @@ margin: 0 3%;
 }
 
 .run-icon-transition-2-slower {
-  animation: icon_transition .7s ease-in-out 1;
+  animation: icon_transition 0.7s ease-in-out 1;
   animation-fill-mode: both;
   animation-direction: reverse;
 }
 
 .run-maps-bottom-container-animation {
-  animation: maps-bottom-container-animation .4s ease-in-out 1;
+  animation: maps-bottom-container-animation 0.4s ease-in-out 1;
   animation-fill-mode: forwards;
 }
 
 .run-maps-bottom-container-animation-2 {
-  animation: maps-bottom-container-animation-2 .4s ease-in-out 1;
+  animation: maps-bottom-container-animation-2 0.4s ease-in-out 1;
   animation-fill-mode: forwards;
   animation-direction: reverse;
 }
 
 .run-iphone-rotate-animation {
-  animation: iphone-rotate .5s ease-in-out 1;
+  animation: iphone-rotate 0.5s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-iphone-rotate-animation-2 {
-  animation: iphone-rotate .5s ease-in-out 1;
+  animation: iphone-rotate 0.5s ease-in-out 1;
   animation-fill-mode: both;
   animation-direction: reverse;
 }
 
 .run-delete-reminder-animation {
-  animation: delete-reminder-animation .5s ease-in-out 1;
+  animation: delete-reminder-animation 0.5s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-transition-inner-extras {
-  animation: transition-inner-extras .5s .5s ease-in-out 1;
+  animation: transition-inner-extras 0.5s 0.5s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-toggle-telegram-calls-animation {
-  animation: toggle-telegram-calls-animation .2s ease-in-out 1;
+  animation: toggle-telegram-calls-animation 0.2s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-toggle-telegram-calls-animation-2 {
-  animation: toggle-telegram-calls-animation-2 .2s ease-in-out 1;
+  animation: toggle-telegram-calls-animation-2 0.2s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-video-text-animation {
-  animation: video-text-animation .6s ease-in-out 1;
+  animation: video-text-animation 0.6s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-photo-text-animation {
-  animation: photo-text-animation .6s ease-in-out 1;
+  animation: photo-text-animation 0.6s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-square-text-animation {
-  animation: square-text-animation .6s ease-in-out 1;
+  animation: square-text-animation 0.6s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-camera-blur-animation {
-  animation: camera-blur-animation .5s ease-in-out 1;
+  animation: camera-blur-animation 0.5s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-appear-start-container-animation {
-  animation: appear-start-container .5s ease-in-out 1;
+  animation: appear-start-container 0.5s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-start-container-transform-animation {
-  animation: start-container-transform .5s ease-in-out 1;
+  animation: start-container-transform 0.5s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-appear-passcode-container-animation {
-  animation: appear-passcode-container .5s ease-in-out 1;
+  animation: appear-passcode-container 0.5s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-unlock-animation {
-  animation: unlock-animation .15s ease-in-out 1;
+  animation: unlock-animation 0.15s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-invalid-password-animation {
-  animation: invalid-password-animation .35s ease-in-out 1;
+  animation: invalid-password-animation 0.35s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-appear-search-input-animation {
-  animation: appear-search-input .6s ease-in-out 1;
+  animation: appear-search-input 0.6s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-disappear-search-input-animation {
-  animation: appear-search-input .2s ease-in-out 1;
+  animation: appear-search-input 0.2s ease-in-out 1;
   animation-fill-mode: both;
   animation-direction: reverse;
 }
 
 .run-appear-maps-destinations-animation {
-  animation: appear-maps-destinations .6s ease-in-out 1;
+  animation: appear-maps-destinations 0.6s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-disappear-maps-destinations-animation {
-  animation: appear-maps-destinations .2s ease-in-out 1;
+  animation: appear-maps-destinations 0.2s ease-in-out 1;
   animation-fill-mode: both;
   animation-direction: reverse;
 }
 
 .run-screen-blur-animation {
-  animation: screen-blur .5s ease-in-out 1;
+  animation: screen-blur 0.5s ease-in-out 1;
   animation-fill-mode: both;
 }
 
 .run-screen-blur-animation-2 {
-  animation: screen-blur .5s ease-in-out 1;
+  animation: screen-blur 0.5s ease-in-out 1;
   animation-fill-mode: both;
   animation-direction: reverse;
 }
 
 @keyframes screen-blur {
-  from {filter: none}
-  to {filter: blur(3px);}
+  from {
+    filter: none;
+  }
+  to {
+    filter: blur(3px);
+  }
 }
 
 @keyframes appear-search-input {
-  from {opacity: 0;}
-  to {opacity: .6;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.6;
+  }
 }
 
 @keyframes appear-maps-destinations {
-  from {opacity: 0;}
-  to {opacity: .85;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.85;
+  }
 }
 
 @keyframes invalid-password-animation {
-  from {transform: translateX(0);}
-  10% {transform: translateX(8px);}
-  40% {transform: translateX(-8px);}
-  70% {transform: translateX(8px);}
-  100% {transform: translateX(0);}
+  from {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(8px);
+  }
+  40% {
+    transform: translateX(-8px);
+  }
+  70% {
+    transform: translateX(8px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes unlock-animation {
-  from {transform: translateY(0);}
-  to {transform: translateY(-450px);}
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-450px);
+  }
 }
 
 @keyframes appear-passcode-container {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes start-container-transform {
-  from {filter: none;}
-  to {filter: blur(2px) brightness(0.2) grayscale(0.4);}
+  from {
+    filter: none;
+  }
+  to {
+    filter: blur(2px) brightness(0.2) grayscale(0.4);
+  }
 }
 
 @keyframes appear-start-container {
-  from {opacity: 1;}
-  to {opacity: 0;}
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes camera-blur-animation {
-  from {filter: none;}
-  50% {filter: blur(6px);}
-  to {filter: none;}
+  from {
+    filter: none;
+  }
+  50% {
+    filter: blur(6px);
+  }
+  to {
+    filter: none;
+  }
 }
 
 @keyframes video-text-animation {
-  from {opacity: 0;}
-  5% {opacity: 0; left: 37px;}
-  to {opacity: 1; left: 37px;}
+  from {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    left: 37px;
+  }
+  to {
+    opacity: 1;
+    left: 37px;
+  }
 }
 
 @keyframes photo-text-animation {
-  from {opacity: 0;}
-  5% {opacity: 0; left: 0;}
-  to {opacity: 1; left: 0;}
+  from {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    left: 0;
+  }
+  to {
+    opacity: 1;
+    left: 0;
+  }
 }
 
 @keyframes square-text-animation {
-  from {opacity: 0;}
-  5% {opacity: 0; left: -43px;}
-  to {opacity: 1; left: -43px;}
+  from {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    left: -43px;
+  }
+  to {
+    opacity: 1;
+    left: -43px;
+  }
 }
 
 @keyframes toggle-telegram-calls-animation {
-  from {transform: translateX(0);}
-  to {transform: translateX(45px);}
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(45px);
+  }
 }
 
 @keyframes toggle-telegram-calls-animation-2 {
-  from {transform: translateX(0);}
-  to {transform: translateX(-45px);}
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-45px);
+  }
 }
 
 @keyframes appear-plus-button-inner-sololearn {
-  from {opacity: 0;}
-  50% {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes transition-inner-extras {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes delete-reminder-animation {
-  from {transform:translateX(0px);}
-  15% {transform:translateX(150px);}
-  to {transform:translateX(-1600px);}
+  from {
+    transform: translateX(0px);
+  }
+  15% {
+    transform: translateX(150px);
+  }
+  to {
+    transform: translateX(-1600px);
+  }
 }
 
 @keyframes iphone-rotate {
-  from {transform: rotate(0);}
-  to {transform: rotate(90deg);}
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(90deg);
+  }
 }
 
 @keyframes maps-bottom-container-animation {
-  from {transform: translateY(0px);}
-  to {transform: translateY(-230px);}
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-230px);
+  }
 }
 
 @keyframes maps-bottom-container-animation-2 {
-  from {transform: translateY(0px);}
-  to {transform: translateY(-230px);}
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-230px);
+  }
 }
 
 @keyframes scale-animation {
-  from {transform: scale(.5);}
-  to {transform: scale(.7);}
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(0.7);
+  }
 }
 
 @keyframes reminders-appear {
-  from {top: 345px; opacity: 1;}
-  to {top: 53px; opacity: 1;}
+  from {
+    top: 345px;
+    opacity: 1;
+  }
+  to {
+    top: 53px;
+    opacity: 1;
+  }
 }
 
 @keyframes stocks-animation {
-  from {transform: scale(.6); opacity: 0;}
-  65% {opacity: .1;}
-  to {transform: scale(1); opacity: 1;}
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  65% {
+    opacity: 0.1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes delete-note {
-  from {width: 235px; height: 328px; top: 0; transform: rotate(0deg);}
-  to {width: 0px; height: 0px; top: 300px; transform: rotate(45deg);}
+  from {
+    width: 235px;
+    height: 328px;
+    top: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 0px;
+    height: 0px;
+    top: 300px;
+    transform: rotate(45deg);
+  }
 }
 
 @keyframes stocks-text {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes icon_transition {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes bottom-container-appear {
-  from {transform: translateX(-300px);z-index: 9999999999;}
-  to {transform: translateX(0);z-index: 9999999999;}
+  from {
+    transform: translateX(-300px);
+    z-index: 9999999999;
+  }
+  to {
+    transform: translateX(0);
+    z-index: 9999999999;
+  }
 }
 
 @keyframes camera-roll-appear {
-  from {transform: translateX(300px);}
-  to {transform: translateX(0);}
+  from {
+    transform: translateX(300px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @keyframes camera-roll-disappear {
-  from {transform: translateX(0);}
-  to {transform: translateX(450px);}
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(450px);
+  }
 }
 
 @keyframes favourites-disappear {
-  from {transform: translateX(0);}
-  to {transform: translateX(500px);}
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(500px);
+  }
 }
 
 @keyframes favourites-appear {
-  from {transform: translateX(1000px);}
-  to {transform: translateX(0);}
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @keyframes new-note-appear {
-  from {transform: translateX(1000px);}
-  to {transform: translateX(0);}
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @keyframes new-note-disappear {
-  from {transform: translateX(0);}
-  to {transform: translateX(500px);}
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(500px);
+  }
 }
 
 @keyframes blur {
-  from {filter: blur(0px);}
-  50% {filter: blur(12px);}
-  to {filter: blur(0px);}
+  from {
+    filter: blur(0px);
+  }
+  50% {
+    filter: blur(12px);
+  }
+  to {
+    filter: blur(0px);
+  }
 }
 
 @keyframes appear {
-  from {width: 0; height: 0;}
-  to {width: 100%; height: 316px;}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 @keyframes alarm-on {
-  from {transform: translateX(0);}
-  to {transform: translateX(12px);}
-}
-
-@media screen and (max-device-width: 440px){
-	html, body {
-	  width: 120%;
-	}
-}
-
-@media screen and (max-device-width: 768px){
-	.numbers {
-	  font-size: 16px;
-	}
-
-	.cleaner {
-	  height: 33px;
-	  padding-top: 11px;
-	}
-
-	.sign {
-	  height: 37px;
-	  padding-top: 7px;
-	}
-
-	.percent {
-	  height: 34px;
-	  padding-top: 10px;
-	}
-
-	#album-text {
-	  top: 15px;
-	}
-
-	#add-album-button {
-	  left: -5px;
-	  font-size: 12px;
-	}
-
-	#back-to-albums-button, #back-to-albums-button-inner-favourites {
-	  left: 5px;
-	  top: 8px;
-	}
-
-	#back-arrow, #back-arrow-inner-favourites {
-	  left: -2px;
-	  font-size: 40px;
-	  top: -12px;
-	}
-
-	#back-arrow-inner-image, #back-arrow-inner-favourites-image {
-	  font-size: 40px;
-	  left: 3px;
-	  top: -4px;
-	}
-
-	#camera-roll-top-container-text, #favourites-top-container-text {
-	  top: 8px;
-	}
-
-	#select-text, #select-text-inner-favourites {
-	  top: 8px;
-	}
-
-	#dayOfPhoto, #dayOfPhoto-inner-favourites-image {
-	  top: 7px;
-	}
-
-	#time-inner-images, #time-inner-favourites-image {
-	  top: 18px;
-	}
-
-	#edit-text, #edit-text-inner-favourites-image {
-	  top: 11px;
-	}
-
-	.photo-icon-text-container, .for-you-icon-text-container, .albums-icon-text-container, .searching-icon-text-container {
-	  top: -8px;
-	}
-
-	#bottom-container-photo-icon, #bottom-container-for-you-icon, #bottom-container-albums-icon, #bottom-container-searching-icon {
-	  top: -1px;
-   }
-
-   #photo-icon-text, #for-you-icon-text, #albums-icon-text, #searching-icon-text {
-	  top: -2.5px;
-   }
-
-   #back-button-inner-calendar-top-container {
-	  top: 8px;
-   }
-
-   #plus-button, #event-button {
-	  top: 8px;
-   }
-
-   #searching-in-calendar {
-	  top: 2px;
-   }
-
-   .day-of-the-week {
-	  top: -5px;
-   }
-
-   #time-hours-1, #time-min-1, #time-sec-1 {
-	 top: -5px;
-   }
-
-   #cancel-button {
-	 font-size: 8.4px;
-	 text-align: left;
-   }
-
-   #text-world-clock-inner-bottom-container {
-	 top: -5px;
-   }
-
-   #alarm-text-inner-bottom-container {
-	 top: -3px;
-   }
-
-   #bedtime-text-inner-bottom-container {
-	 top: -3px;
-   }
-
-   #stopwatch-text-inner-bottom-container {
-	 top: -3px;
-   }
-
-   #timer-text-inner-bottom-container {
-	 top: -3px;
-   }
-
-   .plus-button-inner-clock {
-	 top: 8px;
-   }
-
-   #writing-field {
-	 top: -3px;
-   }
-
-   #music-text, #films-text, #search-text-inner-itunes-store, #tv-text-inner-itunes-store, #more-text-inner-itunes-store, .inner-app-store-icon-text {
-	 top: -3px;
-   }
-
-   #home-text-inner-bottom-container {
-	 top: -2px;
-   }
-
-   #automation-text {
-	 top: -3px;
-   }
-
-   #today-text {
-	 top: -1px;
-   }
-
-   #health-data-text {
-	 top: -1px;
-   }
-
-   #sources-text {
-	 top: -1px;
-   }
-
-   #medical-id-text-inner-medical-id-container {
-	 top: -1px;
-   }
-
-   .message-text {
-	 top: -21px;
-   }
-
-   .date-of-call {
-	 top: 2px;
-   }
-
-   #contacts-text-inner-phone, #contacts-text-inner-contacts {
-	 top: 12px;
-   }
-
-   #search-input-inner-phone, #search-input-inner-contacts {
-	 top: 16px;
-	 width: 201.5px;
-   }
-
-   #name, #name-inner-contacts-icon {
-	 top: 2px;
-   }
-
-   .button-inner-keypad {
-	 font-size: 16px;
-   }
-
-   #call-icon {
-	 left: -7px;
-   }
-
-   #add-number-button {
-	 left: -7px;
-   }
-
-   #delete {
-	 font-size: 10px;
-   }
-
-   #textarea-inner-scheduled {
-	 font-size: 21px;
-   }
-
-   #textarea-inner-bottom-wrapper {
-	 font-size: 21px;
-   }
-
-   #recents-text-inner-recents-container {
-	 top: -2px;
-   }
-
-   #plus-inner-phone-favourites {
-	 top: 8px;
-   }
-
-   #safari-search-input, #search-input-inner-messages, #search-input-inner-maps, #search-input-inner-numbers, #search-input-inner-pages, #search-inner-bottom-wrapper, #search-input-inner-search-container {
-	 width: 201.5px;
-	 height: 17px;
-   }
-
-   #search-input-inner-learn-container {
-	 top: 3px;
-	 width: 211.5px;
-	 height: 12px;
-   }
-
-   #search-input-inner-code-playground, #search-input-inner-discuss {
-	 top: 3px;
-	 height: 12px;
-	 width: 115px;
-   }
-
-   .course-2-container {
-	 font-size: 12px;
-   }
-
-   .course-1-container {
-	 padding-top: 9px;
-	 height: 36px;
-   }
-
-   .medium-wrapper-inner-learn-container {
-	 height: 110px;
-   }
-
-   .bottom-wrapper-inner-learn-container {
-	 height: 145px;
-   }
-
-   #search-inner-contacts-telegram, #search-inner-chats-telegram, #search-inner-settings-telegram, .search-input {
-	 width: 211.5px;
-	 height: 17px;
-   }
-
-   #contacts-text-inner-telegram-bottom-container, #calls-text-inner-telegram-bottom-container, #chats-text-inner-telegram-bottom-container, #settings-text-inner-telegram-bottom-container {
-	 top: 3px;
-   }
-
-   #safari-search-input::placeholder, #search-input-inner-messages::placeholder, #search-input-inner-maps::placeholder, #search-input-inner-numbers::placeholder, #search-input-inner-pages::placeholder, #search-inner-bottom-wrapper::placeholder, #search-input-inner-phone::placeholder, #search-input-inner-browse-container-inner-pages::placeholder, #search-input-inner-browse-container::placeholder, #search-input-inner-search-container::placeholder, #search-input-inner-contacts::placeholder, #search-input-inner-learn-container::placeholder, #search-input-inner-code-playground::placeholder, #search-input-inner-discuss::placeholder, #search-inner-contacts-telegram::placeholder, #search-inner-chats-telegram::placeholder, #search-inner-settings-telegram::placeholder, .search-input::placeholder {
-	 font-size: 8px;
-   }
-
-   #edit-button {
-	 font-size: 6px;
-   }
-
-   .image-2, .image-6, .image-10 {
-	 left: -5.5px;
-   }
-
-   .image-3, .image-7, .image-11 {
-	 left: -11px;
-   }
-
-   .image-4, .image-8, .image-12 {
-	 left: -16.5px;
-   }
-
-   #plus-inner-browse-container, #plus-inner-browse-container-inner-pages {
-	 top: -16px;
-   }
-
-   #search-input-inner-maps {
-	 top: 8px;
-   }
-
-   #notes-text-inner-middle-wrapper {
-	 top: 3px;
-   }
-
-   #numbers-recents-title, #pages-recents-title {
-	 top: 17px;
-   }
-
-   #plus-inner-numbers-container, #plus-inner-pages-container {
-	 top: 15px;
-   }
-
-   #search-input-inner-numbers, #search-input-inner-pages {
-	 top: 21px;
-   }
-
-   #recents-text-inner-numbers, #browse-text-inner-numbers, #recents-text-inner-pages, #browse-text-inner-pages {
-	 top: -4px;
-   }
-
-   #plus-inner-spreadsheet, #plus-inner-document {
-	 top: -2px;
-   }
-
-   #reading-now-text-inner-iBooks, #library-text-inner-iBooks, #search-text-inner-iBooks {
-	 top: -2px;
-   }
-
-   #heart-icon-inner-maps {
-	 top: -1px;
-   }
-
-   #apps-text {
-	 top: 1px;
-   }
-
-   .my-watch-container, .face-gallery-container, .app-store-container, .search-bar-container-inner-watch {
-	 top: -1.5px;
-   }
-
-   #post-button {
-	 font-size: 7px;
-   }
-
-   #book-icon-inner-search-input {
-	 top: 11.5px;
-	 width: 10px;
-	 height: 10px;
-   }
-
-   #plus-button-inner-play-container, #plus-button-inner-code-playground {
-	 font-size: 12px;
-	 height: 30px;
-	 padding-bottom: 2px;
-	 width: 32px;
-	 padding-left: 13px;
-   }
-
-   #pencil-icon-inner-discuss {
-	 height: 16px;
-	 width: 16px;
-	 padding: 0;
-   }
-
-   #first-person-last-seen, #second-person-last-seen {
-	 top: -7px;
-   }
-
-   #recent-calls-button-inner-telegram, #missed-calls-button-inner-telegram {
-	 top: -2px;
-   }
-
-   #done-button-inner-passcode-container {
-	 font-size: 6px;
-   }
-
-   #passcode-input {
-	width: 199.5px;
-   }
-}
-
-@media all and (min-height: 865px) {
-  #textarea-inner-scheduled, #textarea-inner-bottom-wrapper {
-	background: repeating-linear-gradient(0deg, gray, gray 1px, #f2f2f2 1px, #f2f2f2 26.1px);
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(12px);
   }
 }
 
-@media all and (min-height: 1000px) {
-  #hr-inner-current-month{
-	top: 3px;
-  }
-
-  #hr-4 {
-	top: 130px;
-  }
-
-  #textarea-inner-scheduled, #textarea-inner-bottom-wrapper {
-	background: repeating-linear-gradient(0deg, gray, gray 1px, #f2f2f2 1px, #f2f2f2 26.3px);
+@media screen and (max-width: 500px) {
+  .main-container {
+    transform: scale(0.75);
   }
 }
 
-@media all and (min-height: 1080px) {
-  #hr-inner-current-month{
-	top: 4px;
-  }
-
-  #textarea-inner-scheduled, #textarea-inner-bottom-wrapper {
-	background: repeating-linear-gradient(0deg, gray, gray 1px, #f2f2f2 1px, #f2f2f2 26px);
+@media screen and (max-width: 390px) {
+  .main-container {
+    transform: scale(0.5);
   }
 }
 
-@media all and (min-height: 1240px) {
-  #hr-1 {
-	top: 32px;
-  }
-
-  #hr-2 {
-	top: 63px;
-  }
-
-  #hr-3 {
-	top: 95px;
-  }
-
-  #hr-4 {
-	top: 127px;
-  }
-
-  #textarea-inner-scheduled, #textarea-inner-bottom-wrapper {
-	background: repeating-linear-gradient(0deg, gray, gray 1px, #f2f2f2 1px, #f2f2f2 25.5px);
-	font-size: 22.7px;
+@media screen and (max-height: 500px) and (min-width: 500px) {
+  .main-container {
+    transform: scale(0.75);
   }
 }
 
-@media all and (min-height: 1720px) {
-  #hr-1 {
-	top: 33px;
+@media screen and (max-height: 390px) and (min-width: 390px) {
+  .main-container {
+    transform: scale(0.5);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .numbers {
+    font-size: 16px;
   }
 
-  #hr-inner-current-month {
-	top: 8px;
+  .cleaner {
+    height: 33px;
+    padding-top: 11px;
+  }
+
+  .sign {
+    height: 37px;
+    padding-top: 7px;
+  }
+
+  .percent {
+    height: 34px;
+    padding-top: 10px;
+  }
+
+  #library-text,
+  #for-you-text-inner-music,
+  #browse-text-inner-bottom-container,
+  #search-text-inner-music-container {
+    top: -2px;
+  }
+
+  #plus-inner-create-project-container {
+    top: 10px;
+  }
+
+  #show-all-codes-button,
+  #show-hot-today-button,
+  #show-hot-today-button-inner-discuss {
+    top: 3px;
+  }
+
+  #album-text {
+    top: 15px;
+  }
+
+  #add-album-button {
+    left: -5px;
+    font-size: 12px;
+  }
+
+  #back-to-albums-button,
+  #back-to-albums-button-inner-favourites {
+    left: 5px;
+    top: 8px;
+  }
+
+  #back-arrow,
+  #back-arrow-inner-favourites {
+    left: -2px;
+    font-size: 40px;
+    top: -12px;
+  }
+
+  #back-arrow-inner-image,
+  #back-arrow-inner-favourites-image {
+    font-size: 40px;
+    left: 3px;
+    top: -4px;
+  }
+
+  #camera-roll-top-container-text,
+  #favourites-top-container-text {
+    top: 8px;
+  }
+
+  #select-text,
+  #select-text-inner-favourites {
+    top: 8px;
+  }
+
+  #dayOfPhoto,
+  #dayOfPhoto-inner-favourites-image {
+    top: 7px;
+  }
+
+  #time-inner-images,
+  #time-inner-favourites-image {
+    top: 18px;
+  }
+
+  #edit-text,
+  #edit-text-inner-favourites-image {
+    top: 11px;
+  }
+
+  .photo-icon-text-container,
+  .for-you-icon-text-container,
+  .albums-icon-text-container,
+  .searching-icon-text-container {
+    top: -7px;
+  }
+
+  #bottom-container-photo-icon,
+  #bottom-container-for-you-icon,
+  #bottom-container-albums-icon,
+  #bottom-container-searching-icon {
+    top: -1px;
+  }
+
+  .photo-icon-text,
+  #for-you-icon-text,
+  #albums-icon-text,
+  #searching-icon-text {
+    top: -2.5px;
   }
 
   #back-button-inner-calendar-top-container {
-	top: 8px;
+    top: 8px;
   }
 
-  #textarea-inner-scheduled, #textarea-inner-bottom-wrapper {
-	background: repeating-linear-gradient(0deg, gray, gray 1px, #f2f2f2 1px, #f2f2f2 26.1px);
-	font-size: 23.3px;
+  #plus-button,
+  #event-button {
+    top: 8px;
+  }
+
+  #searching-in-calendar {
+    top: 2px;
+  }
+
+  .day-of-the-week {
+    top: -5px;
+  }
+
+  #time-hours-1,
+  #time-min-1,
+  #time-sec-1 {
+    top: -5px;
+  }
+
+  #cancel-button,
+  #start-button-inner-timer,
+  #start-button,
+  #lap-button {
+    font-size: 8px;
+    text-align: center;
+  }
+
+  #text-world-clock-inner-bottom-container {
+    top: -5px;
+  }
+
+  #alarm-text-inner-bottom-container {
+    top: -3px;
+  }
+
+  #bedtime-text-inner-bottom-container {
+    top: -3px;
+  }
+
+  #stopwatch-text-inner-bottom-container {
+    top: -3px;
+  }
+
+  #timer-text-inner-bottom-container {
+    top: -3px;
+  }
+
+  .plus-button-inner-clock {
+    top: 8px;
+  }
+
+  #writing-field {
+    top: -3px;
+  }
+
+  #music-text,
+  #films-text,
+  #search-text-inner-itunes-store,
+  #tv-text-inner-itunes-store,
+  #more-text-inner-itunes-store,
+  .inner-app-store-icon-text {
+    top: -3px;
+  }
+
+  #home-text-inner-bottom-container {
+    top: -2px;
+  }
+
+  #automation-text {
+    top: -3px;
+  }
+
+  #today-text {
+    top: -1px;
+  }
+
+  #health-data-text {
+    top: -1px;
+  }
+
+  #sources-text {
+    top: -1px;
+  }
+
+  #medical-id-text-inner-medical-id-container {
+    top: -1px;
+  }
+
+  .message-text {
+    top: -21px;
+  }
+
+  .date-of-call {
+    top: 2px;
+  }
+
+  #contacts-text-inner-phone,
+  #contacts-text-inner-contacts {
+    top: 12px;
+  }
+
+  #search-input-inner-phone,
+  #search-input-inner-contacts {
+    top: 16px;
+    width: 201.5px;
+  }
+
+  #name,
+  #name-inner-contacts-icon {
+    top: 3px;
+  }
+
+  .button-inner-keypad {
+    font-size: 16px;
+  }
+
+  #call-icon {
+    left: -7px;
+  }
+
+  #add-number-button {
+    left: -7px;
+  }
+
+  #delete {
+    font-size: 10px;
+  }
+
+  #textarea-inner-scheduled {
+    font-size: 21px;
+  }
+
+  #textarea-inner-bottom-wrapper {
+    font-size: 21px;
+  }
+
+  #recents-text-inner-recents-container {
+    top: -1px;
+  }
+
+  #plus-inner-phone-favourites {
+    top: 8px;
+  }
+
+  #safari-search-input,
+  #search-input-inner-messages,
+  #search-input-inner-maps,
+  #search-input-inner-numbers,
+  #search-input-inner-pages,
+  #search-inner-bottom-wrapper,
+  #search-input-inner-search-container {
+    height: 20px;
+  }
+
+  #search-input-inner-learn-container {
+    top: 3px;
+    height: 20px;
+  }
+
+  #search-input-inner-code-playground,
+  #search-input-inner-discuss {
+    top: 3px;
+    height: 20px;
+  }
+
+  .course-2-container {
+    font-size: 12px;
+  }
+
+  .course-1-container {
+    padding-top: 9px;
+    height: 36px;
+  }
+
+  .medium-wrapper-inner-learn-container {
+    height: 110px;
+  }
+
+  .bottom-wrapper-inner-learn-container {
+    height: 145px;
+  }
+
+  #search-inner-contacts-telegram,
+  #search-inner-chats-telegram,
+  #search-inner-settings-telegram,
+  .search-input {
+    height: 20px;
+  }
+
+  #contacts-text-inner-telegram-bottom-container,
+  #calls-text-inner-telegram-bottom-container,
+  #chats-text-inner-telegram-bottom-container,
+  #settings-text-inner-telegram-bottom-container {
+    top: 3px;
+  }
+
+  #safari-search-input::placeholder,
+  #search-input-inner-messages::placeholder,
+  #search-input-inner-maps::placeholder,
+  #search-input-inner-numbers::placeholder,
+  #search-input-inner-pages::placeholder,
+  #search-inner-bottom-wrapper::placeholder,
+  #search-input-inner-phone::placeholder,
+  #search-input-inner-browse-container-inner-pages::placeholder,
+  #search-input-inner-browse-container::placeholder,
+  #search-input-inner-search-container::placeholder,
+  #search-input-inner-contacts::placeholder,
+  #search-input-inner-learn-container::placeholder,
+  #search-input-inner-code-playground::placeholder,
+  #search-input-inner-discuss::placeholder,
+  #search-inner-contacts-telegram::placeholder,
+  #search-inner-chats-telegram::placeholder,
+  #search-inner-settings-telegram::placeholder,
+  .search-input::placeholder {
+    font-size: 8px;
+  }
+
+  #edit-button {
+    font-size: 6px;
+  }
+
+  .image-2,
+  .image-6,
+  .image-10 {
+    left: -5.5px;
+  }
+
+  .image-3,
+  .image-7,
+  .image-11 {
+    left: -11px;
+  }
+
+  .image-4,
+  .image-8,
+  .image-12 {
+    left: -16.5px;
+  }
+
+  #plus-inner-browse-container,
+  #plus-inner-browse-container-inner-pages {
+    top: -16px;
+  }
+
+  #search-input-inner-maps {
+    top: 8px;
+  }
+
+  #notes-text-inner-middle-wrapper {
+    top: 3px;
+  }
+
+  #numbers-recents-title,
+  #pages-recents-title {
+    top: 17px;
+  }
+
+  #plus-inner-numbers-container,
+  #plus-inner-pages-container {
+    top: 15px;
+  }
+
+  #search-input-inner-numbers,
+  #search-input-inner-pages {
+    top: 21px;
+  }
+
+  #recents-text-inner-numbers,
+  #browse-text-inner-numbers,
+  #recents-text-inner-pages,
+  #browse-text-inner-pages {
+    top: -4px;
+  }
+
+  #plus-inner-spreadsheet,
+  #plus-inner-document {
+    top: -2px;
+  }
+
+  #reading-now-text-inner-iBooks,
+  #library-text-inner-iBooks,
+  #search-text-inner-iBooks {
+    top: -2px;
+  }
+
+  #heart-icon-inner-maps {
+    top: -1px;
+  }
+
+  #apps-text {
+    top: 1px;
+  }
+
+  .my-watch-container,
+  .face-gallery-container,
+  .app-store-container,
+  .search-bar-container-inner-watch {
+    top: -1.5px;
+  }
+
+  #post-button {
+    font-size: 7px;
+  }
+
+  #book-icon-inner-search-input {
+    top: 11.5px;
+    width: 10px;
+    height: 10px;
+  }
+
+  #plus-button-inner-play-container,
+  #plus-button-inner-code-playground {
+    font-size: 12px;
+    height: 30px;
+    padding-bottom: 2px;
+    width: 32px;
+    padding-left: 13px;
+  }
+
+  #pencil-icon-inner-discuss {
+    height: 16px;
+    width: 16px;
+    padding: 0;
+  }
+
+  #first-person-last-seen,
+  #second-person-last-seen {
+    top: -7px;
+  }
+
+  #recent-calls-button-inner-telegram,
+  #missed-calls-button-inner-telegram {
+    top: -2px;
+  }
+
+  #done-button-inner-passcode-container {
+    font-size: 6px;
+  }
+
+  #passcode-input {
+    width: 199.5px;
   }
 }
 
-@media all and (min-height: 2680px) {
-  #hr-inner-current-month {
-	top: 0;
+@media screen and (max-height: 768px) {
+  .numbers {
+    font-size: 16px;
   }
 
-  #hr-1 {
-	top: 30px;
+  .cleaner {
+    height: 33px;
+    padding-top: 11px;
   }
 
-  #hr-2 {
-	top: 56px;
+  .sign {
+    height: 37px;
+    padding-top: 7px;
   }
 
-  #hr-3 {
-	top: 87px;
+  .percent {
+    height: 34px;
+    padding-top: 10px;
   }
 
-  #hr-4 {
-	top: 121px;
+  #library-text,
+  #for-you-text-inner-music,
+  #browse-text-inner-bottom-container,
+  #search-text-inner-music-container {
+    top: -2px;
   }
 
-  #calendars-text-inner-calendar-bottom-container {
-	left: 38.5px;
+  #plus-inner-create-project-container {
+    top: 10px;
   }
 
-  #inbox-text-inner-calendar-bottom-container {
-	left: 84px;
-  }
-}
-
-@media all and (min-height: 3600px) {
-  #hr-1 {
-	top: 25px;
+  #show-all-codes-button,
+  #show-hot-today-button,
+  #show-hot-today-button-inner-discuss {
+    top: 3px;
   }
 
-  #hr-2 {
-	top: 55px;
+  #album-text {
+    top: 15px;
   }
 
-  #hr-3 {
-	top: 92px;
+  #add-album-button {
+    left: -5px;
+    font-size: 12px;
   }
 
-  #hr-4 {
-	top: 135px;
+  #back-to-albums-button,
+  #back-to-albums-button-inner-favourites {
+    left: 5px;
+    top: 8px;
   }
 
-  #calendars-text-inner-calendar-bottom-container {
-	left: 31.5px;
+  #back-arrow,
+  #back-arrow-inner-favourites {
+    left: -2px;
+    font-size: 40px;
+    top: -12px;
   }
 
-  #inbox-text-inner-calendar-bottom-container {
-	left: 77px;
+  #back-arrow-inner-image,
+  #back-arrow-inner-favourites-image {
+    font-size: 40px;
+    left: 3px;
+    top: -4px;
   }
 
-  #hr-inner-current-month {
-	top: -3px;
+  #camera-roll-top-container-text,
+  #favourites-top-container-text {
+    top: 8px;
+  }
+
+  #select-text,
+  #select-text-inner-favourites {
+    top: 8px;
+  }
+
+  #dayOfPhoto,
+  #dayOfPhoto-inner-favourites-image {
+    top: 7px;
+  }
+
+  #time-inner-images,
+  #time-inner-favourites-image {
+    top: 18px;
+  }
+
+  #edit-text,
+  #edit-text-inner-favourites-image {
+    top: 11px;
+  }
+
+  .photo-icon-text-container,
+  .for-you-icon-text-container,
+  .albums-icon-text-container,
+  .searching-icon-text-container {
+    top: -7px;
+  }
+
+  #bottom-container-photo-icon,
+  #bottom-container-for-you-icon,
+  #bottom-container-albums-icon,
+  #bottom-container-searching-icon {
+    top: -1px;
+  }
+
+  .photo-icon-text,
+  #for-you-icon-text,
+  #albums-icon-text,
+  #searching-icon-text {
+    top: -2.5px;
+  }
+
+  #back-button-inner-calendar-top-container {
+    top: 8px;
+  }
+
+  #plus-button,
+  #event-button {
+    top: 8px;
+  }
+
+  #searching-in-calendar {
+    top: 2px;
+  }
+
+  .day-of-the-week {
+    top: -5px;
+  }
+
+  #time-hours-1,
+  #time-min-1,
+  #time-sec-1 {
+    top: -5px;
+  }
+
+  #cancel-button,
+  #start-button-inner-timer,
+  #start-button,
+  #lap-button {
+    font-size: 8px;
+    text-align: center;
+  }
+
+  #text-world-clock-inner-bottom-container {
+    top: -5px;
+  }
+
+  #alarm-text-inner-bottom-container {
+    top: -3px;
+  }
+
+  #bedtime-text-inner-bottom-container {
+    top: -3px;
+  }
+
+  #stopwatch-text-inner-bottom-container {
+    top: -3px;
+  }
+
+  #timer-text-inner-bottom-container {
+    top: -3px;
+  }
+
+  .plus-button-inner-clock {
+    top: 8px;
+  }
+
+  #writing-field {
+    top: -3px;
+  }
+
+  #music-text,
+  #films-text,
+  #search-text-inner-itunes-store,
+  #tv-text-inner-itunes-store,
+  #more-text-inner-itunes-store,
+  .inner-app-store-icon-text {
+    top: -3px;
+  }
+
+  #home-text-inner-bottom-container {
+    top: -2px;
+  }
+
+  #automation-text {
+    top: -3px;
+  }
+
+  #today-text {
+    top: -1px;
+  }
+
+  #health-data-text {
+    top: -1px;
+  }
+
+  #sources-text {
+    top: -1px;
+  }
+
+  #medical-id-text-inner-medical-id-container {
+    top: -1px;
+  }
+
+  .message-text {
+    top: -21px;
+  }
+
+  .date-of-call {
+    top: 2px;
+  }
+
+  #contacts-text-inner-phone,
+  #contacts-text-inner-contacts {
+    top: 12px;
+  }
+
+  #search-input-inner-phone,
+  #search-input-inner-contacts {
+    top: 16px;
+    width: 201.5px;
+  }
+
+  #name,
+  #name-inner-contacts-icon {
+    top: 3px;
+  }
+
+  .button-inner-keypad {
+    font-size: 16px;
+  }
+
+  #call-icon {
+    left: -7px;
+  }
+
+  #add-number-button {
+    left: -7px;
+  }
+
+  #delete {
+    font-size: 10px;
+  }
+
+  #textarea-inner-scheduled {
+    font-size: 21px;
+  }
+
+  #textarea-inner-bottom-wrapper {
+    font-size: 21px;
+  }
+
+  #recents-text-inner-recents-container {
+    top: -1px;
+  }
+
+  #plus-inner-phone-favourites {
+    top: 8px;
+  }
+
+  #safari-search-input,
+  #search-input-inner-messages,
+  #search-input-inner-maps,
+  #search-input-inner-numbers,
+  #search-input-inner-pages,
+  #search-inner-bottom-wrapper,
+  #search-input-inner-search-container {
+    height: 20px;
+  }
+
+  #search-input-inner-learn-container {
+    top: 3px;
+    height: 20px;
+  }
+
+  #search-input-inner-code-playground,
+  #search-input-inner-discuss {
+    top: 3px;
+    height: 20px;
+  }
+
+  .course-2-container {
+    font-size: 12px;
+  }
+
+  .course-1-container {
+    padding-top: 9px;
+    height: 36px;
+  }
+
+  .medium-wrapper-inner-learn-container {
+    height: 110px;
+  }
+
+  .bottom-wrapper-inner-learn-container {
+    height: 145px;
+  }
+
+  #search-inner-contacts-telegram,
+  #search-inner-chats-telegram,
+  #search-inner-settings-telegram,
+  .search-input {
+    height: 20px;
+  }
+
+  #contacts-text-inner-telegram-bottom-container,
+  #calls-text-inner-telegram-bottom-container,
+  #chats-text-inner-telegram-bottom-container,
+  #settings-text-inner-telegram-bottom-container {
+    top: 3px;
+  }
+
+  #safari-search-input::placeholder,
+  #search-input-inner-messages::placeholder,
+  #search-input-inner-maps::placeholder,
+  #search-input-inner-numbers::placeholder,
+  #search-input-inner-pages::placeholder,
+  #search-inner-bottom-wrapper::placeholder,
+  #search-input-inner-phone::placeholder,
+  #search-input-inner-browse-container-inner-pages::placeholder,
+  #search-input-inner-browse-container::placeholder,
+  #search-input-inner-search-container::placeholder,
+  #search-input-inner-contacts::placeholder,
+  #search-input-inner-learn-container::placeholder,
+  #search-input-inner-code-playground::placeholder,
+  #search-input-inner-discuss::placeholder,
+  #search-inner-contacts-telegram::placeholder,
+  #search-inner-chats-telegram::placeholder,
+  #search-inner-settings-telegram::placeholder,
+  .search-input::placeholder {
+    font-size: 8px;
+  }
+
+  #edit-button {
+    font-size: 6px;
+  }
+
+  .image-2,
+  .image-6,
+  .image-10 {
+    left: -5.5px;
+  }
+
+  .image-3,
+  .image-7,
+  .image-11 {
+    left: -11px;
+  }
+
+  .image-4,
+  .image-8,
+  .image-12 {
+    left: -16.5px;
+  }
+
+  #plus-inner-browse-container,
+  #plus-inner-browse-container-inner-pages {
+    top: -16px;
+  }
+
+  #search-input-inner-maps {
+    top: 8px;
+  }
+
+  #notes-text-inner-middle-wrapper {
+    top: 3px;
+  }
+
+  #numbers-recents-title,
+  #pages-recents-title {
+    top: 17px;
+  }
+
+  #plus-inner-numbers-container,
+  #plus-inner-pages-container {
+    top: 15px;
+  }
+
+  #search-input-inner-numbers,
+  #search-input-inner-pages {
+    top: 21px;
+  }
+
+  #recents-text-inner-numbers,
+  #browse-text-inner-numbers,
+  #recents-text-inner-pages,
+  #browse-text-inner-pages {
+    top: -4px;
+  }
+
+  #plus-inner-spreadsheet,
+  #plus-inner-document {
+    top: -2px;
+  }
+
+  #reading-now-text-inner-iBooks,
+  #library-text-inner-iBooks,
+  #search-text-inner-iBooks {
+    top: -2px;
+  }
+
+  #heart-icon-inner-maps {
+    top: -1px;
+  }
+
+  #apps-text {
+    top: 1px;
+  }
+
+  .my-watch-container,
+  .face-gallery-container,
+  .app-store-container,
+  .search-bar-container-inner-watch {
+    top: -1.5px;
+  }
+
+  #post-button {
+    font-size: 7px;
+  }
+
+  #book-icon-inner-search-input {
+    top: 11.5px;
+    width: 10px;
+    height: 10px;
+  }
+
+  #plus-button-inner-play-container,
+  #plus-button-inner-code-playground {
+    font-size: 12px;
+    height: 30px;
+    padding-bottom: 2px;
+    width: 32px;
+    padding-left: 13px;
+  }
+
+  #pencil-icon-inner-discuss {
+    height: 16px;
+    width: 16px;
+    padding: 0;
+  }
+
+  #first-person-last-seen,
+  #second-person-last-seen {
+    top: -7px;
+  }
+
+  #recent-calls-button-inner-telegram,
+  #missed-calls-button-inner-telegram {
+    top: -2px;
+  }
+
+  #done-button-inner-passcode-container {
+    font-size: 6px;
+  }
+
+  #passcode-input {
+    width: 199.5px;
   }
 }
