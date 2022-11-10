@@ -4236,7 +4236,7 @@ td:empty {
   display: block;
   left: 28px;
   top: -19px;
-  width: 180px;
+  width: 135px;
   height: 11px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -5029,12 +5029,13 @@ td:empty {
 }
 
 #name {
-  position: relative;
-  left: 8.5px;
-  top: 3.7px;
-  font-weight: 500;
-  width: 15px;
-  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  width: auto;
+  height: auto;
   font-size: 20px;
   color: white;
 }
@@ -5066,18 +5067,19 @@ td:empty {
   left: 0;
   top: 0;
   width: 100%;
-  height: 15px;
+  height: auto;
   background: #bfbfbf;
+  padding: 0;
 }
 
 .first-letter {
   position: relative;
   left: 5px;
   top: 0;
-  width: 15px;
-  height: 15px;
+  width: auto;
+  height: auto;
   background: transparent;
-  font-size: 14px;
+  font-size: 12px;
   text-align: left;
   color: black;
 }
@@ -8454,12 +8456,13 @@ td:empty {
 }
 
 #name-inner-contacts-icon {
-  position: relative;
-  left: 8.5px;
-  top: 3.7px;
-  font-weight: 500;
-  width: 15px;
-  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  width: auto;
+  height: auto;
   font-size: 20px;
   color: white;
 }
@@ -8491,18 +8494,19 @@ td:empty {
   left: 0;
   top: 0;
   width: 100%;
-  height: 15px;
+  height: auto;
   background: #bfbfbf;
+  padding: 0;
 }
 
 .first-letter {
   position: relative;
   left: 5px;
   top: 0;
-  width: 15px;
-  height: 15px;
+  width: auto;
+  height: auto;
   background: transparent;
-  font-size: 14px;
+  font-size: 12px;
   text-align: left;
   color: black;
 }
@@ -8673,8 +8677,9 @@ td:empty {
 
 #book-icon-inner-search-input {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   left: 211px;
-  top: 9px;
   width: 12px;
   height: 12px;
   z-index: 9;
@@ -8744,45 +8749,52 @@ td:empty {
     1.3px 0px #0066b8, 1px 1px #0066b8, 1px -1px #0066b8, -1.2px 1px #0066b8,
     -1.2px -1px #0066b8;
   border: 1px solid white;
+  vertical-align: middle;
 }
 
 .course-1-container {
   background: #7eff62;
-  color: black;
-  font-size: 20px;
-  font-weight: 600;
-  padding-top: 10px;
-  height: 35px;
-  padding-left: 10px;
-  width: 35px;
 }
 
 .course-2-container {
   background: red;
-  font-size: 10px;
-  font-weight: 800;
-  padding-left: 7px;
-  width: 38px;
-  padding-top: 14px;
-  height: 31px;
-  top: -1px;
 }
 
 .course-3-container {
   background: #00abe0;
   font-size: 12px;
-  font-weight: 600;
-  padding-left: 10px;
-  width: 35px;
-  height: 30px;
-  padding-top: 15px;
-  top: 0;
+}
+
+.course-text-inside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: auto;
+  height: auto;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+.course-text-inside-1 {
+  font-size: 18px;
+  color: black;
+}
+
+.course-text-inside-2 {
+  font-size: 11px;
+}
+
+.course-text-inside-3 {
+  font-size: 11px;
 }
 
 #HTML-course-text,
 #CSS-course-text,
 #JS-course-text {
-  top: 4px;
+  top: 7px;
 }
 
 #JS-course-text {
@@ -10293,10 +10305,11 @@ td:empty {
   display: block;
   width: auto;
   font-size: 20px;
-  height: auto;
+  height: 110%;
   left: calc(100% - 13px);
   color: #a8a8a8;
-  top: -1.5px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .saved-messages {
@@ -10435,15 +10448,17 @@ td:empty {
 #count-of-trending-stickers {
   position: absolute;
   left: 194px;
-  top: 5.7px;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 10px;
-  width: 20px;
+  width: auto;
   white-space: nowrap;
-  height: 12px;
   background: #4464f1;
   border-radius: 10px;
   text-align: center;
   color: white;
+  height: auto;
+  padding: 0px 5px;
 }
 
 .ask-a-question {
@@ -12216,7 +12231,7 @@ td:empty {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (hover: none) and (pointer: coarse) {
   .numbers {
     font-size: 16px;
   }
@@ -12325,7 +12340,7 @@ td:empty {
   #for-you-icon-text,
   #albums-icon-text,
   #searching-icon-text {
-    top: -2.5px;
+    top: -2px;
   }
 
   #back-button-inner-calendar-top-container {
@@ -12437,11 +12452,6 @@ td:empty {
   #search-input-inner-contacts {
     top: 16px;
     width: 201.5px;
-  }
-
-  #name,
-  #name-inner-contacts-icon {
-    top: 3px;
   }
 
   .button-inner-keypad {
@@ -12637,7 +12647,6 @@ td:empty {
   }
 
   #book-icon-inner-search-input {
-    top: 11.5px;
     width: 10px;
     height: 10px;
   }
@@ -12676,7 +12685,7 @@ td:empty {
   }
 }
 
-@media screen and (max-height: 768px) {
+@media only screen and (hover: none) and (pointer: coarse) {
   .numbers {
     font-size: 16px;
   }
@@ -12785,7 +12794,7 @@ td:empty {
   #for-you-icon-text,
   #albums-icon-text,
   #searching-icon-text {
-    top: -2.5px;
+    top: -2px;
   }
 
   #back-button-inner-calendar-top-container {
@@ -12897,11 +12906,6 @@ td:empty {
   #search-input-inner-contacts {
     top: 16px;
     width: 201.5px;
-  }
-
-  #name,
-  #name-inner-contacts-icon {
-    top: 3px;
   }
 
   .button-inner-keypad {
@@ -13097,7 +13101,6 @@ td:empty {
   }
 
   #book-icon-inner-search-input {
-    top: 11.5px;
     width: 10px;
     height: 10px;
   }
