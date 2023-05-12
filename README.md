@@ -24,5 +24,6 @@ The performance and implementation of this project leaves much to be desired. Th
     ◼️ Dial and erase a phone number in the "Phone"
     ◼️ Use calculator in the "Calculator"
     ◼️ Open "Extras" in order to see the widgets it has
+    ◼️ Interact and open them as well
     
 Try to open all the widgets and who knows, maybe you will find something else? 🙂
