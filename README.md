@@ -1,6 +1,6 @@
 # iPhone-clone
 
-> Working clones of iPhone widgets
+> Remember what the iPhone was like in 2016
 
 ### ❗️ Important
 
@@ -25,5 +25,9 @@ The performance and implementation of this project leaves much to be desired. Th
     ◼️ Use calculator in the "Calculator"
     ◼️ Open "Extras" in order to see the widgets it has
     ◼️ Interact and open them as well
+    
+### Additional info
+    ◼️ iPhone model is 7 (iPhone 7)
+    ◼️ The cloned system: iOS 12
     
 Try to open all the widgets and who knows, maybe you will find something else? 🙂
