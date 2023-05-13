@@ -2,7 +2,7 @@
 
 > Remember what the iPhone was like in 2016
 
-### ❗️ Important
+### ❗️ Important ❗️
 
 This is __not an emulator__ and __not a simulator__, it's just an __imitation of interaction__ with the __custom iPhone widgets__ I made myself via JS.
 The performance and implementation of this project leaves much to be desired. This is __my old project__, but it's still __interesting__ and __deserves attention__.
