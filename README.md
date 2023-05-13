@@ -13,6 +13,13 @@ The performance and implementation of this project leaves much to be desired. Th
     ◼️ 58 Pages
     ◼️ Not all widgets have functionality, some of them are static
     
+### How to start
+    ◼️ Tap the "Home" button in order to turn on the screen
+    ◼️ Tap it again in order to open the input in the locked screen
+    ◼️ You will get a passcode in the alert, put it into the input
+    ◼️ Click the "Done" button
+    ◼️ Enjoy
+    
 ### What widgets you can interact with and what you can do
     ◼️ Check today's date and month in the "Calendar"
     ◼️ Viewing photos in the "Photos"
