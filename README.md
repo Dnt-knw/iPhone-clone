@@ -10,44 +10,36 @@ The performance and implementation of this project leaves much to be desired. Th
 ## Description
 This project contains __almost all the basic iPhone widgets and pages__ that you can interact with
 
-<ul>
-    <li>39 Widgets <br /></li>
-    <li>58 Pages <br /></li>
-</ul>
+- 39 Widgets
+- 58 Pages
 
 Not all widgets have functionality, some of them are static
     
 ## Where to start
 
-<ul>
-    <li>Tap the "Home" button in order to turn on the screen <br /></li>
-    <li>Tap it again in order to open the input in the locked screen <br /></li>
-    <li>You will get a passcode in the alert, put it into the input <br /></li>
-    <li>Click the "Done" button <br /></li>
-    <li>Enjoy <br /></li>
-</ul>
+- Tap the "Home" button in order to turn on the screen
+- Tap it again in order to open the input in the locked screen
+- You will get a passcode in the alert, put it into the input
+- Click the "Done" button
+- Enjoy
     
 ## Which widgets you can interact with and what you can do
 
-<ul>
-    <li>Check today's date and month in the "Calendar" <br /></li>
-    <li>Viewing photos in the "Photos" <br /></li>
-    <li>Switching camera mode in the "Camera" <br /></li>
-    <li>Disclose additional info in the "Maps" <br /></li>
-    <li>Check the time, turn on alarms and bedtime in the "Clock" <br /></li>
-    <li>Create and delete notes in the "Notes" <br /></li>
-    <li>Create and delete reminders and scheduled tasks in the "Reminders" <br /></li>
-    <li>Dial and erase a phone number in the "Phone" <br /></li>
-    <li>Use calculator in the "Calculator" <br /></li>
-    <li>Open "Extras" in order to see the widgets it has <br /></li>
-    <li>Interact and open them as well <br /></li>
-</ul>
+- Check today's date and month in the "Calendar"
+- Viewing photos in the "Photos"
+- Switching camera mode in the "Camera"
+- Disclose additional info in the "Maps"
+- Check the time, turn on alarms and bedtime in the "Clock"
+- Create and delete notes in the "Notes"
+- Create and delete reminders and scheduled tasks in the "Reminders"
+- Dial and erase a phone number in the "Phone"
+- Use calculator in the "Calculator"
+- Open "Extras" in order to see the widgets it has
+- Interact and open them as well
     
 ## Additional info
 
-<ul>
-    <li>iPhone model is 7 (iPhone 7) <br /></li>
-    <li>The cloned system: iOS 12 <br /></li>
-</ul>
+- iPhone model is 7 (iPhone 7)
+- The cloned system: iOS 12
     
 Try to open all the widgets and who knows, maybe you will find something else? 🙂
