@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 * {
   color: white;
   font-family: sans-serif;
@@ -1982,9 +1983,10 @@ td:empty {
 .text-inner-clock-middle-container {
   position: relative;
   display: inline-block;
-  width: 80px;
+  width: 84px;
   height: 20px;
   text-align: center;
+  font-family: "Open Sans", sans-serif;
 }
 
 .time-of-the-city {
@@ -2025,6 +2027,10 @@ td:empty {
   background: transparent;
 }
 
+.name-of-the-sixth-city {
+  top: -6px;
+}
+
 .time-of-the-second-city,
 .time-of-the-third-city,
 .time-of-the-fourth-city,
@@ -2033,6 +2039,10 @@ td:empty {
   top: 3px;
   left: 55px;
   background: transparent;
+}
+
+.time-of-the-sixth-city {
+  top:  -1px;
 }
 
 .inner-middle-container-second-city-time {
