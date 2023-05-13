@@ -17,7 +17,7 @@ This project contains __almost all the basic iPhone widgets and pages__ that you
 
 Not all widgets have functionality, some of them are static
     
-## How to start
+## Where to start
 
 <ul>
     <li>Tap the "Home" button in order to turn on the screen <br /></li>
@@ -27,7 +27,7 @@ Not all widgets have functionality, some of them are static
     <li>Enjoy <br /></li>
 </ul>
     
-## What widgets you can interact with and what you can do
+## Which widgets you can interact with and what you can do
 
 <ul>
     <li>Check today's date and month in the "Calendar" <br /></li>
