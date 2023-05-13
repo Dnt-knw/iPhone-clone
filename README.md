@@ -8,7 +8,8 @@ This is __not an emulator__ and __not a simulator__, it's just an __imitation of
 The performance and implementation of this project leaves much to be desired. This is __my old project__, but it's still __interesting__ and __deserves attention__.
 
 ### Description
-    This project contains almost all the basic iPhone widgets and pages that you can interact with:
+This project contains __almost all the basic iPhone widgets__ and pages that you can interact with:
+    
     ◼️ 39 Widgets
     ◼️ 58 Pages
     ◼️ Not all widgets have functionality, some of them are static
