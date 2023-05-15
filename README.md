@@ -21,7 +21,7 @@ Not all widgets have functionality, some of them are static
 - Tap it again in order to open the input in the locked screen
 - You will get a passcode in the alert, put it into the input
 - Click the "Done" button
-- Enjoy
+- To see more widgets tap on left / right screen side
     
 ## Which widgets you can interact with and what you can do
 
