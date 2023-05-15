@@ -237,7 +237,7 @@ body {
   left: calc(50% - 117.5px);
   width: 235px;
   height: 354px;
-  background: url(https://dl.dropbox.com/s/21zc33wl3d7gi7f/background_2560x1600.jpg);
+  background: url(./assets/background/background_2560x1600.jpg);
   background-repeat: no-repeat;
   background-size: 241%;
   filter: brightness(0.5) blur(1px);
@@ -283,7 +283,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(https://dl.dropbox.com/s/21zc33wl3d7gi7f/background_2560x1600.jpg)
+  background: url(./assets/background/background_2560x1600.jpg)
     no-repeat;
   background-size: 241%;
   filter: brightness(0.5) blur(1px);
@@ -898,7 +898,7 @@ button:focus {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  background: url(https://dl.dropbox.com/s/5q3asoilg7lehr2/lion.jpg) no-repeat;
+  background: url(./assets/photos/lion.jpg) no-repeat;
   background-size: 100%;
   border-radius: 5px;
   height: 90px;
@@ -1162,84 +1162,84 @@ button:focus {
 .image-1 {
   left: 0;
   top: 0;
-  background: url(https://dl.dropbox.com/s/t4hsuhnn2fday9e/morning.jpg);
+  background: url(./assets/photos/morning.jpg);
   background-size: 100%;
 }
 
 .image-2 {
   left: -5px;
   top: 0;
-  background: url(https://dl.dropbox.com/s/cc70vlgxm5p1i4n/stars.jpg);
+  background: url(./assets/photos/stars.jpg);
   background-size: 136%;
 }
 
 .image-3 {
   left: -10.5px;
   top: 0;
-  background: url(https://dl.dropbox.com/s/avp6pv2680vu1mn/night.jpg) no-repeat;
+  background: url(./assets/photos/night.jpg) no-repeat;
   background-size: 215%;
 }
 
 .image-4 {
   left: -16px;
   top: 0;
-  background: url(https://dl.dropbox.com/s/bb4ldcu2b0fq7uj/beach.jpg);
+  background: url(./assets/photos/beach.jpg);
   background-size: 100%;
 }
 
 .image-5 {
   left: 0px;
   top: 0;
-  background: url(https://dl.dropbox.com/s/0cgcu32ggkrdlai/field.jpg);
+  background: url(./assets/photos/field.jpg);
   background-size: 182%;
 }
 
 .image-6 {
   left: -5px;
   top: 0;
-  background: url(https://dl.dropbox.com/s/hw93oxpsrossfph/santorini.jpg);
+  background: url(./assets/photos/santorini.jpg);
   background-size: 100%;
 }
 
 .image-7 {
   left: -10.5px;
   top: 0;
-  background: url(https://dl.dropbox.com/s/2ntzp8r3i7k6ydv/winter_houses.jpg);
+  background: url(./assets/photos/winter_houses.jpg);
   background-size: 194%;
 }
 
 .image-8 {
   left: -16px;
   top: 0;
-  background: url(https://dl.dropbox.com/s/vzuqu6cd6rlcydu/forest.jpg);
+  background: url(./assets/photos/forest.jpg);
   background-size: 194%;
 }
 
 .image-9 {
   left: 0;
   top: 0;
-  background: url(https://dl.dropbox.com/s/fyy7077xf2pw5iq/cats.jpeg);
+  background: url(./assets/photos/cats.jpeg);
   background-size: 122%;
 }
 
 .image-10 {
   left: -5px;
   top: 0;
-  background: url(https://dl.dropbox.com/s/w3thmo6rqv0ifsf/singapore.jpg);
+  background: url(./assets/photos/singapore.jpg);
   background-size: 137%;
 }
 
 .image-11 {
   left: -10.5px;
   top: 0;
-  background: url(https://dl.dropbox.com/s/m5u0mwv68gag78i/dog.jpg);
+  background: url(./assets/photos/dog.jpg);
   background-size: 152%;
 }
 
 .image-12 {
   left: -16px;
   top: 0;
-  background: url(https://dl.dropbox.com/s/5q3asoilg7lehr2/lion.jpg);
+  background: url(./assets/photos/lion.jpg);
   background-size: 100%;
 }
 
@@ -1342,67 +1342,67 @@ button:focus {
 }
 
 .opened-image-1 {
-  background: url(https://dl.dropbox.com/s/t4hsuhnn2fday9e/morning.jpg) 0% 0% /
+  background: url(./assets/photos/morning.jpg) 0% 0% /
     100% no-repeat;
 }
 
 .opened-image-2 {
-  background: url(https://dl.dropbox.com/s/cc70vlgxm5p1i4n/stars.jpg);
+  background: url(./assets/photos/stars.jpg);
   background-size: 136%;
 }
 
 .opened-image-3 {
-  background: url(https://dl.dropbox.com/s/avp6pv2680vu1mn/night.jpg) no-repeat;
+  background: url(./assets/photos/night.jpg) no-repeat;
   background-size: 215%;
 }
 
 .opened-image-4 {
-  background: url(https://dl.dropbox.com/s/bb4ldcu2b0fq7uj/beach.jpg);
+  background: url(./assets/photos/beach.jpg);
   background-size: 100%;
 }
 
 .opened-image-5 {
-  background: url(https://dl.dropbox.com/s/0cgcu32ggkrdlai/field.jpg);
+  background: url(./assets/photos/field.jpg);
   background-size: 182%;
 }
 
 .opened-image-6 {
-  background: url(https://dl.dropbox.com/s/hw93oxpsrossfph/santorini.jpg);
+  background: url(./assets/photos/santorini.jpg);
   background-size: 100%;
 }
 
 .opened-image-7 {
-  background: url(https://dl.dropbox.com/s/2ntzp8r3i7k6ydv/winter_houses.jpg);
+  background: url(./assets/photos/winter_houses.jpg);
   background-size: 194%;
 }
 
 .opened-image-8 {
-  background: url(https://dl.dropbox.com/s/vzuqu6cd6rlcydu/forest.jpg);
+  background: url(./assets/photos/forest.jpg);
   background-size: 194%;
 }
 
 .opened-image-9 {
-  background: url(https://dl.dropbox.com/s/fyy7077xf2pw5iq/cats.jpeg);
+  background: url(./assets/photos/cats.jpeg);
   background-size: 122%;
 }
 
 .opened-image-10 {
-  background: url(https://dl.dropbox.com/s/w3thmo6rqv0ifsf/singapore.jpg);
+  background: url(./assets/photos/singapore.jpg);
   background-size: 137%;
 }
 
 .opened-image-11 {
-  background: url(https://dl.dropbox.com/s/m5u0mwv68gag78i/dog.jpg);
+  background: url(./assets/photos/dog.jpg);
   background-size: 151%;
 }
 
 .opened-image-12 {
-  background: url(https://dl.dropbox.com/s/5q3asoilg7lehr2/lion.jpg);
+  background: url(./assets/photos/lion.jpg);
   background-size: 100%;
 }
 
 .image-inner-favourites {
-  background: url(https://dl.dropbox.com/s/5q3asoilg7lehr2/lion.jpg);
+  background: url(./assets/photos/lion.jpg);
   background-size: 100%;
 }
 
@@ -1529,7 +1529,7 @@ button:focus {
 .inner-favourites-image {
   left: 0;
   top: 0;
-  background: url(https://dl.dropbox.com/s/5q3asoilg7lehr2/lion.jpg);
+  background: url(./assets/photos/lion.jpg);
   background-size: 100%;
   outline: none;
 }
@@ -3302,7 +3302,7 @@ td:empty {
   height: 100%;
   left: 0;
   top: 0;
-  background: url(https://dl.dropbox.com/s/21zc33wl3d7gi7f/background_2560x1600.jpg)
+  background: url(./assets/background/background_2560x1600.jpg)
     no-repeat;
   background-size: 245%;
   filter: blur(10px);
@@ -3845,7 +3845,7 @@ td:empty {
   top: 17px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/elcr0iajfl58hza/close.png) no-repeat;
+  background: url(./assets/reminders/close.png) no-repeat;
   background-size: 100%;
 }
 
@@ -3855,7 +3855,7 @@ td:empty {
   top: 17px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/elcr0iajfl58hza/close.png) no-repeat;
+  background: url(./assets/reminders/close.png) no-repeat;
   background-size: 100%;
 }
 
@@ -6039,7 +6039,7 @@ td:empty {
   width: 100%;
   height: 356px;
   top: -964px;
-  background: url(https://dl.dropbox.com/s/t5honaa7bnz7423/map.jpg) no-repeat;
+  background: url(./assets/map/map.jpg) no-repeat;
   background-size: 295%;
 }
 
@@ -7126,7 +7126,7 @@ td:empty {
   left: 0;
   width: 100%;
   height: 150px;
-  background: url(https://dl.dropbox.com/s/fcmxdoecqk5ytjf/apple-watch-bg.jpg)
+  background: url(./assets/watch/apple-watch-bg.jpg)
     no-repeat;
   background-size: 100%;
 }
@@ -7319,7 +7319,7 @@ td:empty {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: url(https://dl.dropbox.com/s/zfscan6rf9kqg9e/user.png) no-repeat;
+  background: url(./assets/iBooks/user.png) no-repeat;
   background-size: 100%;
 }
 
@@ -7348,7 +7348,7 @@ td:empty {
   top: 10px;
   width: 80px;
   height: 120px;
-  background: url(https://dl.dropbox.com/s/sqdid0x7cx64nk6/book_1.jpg) no-repeat;
+  background: url(./assets/iBooks/book_1.jpg) no-repeat;
   background-size: 100%;
 }
 
@@ -7422,7 +7422,7 @@ td:empty {
   top: 10px;
   width: 40px;
   height: 60px;
-  background: url(https://dl.dropbox.com/s/tlq38le78d1y2nt/book_2.jpg) no-repeat;
+  background: url(./assets/iBooks/book_2.jpg) no-repeat;
   background-size: 100%;
 }
 
@@ -7481,7 +7481,7 @@ td:empty {
   top: 10px;
   width: 80px;
   height: 120px;
-  background: url(https://dl.dropbox.com/s/sqdid0x7cx64nk6/book_1.jpg) no-repeat;
+  background: url(./assets/iBooks/book_1.jpg) no-repeat;
   background-size: 100%;
 }
 
@@ -7500,7 +7500,7 @@ td:empty {
   top: -4px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/82f8auevyu6soh2/ellipsis.png)
+  background: url(./assets/iBooks/ellipsis.png)
     no-repeat;
   background-size: 100%;
 }
@@ -7522,7 +7522,7 @@ td:empty {
   top: 10px;
   width: 80px;
   height: 120px;
-  background: url(https://dl.dropbox.com/s/tlq38le78d1y2nt/book_2.jpg) no-repeat;
+  background: url(./assets/iBooks/book_2.jpg) no-repeat;
   background-size: 100%;
 }
 
@@ -7541,7 +7541,7 @@ td:empty {
   top: -4px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/82f8auevyu6soh2/ellipsis.png)
+  background: url(./assets/iBooks/ellipsis.png)
     no-repeat;
   background-size: 100%;
 }
@@ -7794,7 +7794,7 @@ td:empty {
   left: 0;
   width: 20px;
   height: 20px;
-  background: url(https://dl.dropbox.com/s/7dyxg2myavf7ff6/menu.png) no-repeat;
+  background: url(./assets/iBooks/menu.png) no-repeat;
   background-size: 100%;
 }
 
@@ -7852,7 +7852,7 @@ td:empty {
   position: relative;
   left: 5px;
   display: inline-block;
-  background: url(https://dl.dropbox.com/s/ublbmz68rh2mi0i/arrow-down.png)
+  background: url(./assets/iBooks/arrow-down.png)
     no-repeat;
   width: 5px;
   height: 5px;
@@ -7866,7 +7866,7 @@ td:empty {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background: url(https://dl.dropbox.com/s/ficfcsel73gulxf/list.png) no-repeat;
+  background: url(./assets/iBooks/list.png) no-repeat;
   background-size: 100%;
 }
 
@@ -8017,14 +8017,14 @@ td:empty {
 .tips-icon {
   top: -1px;
   left: 2px;
-  background: url(https://dl.dropbox.com/s/8q0xjy3vavc0uv7/tips.png) no-repeat;
+  background: url(./assets/iphone_main_icons/tips.png) no-repeat;
   background-size: 100%;
 }
 
 .voice-icon {
   top: -1px;
   left: 0.5px;
-  background: url(https://dl.dropbox.com/s/rpf8a9ggkxj2hn5/voiceMemos.png)
+  background: url(./assets/iphone_main_icons/voiceMemos.png)
     no-repeat;
   background-size: 100%;
 }
@@ -8032,7 +8032,7 @@ td:empty {
 .contacts-icon {
   top: -1px;
   left: -1px;
-  background: url(https://dl.dropbox.com/s/e1m23az6g5pyjcb/contacts.png)
+  background: url(./assets/iphone_main_icons/contacts.png)
     no-repeat;
   background-size: 100%;
 }
@@ -8040,7 +8040,7 @@ td:empty {
 .find-friends-icon {
   top: -8px;
   left: -4.25px;
-  background: url(https://dl.dropbox.com/s/fglfhmuskp2exnh/findFriends.png)
+  background: url(./assets/iphone_main_icons/findFriends.png)
     no-repeat;
   background-size: 100%;
 }
@@ -8048,7 +8048,7 @@ td:empty {
 .find-iphone-icon {
   top: -8px;
   left: -5.75px;
-  background: url(https://dl.dropbox.com/s/cbewfjsdp4qwkkp/findIphone.png)
+  background: url(./assets/iphone_main_icons/findIphone.png)
     no-repeat;
   background-size: 100%;
 }
@@ -8227,7 +8227,7 @@ td:empty {
   left: 85px;
   width: 70px;
   height: 70px;
-  background: url(https://dl.dropbox.com/s/fglfhmuskp2exnh/findFriends.png)
+  background: url(./assets/iphone_main_icons/findFriends.png)
     no-repeat;
   background-size: 100%;
 }
@@ -8325,7 +8325,7 @@ td:empty {
   left: 85px;
   width: 70px;
   height: 70px;
-  background: url(https://dl.dropbox.com/s/cbewfjsdp4qwkkp/findIphone.png)
+  background: url(./assets/iphone_main_icons/findIphone.png)
     no-repeat;
   background-size: 100%;
 }
@@ -8624,7 +8624,7 @@ td:empty {
   left: 152px;
   width: 12px;
   height: 12px;
-  background: url(https://dl.dropbox.com/s/dw2r6uuhg5f2vcm/speech-bubble.png)
+  background: url(./assets/soloLearn/speech-bubble.png)
     no-repeat;
   background-size: 100%;
 }
@@ -8636,7 +8636,7 @@ td:empty {
   left: 155px;
   width: 12px;
   height: 12px;
-  background: url(https://dl.dropbox.com/s/7j07mkus4pcb4ui/notification.png)
+  background: url(./assets/soloLearn/notification.png)
     no-repeat;
   background-size: 100%;
 }
@@ -8648,7 +8648,7 @@ td:empty {
   left: 158px;
   width: 12px;
   height: 12px;
-  background: url(https://dl.dropbox.com/s/0d8trn39t2dpbqv/more.png) no-repeat;
+  background: url(./assets/soloLearn/more.png) no-repeat;
   background-size: 100%;
 }
 
@@ -8951,7 +8951,7 @@ td:empty {
   width: 40px;
   border: 1px solid #0066b8;
   height: 40px;
-  background: url(https://dl.dropbox.com/s/bxon50mqxqanjv9/profile-avatar.jpg)
+  background: url(./assets/telegram/profile-avatar.jpg)
     no-repeat;
   background-size: 105%;
   border-radius: 50%;
@@ -9558,7 +9558,7 @@ td:empty {
   left: 10px;
   width: 20px;
   height: 20px;
-  background: url(https://dl.dropbox.com/s/dtr8ra5sifolmyr/location.png)
+  background: url(./assets/telegram/location.png)
     no-repeat;
   background-size: 100%;
 }
@@ -9594,7 +9594,7 @@ td:empty {
   left: 10px;
   width: 20px;
   height: 20px;
-  background: url(https://dl.dropbox.com/s/rw593ofy6cinx0q/invite_friends.png)
+  background: url(./assets/telegram/invite_friends.png)
     no-repeat;
   background-size: 100%;
 }
@@ -9630,7 +9630,7 @@ td:empty {
   left: 10px;
   width: 20px;
   height: 20px;
-  background: url(https://dl.dropbox.com/s/f9fb0iycs5q7vc4/profile.png)
+  background: url(./assets/telegram/profile.png)
     no-repeat;
   border-radius: 50%;
   background-size: 100%;
@@ -9673,7 +9673,7 @@ td:empty {
   left: 10px;
   width: 20px;
   height: 20px;
-  background: url(https://dl.dropbox.com/s/f9fb0iycs5q7vc4/profile.png)
+  background: url(./assets/telegram/profile.png)
     no-repeat;
   border-radius: 50%;
   background-size: 100%;
@@ -9726,7 +9726,7 @@ td:empty {
   left: 7px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/brywobw3ka1r2xp/contact.png)
+  background: url(./assets/telegram/contact.png)
     no-repeat;
   background-size: 100%;
 }
@@ -9759,7 +9759,7 @@ td:empty {
   left: 7px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/2uvnshws8radgxp/call.png) no-repeat;
+  background: url(./assets/telegram/call.png) no-repeat;
   background-size: 100%;
 }
 
@@ -9791,7 +9791,7 @@ td:empty {
   left: 7px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/tt9yz3xnetqtlu5/chat.png) no-repeat;
+  background: url(./assets/telegram/chat.png) no-repeat;
   background-size: 100%;
 }
 
@@ -9823,7 +9823,7 @@ td:empty {
   left: 7px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/23pfsu681pxrqft/settings.png)
+  background: url(./assets/telegram/settings.png)
     no-repeat;
   background-size: 100%;
 }
@@ -9917,7 +9917,7 @@ td:empty {
   left: 213px;
   width: 14px;
   height: 14px;
-  background: url(https://dl.dropbox.com/s/iyccnjcelttqrv3/new_call.png)
+  background: url(./assets/telegram/new_call.png)
     no-repeat;
   background-size: 100%;
 }
@@ -9992,7 +9992,7 @@ td:empty {
   top: 19px;
   width: 12px;
   height: 12px;
-  background: url(https://dl.dropbox.com/s/2mzok5946ghqm2l/proxy.png) no-repeat;
+  background: url(./assets/telegram/proxy.png) no-repeat;
   background-size: 100%;
 }
 
@@ -10002,7 +10002,7 @@ td:empty {
   top: 19px;
   width: 12px;
   height: 12px;
-  background: url(https://dl.dropbox.com/s/3xn5af3ed4i10r3/note.png) no-repeat;
+  background: url(./assets/notes/note.png) no-repeat;
   background-size: 100%;
 }
 
@@ -10055,7 +10055,7 @@ td:empty {
   left: 5px;
   width: 40px;
   height: 40px;
-  background: url(https://dl.dropbox.com/s/f9fb0iycs5q7vc4/profile.png)
+  background: url(./assets/telegram/profile.png)
     no-repeat;
   background-size: 100%;
 }
@@ -10198,7 +10198,7 @@ td:empty {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: url(https://dl.dropbox.com/s/bxon50mqxqanjv9/profile-avatar.jpg)
+  background: url(./assets/telegram/profile-avatar.jpg)
     no-repeat;
   background-size: 100%;
 }
@@ -10284,7 +10284,7 @@ td:empty {
 }
 
 .proxy-icon {
-  background: url(https://dl.dropbox.com/s/2mzok5946ghqm2l/proxy.png) no-repeat;
+  background: url(./assets/telegram/proxy.png) no-repeat;
   background-size: 100%;
 }
 
@@ -10327,7 +10327,7 @@ td:empty {
 }
 
 .saved-messages-icon {
-  background: url(https://dl.dropbox.com/s/5tnkwzr1q3z0vot/bookmark.png)
+  background: url(./assets/telegram/bookmark.png)
     no-repeat;
   background-size: 100%;
 }
@@ -10339,7 +10339,7 @@ td:empty {
 }
 
 .recent-calls-icon {
-  background: url(https://dl.dropbox.com/s/4se3alh11mso0f6/phone.png) no-repeat;
+  background: url(./assets/telegram/phone.png) no-repeat;
   background-size: 100%;
 }
 
@@ -10350,7 +10350,7 @@ td:empty {
 }
 
 .devices-icon {
-  background: url(https://dl.dropbox.com/s/3p16lbc8a8bidsr/laptop.png) no-repeat;
+  background: url(./assets/telegram/laptop.png) no-repeat;
   background-size: 100%;
 }
 
@@ -10371,7 +10371,7 @@ td:empty {
 }
 
 .notifications-and-sounds-icon {
-  background: url(https://dl.dropbox.com/s/z72k3vehe3st1v9/bell.png) no-repeat;
+  background: url(./assets/telegram/bell.png) no-repeat;
   background-size: 100%;
 }
 
@@ -10381,7 +10381,7 @@ td:empty {
   top: 4px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/wmuuinhwr49c997/warn.png) no-repeat;
+  background: url(./assets/telegram/warn.png) no-repeat;
   background-size: 100%;
 }
 
@@ -10392,7 +10392,7 @@ td:empty {
 }
 
 .privacy-and-security-icon {
-  background: url(https://dl.dropbox.com/s/9tptogctnp1klle/lock.png) no-repeat;
+  background: url(./assets/telegram/lock.png) no-repeat;
   background-size: 100%;
 }
 
@@ -10403,7 +10403,7 @@ td:empty {
 }
 
 .data-and-storage-icon {
-  background: url(https://dl.dropbox.com/s/tim8o2hhg937xhi/database.png)
+  background: url(./assets/telegram/database.png)
     no-repeat;
   background-size: 100%;
 }
@@ -10415,7 +10415,7 @@ td:empty {
 }
 
 .appearance-icon {
-  background: url(https://dl.dropbox.com/s/19s1i78n03oaxt7/brightness.png)
+  background: url(./assets/telegram/brightness.png)
     no-repeat;
   background-size: 100%;
 }
@@ -10427,7 +10427,7 @@ td:empty {
 }
 
 .language-icon {
-  background: url(https://dl.dropbox.com/s/qjgu6ro5yn2g6dw/world.png) no-repeat;
+  background: url(./assets/telegram/world.png) no-repeat;
   background-size: 100%;
 }
 
@@ -10449,7 +10449,7 @@ td:empty {
 }
 
 .stickers-icon {
-  background: url(https://dl.dropbox.com/s/kz641uyzknsezt5/sticker.png)
+  background: url(./assets/telegram/sticker.png)
     no-repeat;
   background-size: 100%;
 }
@@ -10476,7 +10476,7 @@ td:empty {
 }
 
 .ask-a-question-icon {
-  background: url(https://dl.dropbox.com/s/n08zyoc6fmu2z74/sms.png) no-repeat;
+  background: url(./assets/telegram/sms.png) no-repeat;
   background-size: 100%;
 }
 
@@ -10487,7 +10487,7 @@ td:empty {
 }
 
 .telegram-FAQ-icon {
-  background: url(https://dl.dropbox.com/s/f9cdkqf3ehljixp/question.png)
+  background: url(./assets/telegram/question.png)
     no-repeat;
   background-size: 100%;
 }
@@ -10539,7 +10539,7 @@ td:empty {
   left: 5px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/84rp346tealqxpi/flash.png) no-repeat;
+  background: url(./assets/camera/flash.png) no-repeat;
   background-size: 100%;
   transform: rotate(5deg);
 }
@@ -10563,7 +10563,7 @@ td:empty {
   left: 66px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/rxinwbw6oqfh8ba/photo.png) no-repeat;
+  background: url(./assets/camera/photo.png) no-repeat;
   background-size: 100%;
 }
 
@@ -10574,7 +10574,7 @@ td:empty {
   left: 99px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/t8shao9snirn3lx/timer.png) no-repeat;
+  background: url(./assets/camera/timer.png) no-repeat;
   background-size: 100%;
 }
 
@@ -10585,7 +10585,7 @@ td:empty {
   left: 132px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/348iegk0n0729bu/filter.png) no-repeat;
+  background: url(./assets/camera/filter.png) no-repeat;
   background-size: 100%;
 }
 
@@ -10596,7 +10596,7 @@ td:empty {
   left: 0;
   width: 250px;
   height: 355px;
-  background: url(https://dl.dropbox.com/s/ive1x6md6hd93hd/squirrel.jpg)
+  background: url(./assets/camera/squirrel.jpg)
     no-repeat;
   background-size: 140%;
   z-index: 99;
@@ -10629,7 +10629,7 @@ td:empty {
   width: 100%;
   height: 355px;
   z-index: 9;
-  background: url(https://dl.dropbox.com/s/ive1x6md6hd93hd/squirrel.jpg)
+  background: url(./assets/camera/squirrel.jpg)
     no-repeat;
   background-size: 177%;
   filter: blur(2px);
@@ -10673,7 +10673,7 @@ td:empty {
   width: 30px;
   height: 30px;
   border-radius: 5px;
-  background: url(https://dl.dropbox.com/s/5q3asoilg7lehr2/lion.jpg) no-repeat;
+  background: url(./assets/photos/lion.jpg) no-repeat;
   background-size: 100%;
   vertical-align: bottom;
 }
@@ -10701,7 +10701,7 @@ td:empty {
   left: 128px;
   width: 20px;
   height: 20px;
-  background: url(https://dl.dropbox.com/s/ds6aynrs28trgh2/change.png) no-repeat;
+  background: url(./assets/camera/change.png) no-repeat;
   background-size: 100%;
   vertical-align: bottom;
 }
@@ -10734,7 +10734,7 @@ td:empty {
   left: 5px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/84rp346tealqxpi/flash.png) no-repeat;
+  background: url(./assets/camera/flash.png) no-repeat;
   background-size: 100%;
   transform: rotate(5deg);
 }
@@ -10758,7 +10758,7 @@ td:empty {
   left: 101px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/t8shao9snirn3lx/timer.png) no-repeat;
+  background: url(./assets/camera/timer.png) no-repeat;
   background-size: 100%;
 }
 
@@ -10769,7 +10769,7 @@ td:empty {
   left: 151px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/348iegk0n0729bu/filter.png) no-repeat;
+  background: url(./assets/camera/filter.png) no-repeat;
   background-size: 100%;
 }
 
@@ -10789,7 +10789,7 @@ td:empty {
   left: 0;
   width: 100%;
   height: 195px;
-  background: url(https://dl.dropbox.com/s/ive1x6md6hd93hd/squirrel.jpg)
+  background: url(./assets/camera/squirrel.jpg)
     no-repeat;
   background-size: 100%;
 }
@@ -10810,7 +10810,7 @@ td:empty {
   left: 10px;
   width: 250px;
   height: 355px;
-  background: url(https://dl.dropbox.com/s/ive1x6md6hd93hd/squirrel.jpg)
+  background: url(./assets/camera/squirrel.jpg)
     no-repeat;
   background-size: 140%;
   z-index: 99;
@@ -10833,7 +10833,7 @@ td:empty {
   left: 5px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/84rp346tealqxpi/flash.png) no-repeat;
+  background: url(./assets/camera/flash.png) no-repeat;
   background-size: 100%;
   transform: rotate(5deg);
 }
@@ -10914,7 +10914,7 @@ td:empty {
   left: 5px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/t83lhw7unv0g5wd/maps.png) no-repeat;
+  background: url(./assets/iphone_main_icons/maps.png) no-repeat;
   background-size: 100%;
 }
 
@@ -10947,7 +10947,7 @@ td:empty {
   height: 35px;
   width: 35px;
   left: 10px;
-  background: url(https://dl.dropbox.com/s/0nckxzhf8m9ln9d/paper-plane.png)
+  background: url(./assets/iphone_main_icons/paper-plane.png)
     no-repeat;
   background-size: 100%;
   border-radius: 50%;
@@ -11007,7 +11007,7 @@ td:empty {
   left: 5px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/5d9ny1xpc2vy55h/weather.png)
+  background: url(./assets/iphone_main_icons/weather.png)
     no-repeat;
   background-size: 100%;
 }
@@ -11041,7 +11041,7 @@ td:empty {
   height: 35px;
   width: 35px;
   left: 10px;
-  background: url(https://dl.dropbox.com/s/4khm3k8j3zb8lo7/rainy.png) no-repeat;
+  background: url(./assets/weather/rainy.png) no-repeat;
   background-size: 100%;
   border-radius: 50%;
 }
@@ -11127,7 +11127,7 @@ td:empty {
   left: 0;
   width: 100%;
   height: 355px;
-  background: url(https://dl.dropbox.com/s/q846ctlxfd6k89e/weather_bg.jpg)
+  background: url(./assets/weather/weather_bg.jpg)
     no-repeat;
   background-size: 100%;
   z-index: 99;
@@ -11288,7 +11288,7 @@ td:empty {
   left: 5px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/4khm3k8j3zb8lo7/rainy.png) no-repeat;
+  background: url(./assets/weather/rainy.png) no-repeat;
   background-size: 100%;
 }
 
@@ -11319,7 +11319,7 @@ td:empty {
   left: 10px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/klhr588qs97rtuv/sunset.png) no-repeat;
+  background: url(./assets/weather/sunset.png) no-repeat;
   background-size: 100%;
 }
 
@@ -11361,7 +11361,7 @@ td:empty {
   left: 10px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/j0t47d3kr6jb4px/sunrise.png)
+  background: url(./assets/weather/sunrise.png)
     no-repeat;
   background-size: 100%;
 }
@@ -11383,7 +11383,7 @@ td:empty {
   left: 5px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/cvtf7ua79hkqhui/windy.png) no-repeat;
+  background: url(./assets/weather/windy.png) no-repeat;
   background-size: 100%;
 }
 
@@ -11393,7 +11393,7 @@ td:empty {
   left: 5px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/crkbxl4zxsceftk/cloudy.png) no-repeat;
+  background: url(./assets/weather/cloudy.png) no-repeat;
   background-size: 100%;
 }
 
@@ -11403,7 +11403,7 @@ td:empty {
   left: 5px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/30u0klkwjlmgpp1/cloud.png) no-repeat;
+  background: url(./assets/weather/cloud.png) no-repeat;
   background-size: 100%;
 }
 
@@ -11449,7 +11449,7 @@ td:empty {
   left: 36px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/4khm3k8j3zb8lo7/rainy.png) no-repeat;
+  background: url(./assets/weather/rainy.png) no-repeat;
   background-size: 100%;
 }
 
@@ -11484,7 +11484,7 @@ td:empty {
   left: 36px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/cvtf7ua79hkqhui/windy.png) no-repeat;
+  background: url(./assets/weather/windy.png) no-repeat;
   background-size: 100%;
 }
 
@@ -11495,7 +11495,7 @@ td:empty {
   left: 36px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/30u0klkwjlmgpp1/cloud.png) no-repeat;
+  background: url(./assets/weather/cloud.png) no-repeat;
   background-size: 100%;
 }
 
@@ -11506,7 +11506,7 @@ td:empty {
   left: 36px;
   width: 15px;
   height: 15px;
-  background: url(https://dl.dropbox.com/s/crkbxl4zxsceftk/cloudy.png) no-repeat;
+  background: url(./assets/weather/cloudy.png) no-repeat;
   background-size: 100%;
 }
 
